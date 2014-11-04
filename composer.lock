@@ -1,0 +1,724 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "49b5d88a2a0102b297c15bfeb6920fb8",
+    "packages": [
+        {
+            "name": "composer/installers",
+            "version": "v1.0.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "4127333b03e8b4c08d081958548aae5419d1a2fa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/4127333b03e8b4c08d081958548aae5419d1a2fa",
+                "reference": "4127333b03e8b4c08d081958548aae5419d1a2fa",
+                "shasum": ""
+            },
+            "replace": {
+                "shama/baton": "*"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev",
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "composer-installer",
+            "extra": {
+                "class": "Composer\\Installers\\Installer",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Composer\\Installers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "http://composer.github.com/installers/",
+            "keywords": [
+                "Craft",
+                "Hurad",
+                "MODX Evo",
+                "OXID",
+                "WolfCMS",
+                "agl",
+                "annotatecms",
+                "cakephp",
+                "codeigniter",
+                "concrete5",
+                "croogo",
+                "drupal",
+                "elgg",
+                "fuelphp",
+                "installer",
+                "joomla",
+                "kohana",
+                "laravel",
+                "lithium",
+                "magento",
+                "mako",
+                "mediawiki",
+                "modulework",
+                "phpbb",
+                "piwik",
+                "ppi",
+                "shopware",
+                "silverstripe",
+                "symfony",
+                "typo3",
+                "wordpress",
+                "zend",
+                "zikula"
+            ],
+            "time": "2014-02-24 04:21:34"
+        },
+        {
+            "name": "fancyguy/webroot-installer",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fancyguy/webroot-installer.git",
+                "reference": "a2d5c2e149d837e5580a62a91d3c91577aa30d28"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fancyguy/webroot-installer/zipball/a2d5c2e149d837e5580a62a91d3c91577aa30d28",
+                "reference": "a2d5c2e149d837e5580a62a91d3c91577aa30d28",
+                "shasum": ""
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev",
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "composer-installer",
+            "extra": {
+                "class": "FancyGuy\\Composer\\WebrootInstaller"
+            },
+            "autoload": {
+                "psr-0": {
+                    "FancyGuy\\Composer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Steve Buzonas",
+                    "email": "steve@fancyguy.com",
+                    "homepage": "http://www.stevebuzonas.com"
+                }
+            ],
+            "description": "A composer installer for libraries that live in an application webroot.",
+            "homepage": "http://fancyguy.github.com/webroot-installer/",
+            "time": "2013-03-15 17:51:14"
+        },
+        {
+            "name": "ooyala/ooyala-wordpress-plugin",
+            "version": "1.0",
+            "dist": {
+                "type": "tar",
+                "url": "http://www.ravendevelopers.com/sites/default/files/assets/attachments/1/ooyala-for-wp.tar_0.gz",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "v1.0.12"
+            },
+            "type": "wordpress-plugin"
+        },
+        {
+            "name": "roots/soil",
+            "version": "3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/roots/soil.git",
+                "reference": "d138a8677666d912440a7eaff35be1f69acdaf4b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/roots/soil/zipball/d138a8677666d912440a7eaff35be1f69acdaf4b",
+                "reference": "d138a8677666d912440a7eaff35be1f69acdaf4b",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.3.0"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Scott Walkinshaw",
+                    "email": "scott.walkinshaw@gmail.com",
+                    "homepage": "https://github.com/swalkinshaw"
+                },
+                {
+                    "name": "Ben Word",
+                    "email": "ben@benword.com",
+                    "homepage": "https://github.com/retlehs"
+                }
+            ],
+            "description": "Clean up WordPress markup, relative URLs, nice search",
+            "homepage": "http://roots.io/plugins/soil/",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2014-08-13 23:26:46"
+        },
+        {
+            "name": "vlucas/phpdotenv",
+            "version": "v1.0.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vlucas/phpdotenv.git",
+                "reference": "56c252d48dce336da97926591aed71805203815b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/56c252d48dce336da97926591aed71805203815b",
+                "reference": "56c252d48dce336da97926591aed71805203815b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Dotenv": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD"
+            ],
+            "authors": [
+                {
+                    "name": "Vance Lucas",
+                    "email": "vance@vancelucas.com",
+                    "homepage": "http://www.vancelucas.com"
+                }
+            ],
+            "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
+            "homepage": "http://github.com/vlucas/phpdotenv",
+            "keywords": [
+                "dotenv",
+                "env",
+                "environment"
+            ],
+            "time": "2014-10-16 14:50:21"
+        },
+        {
+            "name": "wordpress/wordpress",
+            "version": "4.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://wordpress.org/wordpress-4.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "fancyguy/webroot-installer": "1.1.0"
+            },
+            "type": "webroot"
+        },
+        {
+            "name": "wpackagist-plugin/ad-injection",
+            "version": "1.2.0.16",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/ad-injection/",
+                "reference": "tags/1.2.0.16"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/ad-injection.1.2.0.16.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/ad-injection": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/ad-injection/"
+        },
+        {
+            "name": "wpackagist-plugin/akismet",
+            "version": "3.0.3",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/akismet/",
+                "reference": "tags/3.0.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/akismet.3.0.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/akismet": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/akismet/"
+        },
+        {
+            "name": "wpackagist-plugin/all-in-one-seo-pack",
+            "version": "2.2.3.1",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/all-in-one-seo-pack/",
+                "reference": "tags/2.2.3.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/all-in-one-seo-pack.2.2.3.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/all-in-one-seo-pack": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/all-in-one-seo-pack/"
+        },
+        {
+            "name": "wpackagist-plugin/all-in-one-wp-security-and-firewall",
+            "version": "3.8.5",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/all-in-one-wp-security-and-firewall/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/all-in-one-wp-security-and-firewall.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/all-in-one-wp-security-and-firewall": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/all-in-one-wp-security-and-firewall/"
+        },
+        {
+            "name": "wpackagist-plugin/ap-honeypot",
+            "version": "1.4",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/ap-honeypot/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/ap-honeypot.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/ap-honeypot": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/ap-honeypot/"
+        },
+        {
+            "name": "wpackagist-plugin/easyrecipe",
+            "version": "3.2.2802",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/easyrecipe/",
+                "reference": "tags/3.2.2802"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/easyrecipe.3.2.2802.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/easyrecipe": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/easyrecipe/"
+        },
+        {
+            "name": "wpackagist-plugin/google-universal-analytics",
+            "version": "2.4.1",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/google-universal-analytics/",
+                "reference": "tags/2.4.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/google-universal-analytics.2.4.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/google-universal-analytics": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/google-universal-analytics/"
+        },
+        {
+            "name": "wpackagist-plugin/honeypot-comments",
+            "version": "1.1.0",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/honeypot-comments/",
+                "reference": "tags/1.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/honeypot-comments.1.1.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/honeypot-comments": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/honeypot-comments/"
+        },
+        {
+            "name": "wpackagist-plugin/iq-block-country",
+            "version": "1.1.15",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/iq-block-country/",
+                "reference": "tags/1.1.15"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/iq-block-country.1.1.15.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/iq-block-country": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/iq-block-country/"
+        },
+        {
+            "name": "wpackagist-plugin/jetpack",
+            "version": "3.2",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/jetpack/",
+                "reference": "tags/3.2-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/jetpack.3.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/jetpack": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/jetpack/"
+        },
+        {
+            "name": "wpackagist-plugin/page-links-to",
+            "version": "2.9.4",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/page-links-to/",
+                "reference": "tags/2.9.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/page-links-to.2.9.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/page-links-to": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/page-links-to/"
+        },
+        {
+            "name": "wpackagist-plugin/raw-html",
+            "version": "1.4.13",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/raw-html/",
+                "reference": "tags/1.4.13"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/raw-html.1.4.13.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/raw-html": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/raw-html/"
+        },
+        {
+            "name": "wpackagist-plugin/remove-image-links",
+            "version": "1.2",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/remove-image-links/",
+                "reference": "tags/1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/remove-image-links.1.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/remove-image-links": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/remove-image-links/"
+        },
+        {
+            "name": "wpackagist-plugin/sabre",
+            "version": "1.2.2",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/sabre/",
+                "reference": "tags/1.2.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/sabre.1.2.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/sabre": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/sabre/"
+        },
+        {
+            "name": "wpackagist-plugin/w3-total-cache",
+            "version": "0.9.4",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/w3-total-cache/",
+                "reference": "tags/0.9.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/w3-total-cache.0.9.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/w3-total-cache": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/w3-total-cache/"
+        },
+        {
+            "name": "wpackagist-plugin/wordpress-importer",
+            "version": "0.6.1",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/wordpress-importer/",
+                "reference": "tags/0.6.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/wordpress-importer.0.6.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/wordpress-importer": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/wordpress-importer/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-smushit",
+            "version": "1.6.5.4",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/wp-smushit/",
+                "reference": "tags/1.6.5.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/wp-smushit.1.6.5.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/wp-smushit": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/wp-smushit/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-stripe",
+            "version": "1.5",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/wp-stripe/",
+                "reference": "tags/1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/wp-stripe.1.5.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/wp-stripe": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/wp-stripe/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-stripe-email-receipts",
+            "version": "1.0",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/wp-stripe-email-receipts/",
+                "reference": "tags/1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/wp-stripe-email-receipts.1.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/wp-stripe-email-receipts": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/wp-stripe-email-receipts/"
+        },
+        {
+            "name": "wpackagist-plugin/yet-another-related-posts-plugin",
+            "version": "4.2.4",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/yet-another-related-posts-plugin/",
+                "reference": "tags/4.2.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/yet-another-related-posts-plugin.4.2.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/yet-another-related-posts-plugin": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/yet-another-related-posts-plugin/"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "platform": {
+        "php": ">=5.3.2"
+    },
+    "platform-dev": []
+}

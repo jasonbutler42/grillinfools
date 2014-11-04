@@ -1,0 +1,98 @@
+{
+  "name": "jasonbutler42/grillinfools",
+  "type": "project",
+  "license": "MIT",
+  "description": "WordPress stack for grillinfools.com",
+  "homepage": "http://grillinfools.com",
+  "authors": [
+    {
+      "name": "Jason Butler",
+      "email": "jasonbutler42@gmail.com",
+      "homepage": "http://jasonbutler42.com"
+    }
+  ],
+  "config": {
+    "preferred-install": "dist",
+    "generate-salts": true
+  },
+  "autoload": {
+    "psr-0": {"Bedrock\\Installer": "scripts"}
+  },
+  "scripts": {
+    "post-root-package-install": ["Bedrock\\Installer::addSalts"]
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "ooyala/ooyala-wordpress-plugin",
+        "version": "1.0",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "tar",
+          "url": "http://www.ravendevelopers.com/sites/default/files/assets/attachments/1/ooyala-for-wp.tar_0.gz"
+        },
+        "require" : {
+          "composer/installers": "v1.0.12"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "wordpress/wordpress",
+        "version": "4.0",
+        "type": "webroot",
+        "dist": {
+          "type": "zip",
+          "url": "https://wordpress.org/wordpress-4.0.zip"
+        },
+        "require" : {
+          "fancyguy/webroot-installer": "1.1.0"
+        }
+      }
+    }
+  ],
+  "require": {
+    "php": ">=5.3.2",
+    "wordpress/wordpress": "4.0",
+    "fancyguy/webroot-installer": "1.1.0",
+    "composer/installers": "v1.0.12",
+    "vlucas/phpdotenv": "~1.0.6",
+    "roots/soil": "3.0.1",
+    "wpackagist-plugin/ad-injection": "*",
+    "wpackagist-plugin/all-in-one-seo-pack": "*",
+    "wpackagist-plugin/all-in-one-wp-security-and-firewall": "*",
+    "wpackagist-plugin/easyrecipe": "*",
+    "wpackagist-plugin/page-links-to": "*",
+    "wpackagist-plugin/raw-html": "*",
+    "wpackagist-plugin/w3-total-cache": "*",
+    "wpackagist-plugin/wordpress-importer": "*",
+    "wpackagist-plugin/akismet": "*",
+    "wpackagist-plugin/ap-honeypot": "*",
+    "wpackagist-plugin/remove-image-links": "*",
+    "wpackagist-plugin/honeypot-comments": "*",
+    "wpackagist-plugin/iq-block-country": "*",
+    "wpackagist-plugin/sabre": "*",
+    "wpackagist-plugin/wp-smushit": "*",
+    "wpackagist-plugin/wp-stripe": "*",
+    "wpackagist-plugin/google-universal-analytics": "*",
+    "wpackagist-plugin/wp-stripe-email-receipts": "*",
+    "wpackagist-plugin/yet-another-related-posts-plugin": "*",
+    "ooyala/ooyala-wordpress-plugin": "1.0",
+    "wpackagist-plugin/jetpack": "*"
+  },
+  "extra": {
+    "installer-paths": {
+      "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
+      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "web/app/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "webroot-dir": "web/wp",
+    "webroot-package": "wordpress/wordpress"
+  }
+}
