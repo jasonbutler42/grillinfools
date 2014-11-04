@@ -35,3 +35,7 @@ bin
 
 # OSX
 .DS_Store
+
+# Installed Themes
+web/app/themes/*
+web/app/themes/.gitkeep
