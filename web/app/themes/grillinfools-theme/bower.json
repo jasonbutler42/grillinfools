@@ -1,0 +1,20 @@
+{
+  "name": "grillinfools",
+  "version": "0.1",
+  "homepage": "http://grillinfools.com",
+  "authors": [
+    "Jason A. Butler <jasonbutler42@gmail.com>"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "assets/vendor"
+  ],
+  "dependencies": {
+    "modernizr": "2.8.2",
+    "jquery": "1.11.1",
+    "bootstrap": "3.3.0",
+    "respond": "1.4.2"
+  }
+}
