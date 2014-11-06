@@ -7,7 +7,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+      <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><span class="logo"><?php include(get_template_directory() . "/assets/img/logo.svg"); ?><?php bloginfo('name'); ?></span></a>
     </div>
 
     <nav class="collapse navbar-collapse" role="navigation">
@@ -19,3 +19,4 @@
     </nav>
   </div>
 </header>
+
