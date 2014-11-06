@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "author": "Jason A. Butler <jasonbutler42@gmail.com>",
   "homepage": "http://grillinfools.com",
+  "description":"WordPress theme for GrillinFools.com",
   "repository": {
     "type": "git",
     "url": "git://github.com/jasonbutler42/grillinfools.git"
