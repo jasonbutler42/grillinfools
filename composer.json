@@ -84,8 +84,7 @@
     "wpackagist-plugin/wp-stripe-email-receipts": "*",
     "wpackagist-plugin/yet-another-related-posts-plugin": "*",
     "ooyala/ooyala-wordpress-plugin": "1.0",
-    "wpackagist-plugin/jetpack": "*",
-    "jasonbutler42/grillinfools-theme": "1.0"
+    "wpackagist-plugin/jetpack": "*"
   },
   "extra": {
     "installer-paths": {
