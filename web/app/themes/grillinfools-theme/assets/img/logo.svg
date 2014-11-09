@@ -1,7 +1,7 @@
 <svg version="1.1"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
 	 x="0px" y="0px" width="225px" height="208px" viewBox="0 -0.8 225 208"
-	 style="overflow:visible;enable-background:new 0 -0.8 225 208;height: 100%;width: 100%;" xml:space="preserve">
+	 style="overflow:visible;enable-background:new 0 -0.8 225 208;height: 100%;width: 100%;" xml:space="preserve" class="logo-svg">
 <style type="text/css">
 <![CDATA[
 	.letters path {fill:#C4203B;}
@@ -249,4 +249,7 @@
 		c1.1-1.9,2.7-3.1,4.9-3.7c2.8-0.7,5.3-0.2,7.5,1.6c2.2,1.8,3.7,4.5,4.5,8.2c1.1,5,0.7,9.9-1.2,14.7C212.1,33,208.9,37.3,204.3,41.2z
 		"/>
 </g>
+<filter id="pictureFilter" >
+  	<feGaussianBlur stdDeviation="2" />
+</filter>
 </svg>

@@ -1,10 +1,26 @@
+.mega-wrapper {
+	background-color: white;
+	@media(min-width: @screen-tablet){background-color: @gf-background;}
+	font-family: Georgia;
+}
 // Content wrapper
-.wrap {}
+.wrap {
+	background-color: white;
+	@media(min-width: @screen-tablet){
+		padding-top: 14em;
+		border-left: 1px solid @border-color;
+		border-right: 1px solid @border-color;
+	}
+	@media(min-width: @screen-desktop){padding-top: 19em;}    /* or @screen-md */
+}
 
 // Main content area
 .main {
+	//border-top: 1px solid #bbbbbb;
   .make-sm-column(@main-sm-columns);
   .sidebar-primary & {
     .make-sm-column(@main-sm-columns - @sidebar-sm-columns);
+		@media(min-width: @screen-tablet){padding-left: 3em;}     /* or @screen-sm */
+		@media(min-width: @screen-desktop){padding-left: 5em;}    /* or @screen-md */
   }
 }

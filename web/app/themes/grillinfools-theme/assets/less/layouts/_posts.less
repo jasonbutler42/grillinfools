@@ -3,8 +3,9 @@
 .hentry .byline { }
 .hentry .entry-content {
 	img {
-		&.size-full {
-			.img-responsive; // make the images scale appropriately
+		&[class*="size-"],
+		&.alignnone {
+			.img-responsive; // make the images scale appropriately 
 			border: 1px solid @border-color;
 			padding: 2px 3px;	
 			@media (min-width: @screen-xs-min) {
