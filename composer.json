@@ -72,6 +72,7 @@
     "wpackagist-plugin/raw-html": "*",
     "wpackagist-plugin/w3-total-cache": "*",
     "wpackagist-plugin/wordpress-importer": "*",
+    "wpackagist-plugin/askapache-debug-viewer": "*",
     "wpackagist-plugin/akismet": "*",
     "wpackagist-plugin/ap-honeypot": "*",
     "wpackagist-plugin/remove-image-links": "*",
