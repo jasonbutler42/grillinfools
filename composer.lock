@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "49b5d88a2a0102b297c15bfeb6920fb8",
+    "hash": "1966664479ad8b7428ba545f35d4aa1f",
     "packages": [
         {
             "name": "composer/installers",
@@ -366,6 +366,29 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/ap-honeypot/"
+        },
+        {
+            "name": "wpackagist-plugin/askapache-debug-viewer",
+            "version": "3.1",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/askapache-debug-viewer/",
+                "reference": "tags/3.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/askapache-debug-viewer.3.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/askapache-debug-viewer": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/askapache-debug-viewer/"
         },
         {
             "name": "wpackagist-plugin/easyrecipe",
