@@ -6083,7 +6083,9 @@ button.close {
 .panel-body:before,
 .panel-body:after,
 .modal-footer:before,
-.modal-footer:after {
+.modal-footer:after,
+.hentry header:before,
+.hentry header:after {
   content: " ";
   display: table;
 }
@@ -6101,7 +6103,8 @@ button.close {
 .navbar-collapse:after,
 .pager:after,
 .panel-body:after,
-.modal-footer:after {
+.modal-footer:after,
+.hentry header:after {
   clear: both;
 }
 .center-block {
@@ -6420,40 +6423,17 @@ figure.alignnone {
     padding-top: 19em;
   }
 }
-.main {
+.sidebar {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: .7em;
 }
 @media (min-width: 768px) {
-  .main {
+  .sidebar {
     float: left;
-    width: 100%;
-  }
-}
-.sidebar-primary .main {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  /* or @screen-sm */
-  /* or @screen-md */
-}
-@media (min-width: 768px) {
-  .sidebar-primary .main {
-    float: left;
-    width: 66.66666667%;
-  }
-}
-@media (min-width: 768px) {
-  .sidebar-primary .main {
-    padding-left: 3em;
-  }
-}
-@media (min-width: 992px) {
-  .sidebar-primary .main {
-    padding-left: 5em;
+    width: 33.33333333%;
   }
 }
 .banner {
@@ -6466,6 +6446,8 @@ figure.alignnone {
   width: 90%;
   margin: auto;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  /* or @screen-sm */
+  /* or @screen-md */
 }
 .banner .tagline:before,
 .banner .tagline:after {
@@ -6482,6 +6464,17 @@ figure.alignnone {
 }
 .banner .tagline:after {
   clear: both;
+}
+@media (min-width: 768px) {
+  .banner .tagline {
+    font-size: 175%;
+    text-align: right;
+  }
+}
+@media (min-width: 992px) {
+  .banner .tagline {
+    font-size: 225%;
+  }
 }
 .banner .navbar-toggle {
   margin-top: 42px;
@@ -6648,8 +6641,22 @@ figure.alignnone {
     width: 33.33333333%;
   }
 }
+.hentry .entry-content .wp-video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #bbbbbb;
+  padding: 2px 3px;
+  margin: auto;
+}
+@media (min-width: 480px) {
+  .hentry .entry-content .wp-video {
+    padding: 4px 6px;
+  }
+}
 .hentry .entry-content img[class*="size-"],
-.hentry .entry-content img.alignnone {
+.hentry .entry-content img.alignnone,
+.hentry .entry-content img.aligncenter {
   display: block;
   max-width: 100%;
   height: auto;
@@ -6658,8 +6665,91 @@ figure.alignnone {
 }
 @media (min-width: 480px) {
   .hentry .entry-content img[class*="size-"],
-  .hentry .entry-content img.alignnone {
+  .hentry .entry-content img.alignnone,
+  .hentry .entry-content img.aligncenter {
     padding: 4px 6px;
+  }
+}
+.hentry header {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: -15px;
+  margin-right: -15px;
+  border-top: 20px solid #470d0d;
+  color: #c9c9c0;
+  background: #c4203b;
+  /* or @screen-sm */
+  /* or @screen-md */
+}
+@media (min-width: 768px) {
+  .hentry header {
+    padding: 0 5em;
+  }
+}
+@media (min-width: 992px) {
+  .hentry header {
+    padding: 0 6.75em;
+  }
+}
+.hentry header .author-pic {
+  display: block;
+  width: 20%;
+  float: left;
+  margin-top: -1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+.hentry header .author-pic .avatar {
+  width: 100%;
+  height: 100%;
+}
+.hentry header .entry-meta-wrap {
+  display: block;
+  float: left;
+  width: 75%;
+  clear: none;
+}
+.hentry header .entry-meta-wrap h1 {
+  font-size: 200%;
+}
+.hentry .article-body-wrap {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .hentry .article-body-wrap {
+    float: left;
+    width: 100%;
+  }
+}
+.sidebar-primary .hentry .article-body-wrap {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .sidebar-primary .hentry .article-body-wrap {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+.hentry .entry-content {
+  /* or @screen-sm */
+  /* or @screen-md */
+}
+@media (min-width: 768px) {
+  .hentry .entry-content {
+    padding-left: 3em;
+  }
+}
+@media (min-width: 992px) {
+  .hentry .entry-content {
+    padding-left: 5em;
   }
 }
 /*# sourceMappingURL=main.css.map */

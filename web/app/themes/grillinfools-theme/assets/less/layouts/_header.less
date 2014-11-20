@@ -10,6 +10,11 @@
 		width:90%;
 		margin:auto;
 		.text-shadow();
+		@media(min-width: @screen-tablet){
+			font-size: 175%;
+			text-align: right;
+		}     /* or @screen-sm */
+		@media(min-width: @screen-desktop){font-size: 225%}    /* or @screen-md */
 	}
 	.navbar-toggle {
 		margin-top: 42px;
