@@ -126,6 +126,22 @@ module.exports = function(grunt) {
         }
       }
     },
+      bump: {
+        options: {
+          files: ['package.json','style.css','bower.json'],
+          updateConfigs: [],
+          commit: true,
+          commitMessage: 'Release v%VERSION%',
+          commitFiles: ['-a'],
+          createTag: false,
+          tagName: 'v%VERSION%',
+          tagMessage: 'Version %VERSION%',
+          push: false,
+          pushTo: 'upstream',
+          gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d',
+          globalReplace: false
+        }
+    },
     watch: {
       less: {
         files: [
@@ -156,7 +172,7 @@ module.exports = function(grunt) {
       }
     }
   });
-
+  grunt.loadNpmTasks('grunt-bump');
   // Register tasks
   grunt.registerTask('default', [
     'dev'
