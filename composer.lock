@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "1966664479ad8b7428ba545f35d4aa1f",
+    "hash": "9ef5747c4d439310c404bcd06fa1b13b",
     "packages": [
         {
             "name": "composer/installers",
@@ -240,10 +240,10 @@
         },
         {
             "name": "wordpress/wordpress",
-            "version": "4.0",
+            "version": "4.0.1",
             "dist": {
                 "type": "zip",
-                "url": "https://wordpress.org/wordpress-4.0.zip",
+                "url": "https://wordpress.org/wordpress-4.0.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -392,15 +392,15 @@
         },
         {
             "name": "wpackagist-plugin/easyrecipe",
-            "version": "3.2.2802",
+            "version": "3.2.2885",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/easyrecipe/",
-                "reference": "tags/3.2.2802"
+                "reference": "tags/3.2.2885"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/easyrecipe.3.2.2802.zip",
+                "url": "http://downloads.wordpress.org/plugin/easyrecipe.3.2.2885.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -415,15 +415,15 @@
         },
         {
             "name": "wpackagist-plugin/google-universal-analytics",
-            "version": "2.4.1",
+            "version": "2.4.2",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/google-universal-analytics/",
-                "reference": "tags/2.4.1"
+                "reference": "tags/2.4.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/google-universal-analytics.2.4.1.zip",
+                "url": "http://downloads.wordpress.org/plugin/google-universal-analytics.2.4.2.zip",
                 "reference": null,
                 "shasum": null
             },
