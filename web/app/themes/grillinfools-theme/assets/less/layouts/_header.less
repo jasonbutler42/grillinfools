@@ -80,17 +80,20 @@
 		.hidden-lg;
 		transition: all 0.5s ease;
 	}
-	&.navbar-full {
+	&.navbar-full { //header for the non-mobile site
 		transition: all 0.5s ease;
 		.hidden-xs;
 		position:absolute;
 		width: 100%;
 		.navbar-primary {
 			.container {
+			@media(min-width: @screen-desktop){.make-row; .container-fixed();}    /* or @screen-md */
+			
 				text-transform: uppercase;
 				text-align:center;
 				font-weight:bold;
 				.navbar-nav {
+					//@media(min-width: @screen-desktop){.make-sm-column(7);}    /* or @screen-md */
 					float:none;
 					display:inline-block;
 					*display:inline; /* ie7 fix */
@@ -99,6 +102,11 @@
 					> li {
 						padding-top: .5em;
 						padding-bottom: .5em;
+						.opacity();
+						&:hover {
+							.opacity(1);
+						}
+						
 						> a {
 							font-size: 90%;
 							line-height: 1.5em;
@@ -107,6 +115,8 @@
 							&:link,
 							&:visited {
 								color: @gf-red-dark;
+								background: white;
+
 
 							}
 							&:hover,
@@ -129,6 +139,25 @@
 				.navbar-inner {
 					text-align:center;
 				}
+			}
+			.search-form {
+				.hidden-xs;
+				.hidden-sm;
+				.hidden-md;
+				.pull-right;
+				//border-top: 1px solid red;
+				//border-bottom: 1px solid red;
+				margin-top: 1em;
+				.make-sm-column(4);
+				.search-field {
+					.opacity();
+				}
+				.search-submit {
+					background: @gf-green;
+					color: white;
+					border-color: @gf-green;
+				}
+				//@media(min-width: @screen-desktop){.make-sm-column(4);}    /* or @screen-md */
 			}
 		}
 		.navbar-category {

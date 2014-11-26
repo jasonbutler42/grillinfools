@@ -47,7 +47,7 @@ function featured_image($post_id) {
 	//echo "image_src_filename: " . $image_src_filename . "<br>";
 	//echo "image_src_extention_loc: " . $image_src_extention_loc . "<br>";
 	$featured_width = 1170;
-	$featured_height = 400;
+	$featured_height = 350;
 	$featured_image_filename = substr($image_src_filename, 0, $image_src_extention_loc) . '-' . $featured_width . 'x' . $featured_height . '_featured' . substr($image_src_filename, $image_src_extention_loc);
 	$featured_image_ext = substr($image_src_filename,$image_src_extention_loc+1);
 	//echo "type of file = " . $featured_image_ext;

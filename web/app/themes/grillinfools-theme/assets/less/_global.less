@@ -8,6 +8,7 @@
 @gf-red:				#C4203B;
 @gf-red-med:			#a32828;
 @gf-red-dark:			#470d0d;
+@gf-green:				#428bca;
 
 @font-face {
     font-family: 'fawn_script';
@@ -24,6 +25,13 @@
 //text shadow mixin
 .text-shadow (@string: 0 1px 3px rgba(0, 0, 0, 0.25)) {
 	text-shadow: @string;
+}
+
+//opacity mixin
+.opacity (@opacity: 0.5) {
+	-webkit-opacity: 	@opacity;
+	-moz-opacity: 		@opacity;
+	opacity: 			@opacity;
 }
 
 a {

@@ -29,6 +29,7 @@
 
 <header class="banner navbar navbar-static-top navbar-full" role="banner">
   <nav class="navbar-primary" role="navigation">
+    <?php get_template_part('templates/searchform'); ?>
     <div class="container">
       <?php
         if (has_nav_menu('primary_navigation')) :
@@ -36,6 +37,7 @@
         endif;
       ?>
     </div>
+
   </nav>
   <nav class="navbar-category" role="navigation">
     <div class="container">
