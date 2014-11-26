@@ -49,10 +49,28 @@ function featured_image($post_id) {
 	$featured_width = 1170;
 	$featured_height = 400;
 	$featured_image_filename = substr($image_src_filename, 0, $image_src_extention_loc) . '-' . $featured_width . 'x' . $featured_height . '_featured' . substr($image_src_filename, $image_src_extention_loc);
-	 //echo "featured_image_filename: " . $featured_image_filename . "<br>";
+	$featured_image_ext = substr($image_src_filename,$image_src_extention_loc+1);
+	//echo "type of file = " . $featured_image_ext;
+	//echo "featured_image_filename: " . $featured_image_filename . "<br>";
 	// Get the local path of the image
 	$wpcontent_image_path = dirname(get_attached_file($post_thumbnail_id));
-	 
+
+
+/*
+switch ($orig_type) {
+        case IMAGETYPE_GIF:
+            imagegif( $image, $file );
+            break;
+        case IMAGETYPE_PNG:
+            imagepng( $image, $file );
+            break;
+        case IMAGETYPE_JPEG:
+            imagejpeg( $image, $file );
+            break;
+    }
+*/
+
+
 	if (!file_exists($wpcontent_image_path . '/' . $featured_image_filename)) {
 
 		list($width, $height) = getimagesize($wpcontent_image_path . '/' . $image_src_filename);
@@ -69,8 +87,16 @@ function featured_image($post_id) {
 		echo "image_src_filename = " . $image_src_filename . "<br>";
 */
 		$featured_image = imagecreatetruecolor($featured_width, $new_height);
-		$image = imagecreatefrompng($wpcontent_image_path . '/' . $image_src_filename);
 
+		
+		switch ($featured_image_ext) {
+			case 'jpg':
+				$image = imagecreatefromjpeg($wpcontent_image_path . '/' . $image_src_filename);
+				break;
+			case 'png':
+				$image = imagecreatefrompng($wpcontent_image_path . '/' . $image_src_filename);
+				break;
+		}	
 
 	 	imagecopyresized($featured_image, $image, 0, 0, 0, 0, $featured_width, $new_height, $width, $height);
 	 	$new_y = $height/2 - $featured_height/2;
