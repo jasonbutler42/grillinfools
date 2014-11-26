@@ -3,6 +3,7 @@
 	background: none;
 	// tagline
 	.tagline {
+		transition: all 0.5s ease;
 		font-family: 'fawn_script';
 		color: @gf-red;
 		font-size: 200%;
@@ -10,11 +11,11 @@
 		width:90%;
 		margin:auto;
 		.text-shadow();
-		@media(min-width: @screen-tablet){
-			font-size: 175%;
+		@media(min-width: @screen-tablet){ 		/* or @screen-sm */
+			font-size: 170%;
 			text-align: right;
-		}     /* or @screen-sm */
-		@media(min-width: @screen-desktop){font-size: 225%}    /* or @screen-md */
+		}     
+		@media(min-width: @screen-desktop){font-size: 200%}    /* or @screen-md */
 	}
 	.navbar-toggle {
 		margin-top: 42px;
@@ -23,23 +24,39 @@
 		height: 125px;
 		padding: 5px;
 		width: 150px;
-		@media(min-width: @screen-tablet){}     /* or @screen-sm */
-		@media(min-width: @screen-desktop){width:200px; height: 186px;}    /* or @screen-md */
+		transition: all 0.5s ease;
+		@media(min-width: @screen-tablet){		/* or @screen-sm */
+			&:hover {
+				height: 120px;
+				padding-top: 10px;
+			}
+		}     
+		@media(min-width: @screen-desktop){		/* or @screen-md */
+			width:200px; 
+			height: 186px;
+			
+			&:hover {
+				height: 175px;
+				padding-top: 16px;
+			}
+		}    
 		.logo {
 			 .text-hide;
 			 display: block;
 			 height:100%;
 			 overflow: hidden;
-			 //background: #336633;
 			 .logo-svg {
+			 	path {transition: all 0.5s ease;}
 			 	&:hover {
 			 		.grate path {
-  						fill: #777777;
-  						fill: none;
+  						fill: #444444;
+  						//fill: none;
+  						
   						//filter: url(#pictureFilter);
 			 		}
 			 		.letters path {
-			 			fill: lighten(@gf-red, 10%)
+			 			fill: lighten(@gf-red, 10%);
+
 			 		}
 			 		.letter-outline path {
 			 			
@@ -61,8 +78,10 @@
 		.hidden-sm;
 		.hidden-md;
 		.hidden-lg;
+		transition: all 0.5s ease;
 	}
 	&.navbar-full {
+		transition: all 0.5s ease;
 		.hidden-xs;
 		position:absolute;
 		width: 100%;
@@ -123,6 +142,7 @@
 					top: 0;
 				}
 				.nav {
+					transition: all 0.5s ease;
 					padding-left: 150px;
 					@media(min-width: @screen-desktop){padding-left: 200px;}    /* or @screen-md */
 						//margin-left: 200px;

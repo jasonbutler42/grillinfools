@@ -31,43 +31,52 @@
 
 .hentry {
 	header {
+		position:relative;
+		transition: all 0.5s ease;
 		.container-fixed();
 		margin-left: -15px;
 		margin-right: -15px;
 		border-top: 20px solid @gf-red-dark;
 		color: @text-color-on-red;
-		background: @gf-red;
+		background: @gf-red-med;
 		@media(min-width: @screen-tablet){padding: 0 5em;}     /* or @screen-sm */
 		@media(min-width: @screen-desktop){padding: 0 6.75em;}    /* or @screen-md */
 		//position: relative;
 		
+		/* Not sure if we will even use this on posts 
 		.author-pic {
-			//.make-xs-column(2);
+			transition: all 0.5s ease;
 			display:block;
-			//height: 64px;
 			width: 20%;
 			float: left;
-			margin-top: -1em;
+			margin-top: 1em;
 			margin-right: 1em;
 			margin-bottom: 1em;
 			border: 3px solid @gf-red-dark;
+			@media(min-width: @screen-tablet){
+				margin-top: -1em; 
+				
+			}    
+			@media(min-width: @screen-desktop){
+				margin-top: -2em;
+			}    
 			.avatar {
 				width: 100%;
 				height: 100%;
 			}
 		}
-		
+		*/
 		.entry-meta-wrap {
 			display:block;
-			float:left;
-			width: 75%;
+			//float:left;
+			//width: 75%;
 			//border: 1px solid black;
 			//.make-xs-column(10);
 			h1 {
 
 				font-size: 200%;
 			}
-			clear:none;
+			//clear:none;
 			
 		}
 		time {

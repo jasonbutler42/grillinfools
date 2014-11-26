@@ -7,13 +7,20 @@
     </div>
   <![endif]-->
   <div class="mega-wrapper">
+
     <?php
       do_action('get_header');
       get_template_part('templates/header');
     ?>
 
     <div class="wrap container" role="document">
+
       <div class="content">
+      <?php while (have_posts()) : the_post(); ?>
+        <?php if ( has_post_thumbnail() ) : ?>
+          <?php featured_image($post->ID); ?>
+        <?php endif; ?>
+    <?php endwhile; ?>
         <main class="main" role="main">
           <?php include roots_template_path(); ?>
         </main><!-- /.main -->

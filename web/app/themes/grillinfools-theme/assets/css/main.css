@@ -6084,6 +6084,8 @@ button.close {
 .panel-body:after,
 .modal-footer:before,
 .modal-footer:after,
+.content .featured-image:before,
+.content .featured-image:after,
 .hentry header:before,
 .hentry header:after {
   content: " ";
@@ -6104,6 +6106,7 @@ button.close {
 .pager:after,
 .panel-body:after,
 .modal-footer:after,
+.content .featured-image:after,
 .hentry header:after {
   clear: both;
 }
@@ -6408,7 +6411,11 @@ figure.alignnone {
   }
 }
 .wrap {
+  -webkit-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+          transition: all 0.5s ease;
   background-color: white;
+  position: relative;
   /* or @screen-md */
 }
 @media (min-width: 768px) {
@@ -6421,6 +6428,24 @@ figure.alignnone {
 @media (min-width: 992px) {
   .wrap {
     padding-top: 19em;
+  }
+}
+.content .featured-image {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .content .featured-image {
+    display: block;
   }
 }
 .sidebar {
@@ -6440,13 +6465,15 @@ figure.alignnone {
   background: none;
 }
 .banner .tagline {
+  -webkit-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+          transition: all 0.5s ease;
   font-family: 'fawn_script';
   color: #c4203b;
   font-size: 200%;
   width: 90%;
   margin: auto;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-  /* or @screen-sm */
   /* or @screen-md */
 }
 .banner .tagline:before,
@@ -6467,13 +6494,14 @@ figure.alignnone {
 }
 @media (min-width: 768px) {
   .banner .tagline {
-    font-size: 175%;
+    /* or @screen-sm */
+    font-size: 170%;
     text-align: right;
   }
 }
 @media (min-width: 992px) {
   .banner .tagline {
-    font-size: 225%;
+    font-size: 200%;
   }
 }
 .banner .navbar-toggle {
@@ -6483,13 +6511,28 @@ figure.alignnone {
   height: 125px;
   padding: 5px;
   width: 150px;
-  /* or @screen-sm */
-  /* or @screen-md */
+  -webkit-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+@media (min-width: 768px) {
+  .banner .navbar-brand {
+    /* or @screen-sm */
+  }
+  .banner .navbar-brand:hover {
+    height: 120px;
+    padding-top: 10px;
+  }
 }
 @media (min-width: 992px) {
   .banner .navbar-brand {
+    /* or @screen-md */
     width: 200px;
     height: 186px;
+  }
+  .banner .navbar-brand:hover {
+    height: 175px;
+    padding-top: 16px;
   }
 }
 .banner .navbar-brand .logo {
@@ -6502,9 +6545,13 @@ figure.alignnone {
   height: 100%;
   overflow: hidden;
 }
+.banner .navbar-brand .logo .logo-svg path {
+  -webkit-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
 .banner .navbar-brand .logo .logo-svg:hover .grate path {
-  fill: #777777;
-  fill: none;
+  fill: #444444;
 }
 .banner .navbar-brand .logo .logo-svg:hover .letters path {
   fill: #df3854;
@@ -6515,6 +6562,9 @@ figure.alignnone {
 }
 .banner.navbar-mobile {
   background: white;
+  -webkit-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+          transition: all 0.5s ease;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .banner.navbar-mobile {
@@ -6532,6 +6582,9 @@ figure.alignnone {
   }
 }
 .banner.navbar-full {
+  -webkit-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+          transition: all 0.5s ease;
   position: absolute;
   width: 100%;
 }
@@ -6594,6 +6647,9 @@ figure.alignnone {
   top: 0;
 }
 .banner.navbar-full .navbar-category .container .nav {
+  -webkit-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+          transition: all 0.5s ease;
   padding-left: 150px;
   /* or @screen-md */
 }
@@ -6671,6 +6727,10 @@ figure.alignnone {
   }
 }
 .hentry header {
+  position: relative;
+  -webkit-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+          transition: all 0.5s ease;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -6679,9 +6739,32 @@ figure.alignnone {
   margin-right: -15px;
   border-top: 20px solid #470d0d;
   color: #c9c9c0;
-  background: #c4203b;
+  background: #a32828;
   /* or @screen-sm */
   /* or @screen-md */
+  /* Not sure if we will even use this on posts 
+		.author-pic {
+			transition: all 0.5s ease;
+			display:block;
+			width: 20%;
+			float: left;
+			margin-top: 1em;
+			margin-right: 1em;
+			margin-bottom: 1em;
+			border: 3px solid @gf-red-dark;
+			@media(min-width: @screen-tablet){
+				margin-top: -1em; 
+				
+			}    
+			@media(min-width: @screen-desktop){
+				margin-top: -2em;
+			}    
+			.avatar {
+				width: 100%;
+				height: 100%;
+			}
+		}
+		*/
 }
 @media (min-width: 768px) {
   .hentry header {
@@ -6693,23 +6776,8 @@ figure.alignnone {
     padding: 0 6.75em;
   }
 }
-.hentry header .author-pic {
-  display: block;
-  width: 20%;
-  float: left;
-  margin-top: -1em;
-  margin-right: 1em;
-  margin-bottom: 1em;
-}
-.hentry header .author-pic .avatar {
-  width: 100%;
-  height: 100%;
-}
 .hentry header .entry-meta-wrap {
   display: block;
-  float: left;
-  width: 75%;
-  clear: none;
 }
 .hentry header .entry-meta-wrap h1 {
   font-size: 200%;

@@ -5,7 +5,9 @@
 }
 // Content wrapper
 .wrap {
+	transition: all 0.5s ease;
 	background-color: white;
+	position:relative;
 	@media(min-width: @screen-tablet){
 		padding-top: 14em;
 		border-left: 1px solid @border-color;
@@ -16,6 +18,20 @@
 
 // Main content area
 .content {
+	.featured-image {
+		display:none;
+		position:absolute;
+		top:0;
+		left:0;
+		overflow: hidden;
+		width: 100%;
+		.container-fixed();
+		padding:0;
+
+		@media(min-width: @screen-tablet){
+			display: block;
+		}
+	}
 	//.make-row();
 }
 .main {
