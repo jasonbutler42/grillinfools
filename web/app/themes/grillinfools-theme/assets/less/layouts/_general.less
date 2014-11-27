@@ -24,15 +24,18 @@
 		top:0;
 		left:0;
 		overflow: hidden;
+		height: 400px;
 		width: 100%;
 		.container-fixed();
 		padding:0;
-
-		@media(min-width: @screen-tablet){
-			display: block;
-		}
+		@media(min-width: @screen-tablet){display: block;}
+		@media(min-width: @screen-desktop){height: 350px;}    
+		background-position: 0 0;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% auto;
 	}
-	//.make-row();
+
 }
 .main {
 	//.make-sm-column(12);	

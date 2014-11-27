@@ -6454,16 +6454,27 @@ figure.alignnone {
   top: 0;
   left: 0;
   overflow: hidden;
+  height: 400px;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
   padding: 0;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: 100% auto;
+          background-size: 100% auto;
 }
 @media (min-width: 768px) {
   .content .featured-image {
     display: block;
+  }
+}
+@media (min-width: 992px) {
+  .content .featured-image {
+    height: 350px;
   }
 }
 .sidebar {
@@ -6583,6 +6594,7 @@ figure.alignnone {
   -webkit-transition: all 0.5s ease;
        -o-transition: all 0.5s ease;
           transition: all 0.5s ease;
+  border-bottom-color: transparent;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .banner.navbar-mobile {
@@ -6706,6 +6718,7 @@ figure.alignnone {
   -webkit-opacity: 0.5;
   -moz-opacity: 0.5;
   opacity: 0.5;
+  border-color: #428bca;
 }
 .banner.navbar-full .navbar-primary .search-form .search-submit {
   background: #428bca;

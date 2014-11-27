@@ -25,7 +25,7 @@ add_filter('wp_title', 'roots_wp_title', 10);
 
 
 
-function featured_image($post_id) {
+function featured_image($post_id, $url=false) {
 	// Get thumbnail ID
 	$post_thumbnail_id = get_post_thumbnail_id($post_id);
 	 
@@ -34,20 +34,12 @@ function featured_image($post_id) {
 	$image_src_path = dirname($image_src[0]);
 	$image_src_filename = basename($image_src[0]);
 	 
-
-
-
-
-
-
-
-
 	// Create greyscale filename
 	$image_src_extention_loc = (strripos($image_src_filename, '.') - strlen($image_src_filename));
 	//echo "image_src_filename: " . $image_src_filename . "<br>";
 	//echo "image_src_extention_loc: " . $image_src_extention_loc . "<br>";
 	$featured_width = 1170;
-	$featured_height = 350;
+	$featured_height = 400;
 	$featured_image_filename = substr($image_src_filename, 0, $image_src_extention_loc) . '-' . $featured_width . 'x' . $featured_height . '_featured' . substr($image_src_filename, $image_src_extention_loc);
 	$featured_image_ext = substr($image_src_filename,$image_src_extention_loc+1);
 	//echo "type of file = " . $featured_image_ext;
@@ -56,39 +48,23 @@ function featured_image($post_id) {
 	$wpcontent_image_path = dirname(get_attached_file($post_thumbnail_id));
 
 
-/*
-switch ($orig_type) {
-        case IMAGETYPE_GIF:
-            imagegif( $image, $file );
-            break;
-        case IMAGETYPE_PNG:
-            imagepng( $image, $file );
-            break;
-        case IMAGETYPE_JPEG:
-            imagejpeg( $image, $file );
-            break;
-    }
-*/
-
-
 	if (!file_exists($wpcontent_image_path . '/' . $featured_image_filename)) {
 
 		list($width, $height) = getimagesize($wpcontent_image_path . '/' . $image_src_filename);
 		$percentage = $featured_width / $width;
 		$new_height = $height * $percentage;
 		/*
-		echo $new_height;
-		echo "percentage = " . $percentage . "<br>";
-		echo "width of original = " . $width . "<br>";
-		echo "height of original = " . $height . "<br>";
-		echo "width of new image = " . $featured_width . "<br>";
-		echo "height of new image = " . $featured_height . "<br>";
-		echo "featured_image_filename = " . $featured_image_filename . "<br>";
-		echo "image_src_filename = " . $image_src_filename . "<br>";
+		echo "\nnew height = " . $new_height . "<br>\n";
+		echo "percentage = " . $percentage . "<br>\n";
+		echo "width of original = " . $width . "<br>\n";
+		echo "height of original = " . $height . "<br>\n";
+		echo "width of new image = " . $featured_width . "<br>\n";
+		echo "height of new image = " . $featured_height . "<br>\n";
+		echo "featured_image_filename = " . $featured_image_filename . "<br>\n";
+		echo "image_src_filename = " . $image_src_filename . "<br>\n";
 */
 		$featured_image = imagecreatetruecolor($featured_width, $new_height);
 
-		
 		switch ($featured_image_ext) {
 			case 'jpg':
 				$image = imagecreatefromjpeg($wpcontent_image_path . '/' . $image_src_filename);
@@ -98,15 +74,19 @@ switch ($orig_type) {
 				break;
 		}	
 
-	 	imagecopyresized($featured_image, $image, 0, 0, 0, 0, $featured_width, $new_height, $width, $height);
-	 	$new_y = $height/2 - $featured_height/2;
+	 	imagecopyresampled($featured_image, $image, 0, 0, 0, 0, $featured_width, $new_height, $width, $height);
+	 	//$new_y = $height/2 - $featured_height/2;
+	 	$new_y = $featured_height/1.5;
+	 	//echo "new_y = " . $new_y . "<br>/n";
 	 	$to_crop_array = array('x' =>0 , 'y' => $new_y, 'width' => $featured_width, 'height'=> $featured_height);
 		$featured_image = imagecrop($featured_image, $to_crop_array);
-
-		imagefilter($featured_image, IMG_FILTER_GAUSSIAN_BLUR);
+		// if the image is being stretch, blur it to reduce jpeg artifacting
+		if ($width <= $featured_width) {
+			imagefilter($featured_image, IMG_FILTER_GAUSSIAN_BLUR);
+		}
 
 		// Save the image.
-	    imagejpeg($featured_image, $wpcontent_image_path . '/' . $featured_image_filename, 30);
+	    imagejpeg($featured_image, $wpcontent_image_path . '/' . $featured_image_filename, 60);
 	 
 	    imagedestroy($featured_image);
 
@@ -114,7 +94,11 @@ switch ($orig_type) {
 
 	}
 	//echo '<img src="'  . $image_src_path . '/' . $image_src_filename . '" />';
-	echo '<img src="'  . $image_src_path . '/' . $featured_image_filename . '" alt="" class="featured-image">';
+	if ($url) {
+		return $image_src_path . '/' . $featured_image_filename;
+	} else {
+		echo '<img src="'  . $image_src_path . '/' . $featured_image_filename . '" alt="" class="featured-image">';
+	}
 }
 
 

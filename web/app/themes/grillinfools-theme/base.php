@@ -18,7 +18,8 @@
       <div class="content">
       <?php while (have_posts()) : the_post(); ?>
         <?php if ( has_post_thumbnail() ) : ?>
-          <?php featured_image($post->ID); ?>
+          <div class="featured-image" style="background-image: url('<?php echo featured_image($post->ID, true); ?>')"></div>
+          <?php //echo featured_image($post->ID); ?>
         <?php endif; ?>
     <?php endwhile; ?>
         <main class="main" role="main">
