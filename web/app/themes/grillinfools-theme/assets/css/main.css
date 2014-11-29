@@ -6831,6 +6831,7 @@ figure.alignnone {
   border-top: 20px solid #470d0d;
   color: #c9c9c0;
   background: #a32828;
+  margin-bottom: 2em;
   /* or @screen-sm */
   /* or @screen-md */
   /* Not sure if we will even use this on posts 
@@ -6873,6 +6874,15 @@ figure.alignnone {
 .hentry header .entry-meta-wrap h1 {
   font-size: 200%;
 }
+.hentry header .entry-meta-wrap .byline {
+  margin-bottom: 1em;
+}
+.hentry header .entry-meta-wrap .byline .meta i {
+  font-weight: bold;
+}
+.hentry header .entry-meta-wrap .byline .meta a {
+  color: #c9c9c0;
+}
 .hentry .article-body-wrap {
   position: relative;
   min-height: 1px;
@@ -6897,17 +6907,20 @@ figure.alignnone {
     width: 66.66666667%;
   }
 }
-.hentry .entry-content {
+.hentry .entry-content,
+.hentry .comments {
   /* or @screen-sm */
   /* or @screen-md */
 }
 @media (min-width: 768px) {
-  .hentry .entry-content {
+  .hentry .entry-content,
+  .hentry .comments {
     padding-left: 3em;
   }
 }
 @media (min-width: 992px) {
-  .hentry .entry-content {
+  .hentry .entry-content,
+  .hentry .comments {
     padding-left: 5em;
   }
 }
