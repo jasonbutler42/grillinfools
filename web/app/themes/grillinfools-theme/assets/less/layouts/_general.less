@@ -6,6 +6,7 @@
 // Content wrapper
 .wrap {
 	transition: all 0.5s ease;
+	transition: padding-top 0;
 	background-color: white;
 	position:relative;
 	@media(min-width: @screen-tablet){
@@ -19,21 +20,30 @@
 // Main content area
 .content {
 	.featured-image { 
-		display:none;
+		transition: all .75s ease-in;
+		opacity:0;
+		//display:none;
+		//height:0;
 		position:absolute;
 		top:0;
 		left:0;
 		overflow: hidden;
-		height: 400px;
+		//height: 400px;
 		width: 100%;
 		.container-fixed();
-		padding:0;
-		@media(min-width: @screen-tablet){display: block;}
-		@media(min-width: @screen-desktop){height: 350px;}    
-		background-position: 0 0;
+		//padding:0;
+		//display:block;
+		//@media(min-width: @screen-desktop){height: 350px;}    
+		//background-position: 0 -300px;
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		background-size: 100% auto;
+		@media(min-width: @screen-tablet){
+			//transition: all 5s ease-in;
+			display:block;
+			height:300px; 
+			opacity:1;
+		}
 	}
 }
 .main {

@@ -3,17 +3,22 @@
 	background: none;
 	// tagline
 	.tagline {
-		transition: all 0.5s ease;
+		//transition: all 0.5s ease-in;
 		font-family: 'fawn_script';
 		color: @gf-red;
 		font-size: 200%;
 		.clearfix;
 		width:90%;
 		margin:auto;
-		.text-shadow();
+		text-align:center;
+		padding-top:1em;
+
 		@media(min-width: @screen-tablet){ 		/* or @screen-sm */
 			font-size: 170%;
 			text-align: right;
+			padding-top: 0;
+			.has-featured-image & {.text-shadow(0 1px 1px #000000);}
+			
 		}     
 		@media(min-width: @screen-desktop){font-size: 200%}    /* or @screen-md */
 	}
@@ -24,8 +29,10 @@
 		height: 125px;
 		padding: 5px;
 		width: 150px;
-		transition: all 0.5s ease;
+		transition: all 0.5s ease-in;
+		margin-top: 1em;
 		@media(min-width: @screen-tablet){		/* or @screen-sm */
+			margin-top: 0;
 			&:hover {
 				height: 120px;
 				padding-top: 10px;

@@ -101,6 +101,14 @@ function featured_image($post_id, $url=false) {
 	}
 }
 
+add_action('body_class', 'if_featured_image_class' );
+function if_featured_image_class($classes) {
+	if ( has_post_thumbnail() && strlen($img = get_the_post_thumbnail( get_the_ID(), array( 150, 150 ) ) ) ) {
+		array_push($classes, 'has-featured-image');
+	}
+	return $classes;
+}
+
 
 
 
