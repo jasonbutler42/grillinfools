@@ -1,6 +1,3 @@
-.hentry header { }
-.hentry time { }
-.hentry .byline { }
 .hentry .entry-content {
 	.wp-video {
 		.img-responsive; // make the images scale appropriately 
@@ -23,9 +20,7 @@
 				padding: 4px 6px;	
   			}
 		}
-		
 	}
-
 }
 .hentry footer { }
 
@@ -43,7 +38,6 @@
 		margin-bottom: 2em;
 		@media(min-width: @screen-tablet){padding: 0 5em;}     /* or @screen-sm */
 		@media(min-width: @screen-desktop){padding: 0 6.75em;}    /* or @screen-md */
-		//position: relative;
 		
 		/* Not sure if we will even use this on posts 
 		.author-pic {
@@ -70,9 +64,7 @@
 		*/
 		.entry-meta-wrap {
 			display:block;
-			
 			h1 {
-
 				font-size: 200%;
 			}
 			.byline {
@@ -80,14 +72,12 @@
 				.meta {
 					i {
 						font-weight: bold;
-
 					}
 					a {
-							color: @text-color-on-red;
-						}
+						color: @text-color-on-red;
+					}
 				}
 			}
-			
 		}
 	}
 	.article-body-wrap {
@@ -102,7 +92,36 @@
 		@media(min-width: @screen-desktop){padding-left: 5em;}    /* or @screen-md */
 	}
 	.comments {
-		//background: yellow;
-		//.make-sm-column	
+	}
+	// --------------------------------------- //
+	//   Archive, Category, & Search layouts   //
+	// --------------------------------------- //
+	.home &,
+	.archive &,
+	.search &,
+	.category & {
+		.make-sm-column(8);
+		min-height:400px;
+		header {
+			width: auto;
+			padding: initial;
+			background: blue;
+			.entry-title {
+				font-size: 100%;
+			}
+			.entry-meta-wrap {
+				.byline {
+					.meta {
+						i {
+
+						}
+						a {
+
+						}
+					}
+				}
+			}
+		}
+
 	}
 }

@@ -6934,4 +6934,37 @@ figure.alignnone {
     padding-left: 5em;
   }
 }
+.home .hentry,
+.archive .hentry,
+.search .hentry,
+.category .hentry {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 400px;
+}
+@media (min-width: 768px) {
+  .home .hentry,
+  .archive .hentry,
+  .search .hentry,
+  .category .hentry {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+.home .hentry header,
+.archive .hentry header,
+.search .hentry header,
+.category .hentry header {
+  width: auto;
+  padding: initial;
+  background: blue;
+}
+.home .hentry header .entry-title,
+.archive .hentry header .entry-title,
+.search .hentry header .entry-title,
+.category .hentry header .entry-title {
+  font-size: 100%;
+}
 /*# sourceMappingURL=main.css.map */

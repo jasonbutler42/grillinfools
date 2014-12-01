@@ -7,15 +7,15 @@
     </div>
   <![endif]-->
   <div class="mega-wrapper">
-
     <?php
       do_action('get_header');
       get_template_part('templates/header');
     ?>
-
     <div class="wrap container" role="document">
       <div class="content">
+      <?php if (!is_category() && !is_search() && !is_archive() && !is_home()): ?>
       <?php get_template_part('templates/featured-image'); ?>
+      <?php endif; ?>
         <main class="main" role="main">
           <?php include roots_template_path(); ?>
         </main><!-- /.main -->
@@ -26,7 +26,6 @@
         <?php endif; ?>
       </div><!-- /.content -->
     </div><!-- /.wrap -->
-
   <?php get_template_part('templates/footer'); ?>
   <?php wp_footer(); ?>
   </div><!-- /.mega-wrapper -->
