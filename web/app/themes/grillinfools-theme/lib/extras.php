@@ -25,6 +25,13 @@ add_filter('wp_title', 'roots_wp_title', 10);
 
 
 
+
+
+
+
+
+
+
 function featured_image($post_id, $featured_width=400, $featured_height = 1170, $quality = 60, $url=false) {
 	// Get thumbnail ID
 	$post_thumbnail_id = get_post_thumbnail_id($post_id);
@@ -58,68 +65,71 @@ if (!file_exists($wpcontent_image_path . '/' . $featured_image_filename)) {
 	/****************************************/
 	/*  Determine some stuff about resizing */
 	/****************************************/
-	list($source_width, $source_height) = getimagesize($wpcontent_image_path . '/' . $image_src_filename);
-	//echo "\n<p>Debugging things</p>\n";
-	
-	// Set the aspect ratio for original
+	// Create image to be manipulated from source image
+	switch ($source_image_ext) {
+		case 'jpg':
+			$source_image = imagecreatefromjpeg($wpcontent_image_path . '/' . $image_src_filename);
+			break;
+		case 'png':
+			$source_image = imagecreatefrompng($wpcontent_image_path . '/' . $image_src_filename);
+			break;
+	}	
+
+ 	$source_width = imagesx($source_image); 
+ 	$source_height = imagesy($source_image);
+    // Set the aspect ratio for original
 	$source_aspect_ratio = $source_width / $source_height;
-
-	if ($source_width / $featured_width > $source_height / $featured_height) {
-		$resizing_ratio = $source_width / $featured_width;
-	} else {
-		$resizing_ratio = $source_height / $featured_height;
-	}
-
-	$resized_width = $source_width / $resizing_ratio;
-	$resized_height = $source_height / $resizing_ratio;
-
-	//check to see if our dimensions are enough to cover the full featured image
-	if ($resized_width < $featured_width) {
-		$resized_width = $featured_width;
-		$resized_height = $resized_width / $source_aspect_ratio; 
-	} else if ($resized_height > $featured_height) {
-		$resized_height = $featured_height;
-		$resized_width = $resized_height / $source_aspect_ratio;
-	}
+	
+	$featured_aspect_ratio = $featured_width / $featured_height;
+	
+	if ($source_aspect_ratio > $featured_aspect_ratio) { 
+        // source has a wider ratio 
+    
+        $temp_width = (int)($source_height * $featured_aspect_ratio); 
+        $temp_height = $source_height; 
+    
+        $source_x = (int)(($source_width - $temp_width) / 2); 
+        $source_y = 0; 
+    
+    } else { 
+        // source has a taller ratio 
+    
+        $temp_width = $source_width; 
+        $temp_height = (int)($source_width / $featured_aspect_ratio); 
+    
+        $source_x = 0; 
+        $source_y = (int)(($source_height - $temp_height) / 2); 
+    
+    } 
+    $featured_x = 0; 
+    $featured_y = 0; 
+    
+    $source_width = $temp_width; 
+    
+    $source_height = $temp_height; 
+    
+    $new_featured_width = $featured_width; 
+    
+    $new_featured_height = $featured_height; 
+    
 
 	/****************************************/
 	/*       Build the actual image         */
 	/****************************************/
 
-	// Create the blank new featured image object
-	$featured_image = imagecreatetruecolor($resized_width, $resized_height);
-	
-	// Create image to be manipulated from source image
-	switch ($source_image_ext) {
-		case 'jpg':
-			$image = imagecreatefromjpeg($wpcontent_image_path . '/' . $image_src_filename);
-			break;
-		case 'png':
-			$image = imagecreatefrompng($wpcontent_image_path . '/' . $image_src_filename);
-			break;
-	}	
-	// resize the created source image and put it in the feature image object
-	imagecopyresampled($featured_image, $image, 0, 0, 0, 0, $resized_width, $resized_height, $source_width, $source_height);
+	$featured_image = imagecreatetruecolor($featured_width, $featured_height); 
+     
+    imagecopyresampled($featured_image, $source_image, $featured_x, $featured_y, $source_x, $source_y, $new_featured_width, $new_featured_height, $source_width, $source_height); 
 
-	// create crop array (source x, source y, featured x, featured y)
-	$new_x = ($resized_width - $featured_width) / 2;
-	$new_y = ($resized_height - $featured_height) / 2;
-	$to_crop_array = array('x' => $new_x , 'y' => $new_y, 'width' => $featured_width, 'height'=> $featured_height);
-
-	// crop the image
-	$featured_image = imagecrop($featured_image, $to_crop_array);
-
-	// if we are enlarging a small image, blur it to reduce jpeg artifacting
 	if ($source_width < $featured_width || $source_height < $featured_height) {
 		imagefilter($featured_image, IMG_FILTER_GAUSSIAN_BLUR);
-	}	
-
+	}
 	// Save the image.
-    imagejpeg($featured_image, $wpcontent_image_path . '/' . $featured_image_filename, $quality);
- 
+	imagejpeg($featured_image, $wpcontent_image_path . '/' . $featured_image_filename, $quality);
  	// Destroy the image object to free up memory
     imagedestroy($featured_image);
 }
+
 
 	if ($url) {
 		return $image_src_path . '/' . $featured_image_filename;

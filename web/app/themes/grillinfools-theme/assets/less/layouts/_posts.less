@@ -1,3 +1,4 @@
+.single {
 .hentry .entry-content {
 	.wp-video {
 		.img-responsive; // make the images scale appropriately 
@@ -23,6 +24,7 @@
 	}
 }
 .hentry footer { }
+
 
 
 .hentry {
@@ -80,11 +82,15 @@
 			}
 		}
 	}
+	h2 {
+		font-size: 150%;
+	}
 	.article-body-wrap {
 		.make-sm-column(12);
 		.sidebar-primary & { // if a parent (like <body>) has ".sidebar-primary"
-			.make-sm-column(@main-sm-columns - @sidebar-sm-columns);
+//			.make-sm-column(@main-sm-columns - @sidebar-sm-columns);
 		}
+		.make-sm-column(@main-sm-columns - @sidebar-sm-columns);
 	}
 	.entry-content, 
 	.comments {
@@ -93,35 +99,6 @@
 	}
 	.comments {
 	}
-	// --------------------------------------- //
-	//   Archive, Category, & Search layouts   //
-	// --------------------------------------- //
-	.home &,
-	.archive &,
-	.search &,
-	.category & {
-		.make-sm-column(8);
-		min-height:400px;
-		header {
-			width: auto;
-			padding: initial;
-			background: blue;
-			.entry-title {
-				font-size: 100%;
-			}
-			.entry-meta-wrap {
-				.byline {
-					.meta {
-						i {
 
-						}
-						a {
-
-						}
-					}
-				}
-			}
-		}
-
-	}
+}
 }
