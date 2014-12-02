@@ -79,12 +79,37 @@
 	.make-sm-column(@sidebar-sm-columns);
 	padding-top: .7em;
 	.sponsor {
-					.hidden-xs;
-					.visible-sm-block;
-					.visible-md-block;
-					.visible-lg-block;
-					
+		.hidden-xs;
+		.visible-sm-block;
+		.visible-md-block;
+		.visible-lg-block;
+		
+	}
+	.null-instagram-feed {
+		padding: 0;
+		margin: auto;
+		.instagram-pics {
+			padding:0;
+			li {
+				padding: 0;
+				margin: 0;
+				list-style: none;
+				//width: 100%;
+				margin-bottom: 1em;
+				a {
+					//width: 90%;
+					img {
+						.img-responsive();
+						width: 89%;
+						padding: 2.5%;
+						margin: auto;
+						border: 1px solid @gf-background;
+						//width: 100%;
+					}
 				}
+			}
+		}
+	}
 }
 
 

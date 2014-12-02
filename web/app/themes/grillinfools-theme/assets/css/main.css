@@ -6597,6 +6597,28 @@ figure.alignnone {
     display: block !important;
   }
 }
+.sidebar .null-instagram-feed {
+  padding: 0;
+  margin: auto;
+}
+.sidebar .null-instagram-feed .instagram-pics {
+  padding: 0;
+}
+.sidebar .null-instagram-feed .instagram-pics li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 1em;
+}
+.sidebar .null-instagram-feed .instagram-pics li a img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 89%;
+  padding: 2.5%;
+  margin: auto;
+  border: 1px solid #d5d5cd;
+}
 .home .wrap .content,
 .archive .wrap .content,
 .search .wrap .content,
