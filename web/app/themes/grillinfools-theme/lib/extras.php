@@ -33,6 +33,8 @@ add_filter('wp_title', 'roots_wp_title', 10);
 
 
 function featured_image($post_id, $featured_width=400, $featured_height = 1170, $quality = 60, $url=false) {
+	//mad props to this blog post: http://spotlesswebdesign.com/blog.php?id=1 for helping me figure out the logic.
+
 	// Get thumbnail ID
 	$post_thumbnail_id = get_post_thumbnail_id($post_id);
 	 

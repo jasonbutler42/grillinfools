@@ -254,15 +254,15 @@
         },
         {
             "name": "wpackagist-plugin/ad-injection",
-            "version": "1.2.0.16",
+            "version": "1.2.0.17",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/ad-injection/",
-                "reference": "tags/1.2.0.16"
+                "reference": "tags/1.2.0.17"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/ad-injection.1.2.0.16.zip",
+                "url": "http://downloads.wordpress.org/plugin/ad-injection.1.2.0.17.zip",
                 "reference": null,
                 "shasum": null
             },
