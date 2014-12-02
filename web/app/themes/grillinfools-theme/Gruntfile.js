@@ -126,21 +126,26 @@ module.exports = function(grunt) {
         }
       }
     },
-      bump: {
-        options: {
-          files: ['package.json','style.css','bower.json'],
-          updateConfigs: [],
-          commit: true,
-          commitMessage: 'Release v%VERSION%',
-          commitFiles: ['-a'],
-          createTag: true,
-          tagName: 'v%VERSION%',
-          tagMessage: 'Version %VERSION%',
-          push: false,
-          pushTo: 'upstream',
-          gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d',
-          globalReplace: false
-        }
+    changelog: {
+      options: {
+        // Task-specific options go here.
+      }
+    },
+    bump: {
+      options: {
+        files: ['package.json','style.css','bower.json'],
+        updateConfigs: [],
+        commit: true,
+        commitMessage: 'Release v%VERSION%',
+        commitFiles: ['-a'],
+        createTag: true,
+        tagName: 'v%VERSION%',
+        tagMessage: 'Version %VERSION%',
+        push: false,
+        pushTo: 'upstream',
+        gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d',
+        globalReplace: false
+      }
     },
     watch: {
       less: {
@@ -172,6 +177,7 @@ module.exports = function(grunt) {
       }
     }
   });
+  grunt.loadNpmTasks('grunt-conventional-changelog');
   grunt.loadNpmTasks('grunt-bump');
   // Register tasks
   grunt.registerTask('default', [
