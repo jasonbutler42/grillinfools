@@ -6513,6 +6513,54 @@ figure.alignnone {
     opacity: 1;
   }
 }
+.content .sponsor {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  display: none !important;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-decoration: none;
+  color: #d5d5cd;
+}
+@media (max-width: 767px) {
+  .content .sponsor {
+    display: block !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .content .sponsor {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .content .sponsor {
+    display: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  .content .sponsor {
+    display: none !important;
+  }
+}
+.content .sponsor img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #bbbbbb;
+  padding: 2px 3px;
+  margin: auto;
+}
+@media (min-width: 480px) {
+  .content .sponsor img {
+    padding: 4px 6px;
+  }
+}
+.content .sponsor:before {
+  content: "Sponsored Content";
+  width: 100%;
+}
 .sidebar {
   position: relative;
   min-height: 1px;
@@ -6524,6 +6572,29 @@ figure.alignnone {
   .sidebar {
     float: left;
     width: 33.33333333%;
+  }
+}
+.sidebar .sponsor {
+  display: none !important;
+}
+@media (max-width: 767px) {
+  .sidebar .sponsor {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .sidebar .sponsor {
+    display: block !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .sidebar .sponsor {
+    display: block !important;
+  }
+}
+@media (min-width: 1200px) {
+  .sidebar .sponsor {
+    display: block !important;
   }
 }
 .home .wrap .content,
@@ -6743,41 +6814,6 @@ figure.alignnone {
     width: 33.33333333%;
   }
 }
-/*
-	.home,
-	.archive,
-	.search,
-	.category {
-		.hentry {
-		.make-sm-column(8);
-		border-top: 1px solid red;
-		border-bottom: 1px solid red;
-		//min-height:400px;
-		.featured-image {
-			position:initial;
-		}
-		header {
-			width: auto;
-			padding: 0;
-			margin:auto;
-			background: blue;
-			.entry-title {
-				font-size: 100%;
-			}
-			.entry-meta-wrap {
-				.byline {
-					.meta {
-						i {
-
-						}
-						a {
-
-						}
-					}
-				}
-			}
-		}
-	}*/
 .banner {
   background: none;
 }
