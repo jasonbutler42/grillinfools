@@ -128,7 +128,8 @@ module.exports = function(grunt) {
     },
     changelog: {
       options: {
-        // Task-specific options go here.
+        //from: '0.0.0'
+      // Task-specific options go here.
       }
     },
     bump: {
