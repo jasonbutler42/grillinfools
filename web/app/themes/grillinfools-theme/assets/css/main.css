@@ -6462,6 +6462,7 @@ figure.alignnone {
 @media (min-width: 768px) {
   .mega-wrapper {
     background-color: #d5d5cd;
+    background-image: url('/app/themes/grillinfools-theme/assets/img/gf-rose.png');
   }
 }
 .wrap {
@@ -6512,6 +6513,27 @@ figure.alignnone {
     height: 300px;
     opacity: 1;
   }
+}
+.content .featured-image.featured-image-default {
+  background-repeat: repeat;
+  -webkit-background-size: auto auto;
+          background-size: auto;
+  background-color: #d5d5cd;
+}
+.content .featured-image.featured-image-default.featured-random-1 {
+  background-image: url('/app/themes/grillinfools-theme/assets/img/bo_play_pattern.png');
+}
+.content .featured-image.featured-image-default.featured-random-2 {
+  background-image: url('/app/themes/grillinfools-theme/assets/img/restaurant_icons.png');
+}
+.content .featured-image.featured-image-default.featured-random-3 {
+  background-image: url('/app/themes/grillinfools-theme/assets/img/stacked_circles.png');
+}
+.content .featured-image.featured-image-default.featured-random-4 {
+  background-image: url('/app/themes/grillinfools-theme/assets/img/agsquare.png');
+}
+.content .featured-image.featured-image-default.featured-random-5 {
+  background-image: url('/app/themes/grillinfools-theme/assets/img/pw_maze_white.png');
 }
 .content .sponsor {
   display: block;
@@ -6871,8 +6893,6 @@ figure.alignnone {
     font-size: 170%;
     text-align: right;
     padding-top: 0;
-  }
-  .has-featured-image .banner .tagline {
     text-shadow: 0 1px 1px #000000;
   }
 }

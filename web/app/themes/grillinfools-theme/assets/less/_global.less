@@ -10,13 +10,16 @@
 @gf-red-dark:			#470d0d;
 @gf-green:				#428bca;
 
+@theme-location:		'/app/themes/grillinfools-theme/';
+@fonts-location:			'@{theme-location}assets/fonts/'; 
+
 @font-face {
     font-family: 'fawn_script';
-    src: url('/app/themes/grillinfools-theme/assets/fonts/fawn-webfont.eot');
-    src: url('/app/themes/grillinfools-theme/assets/fonts/fawn-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/app/themes/grillinfools-theme/assets/fonts/fawn-webfont.woff2') format('woff2'),
-         url('/app/themes/grillinfools-theme/assets/fonts/fawn-webfont.woff') format('woff'),
-         url('/app/themes/grillinfools-theme/assets/fonts/fawn-webfont.ttf') format('truetype');
+    src: url('@{fonts-location}fawn-webfont.eot');
+    src: url('@{fonts-location}fawn-webfont.eot?#iefix') format('embedded-opentype'),
+         url('@{fonts-location}fawn-webfont.woff2') format('woff2'),
+         url('@{fonts-location}fawn-webfont.woff') format('woff'),
+         url('@{fonts-location}fawn-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 

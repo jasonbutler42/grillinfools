@@ -1,6 +1,6 @@
 .mega-wrapper {
 	background-color: white;
-	@media(min-width: @screen-tablet){background-color: @gf-background;}
+	@media(min-width: @screen-tablet){background-color: @gf-background; background-image: url('@{theme-location}assets/img/gf-rose.png');}
 	font-family: Georgia;
 }
 // Content wrapper
@@ -41,6 +41,16 @@
 			display:block;
 			height:300px; 
 			opacity:1;
+		}
+		&.featured-image-default {
+			background-repeat: repeat;
+			background-size: auto;
+			background-color: @gf-background; 
+			&.featured-random-1 {background-image: url('@{theme-location}assets/img/bo_play_pattern.png');}
+			&.featured-random-2 {background-image: url('@{theme-location}assets/img/restaurant_icons.png');}
+			&.featured-random-3 {background-image: url('@{theme-location}assets/img/stacked_circles.png');}
+			&.featured-random-4 {background-image: url('@{theme-location}assets/img/agsquare.png');}
+			&.featured-random-5 {background-image: url('@{theme-location}assets/img/pw_maze_white.png');}
 		}
 	}
 	.sponsor {
