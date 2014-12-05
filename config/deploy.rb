@@ -17,7 +17,7 @@ set :log_level, :info
 # it needs to be added to linked_files so it persists across deploys:
 set :linked_files, %w{.env web/.htaccess}
 #set :linked_files, %w{.env}
-set :linked_dirs, %w{web/app/uploads web/app/aiowps_backups}
+set :linked_dirs, %w{web/app/uploads web/app/aiowps_backups web/app/ad-injection-data}
 
 namespace :deploy do
   desc 'Restart application'
