@@ -22,8 +22,14 @@ function roots_wp_title($title) {
 add_filter('wp_title', 'roots_wp_title', 10);
 
 
+add_theme_support( 'featured-content', array(
+    'filter'     => 'grillinfools_get_featured_posts',
+    'max_posts'  => 20
+) );
 
-
+function grillinfools_get_featured_posts() {
+    return apply_filters( 'grillinfools_get_featured_posts', array() );
+}
 
 
 
