@@ -74,6 +74,48 @@ function gf_login_logo_url_title() {
 add_filter( 'login_headertitle', 'gf_login_logo_url_title' );
 
 /**********************************/
+/*       Custom Admin Stuff       */
+/**********************************/
+/*
+ * Remove the WordPress Logo from the WordPress Admin Bar
+ */
+function remove_wp_logo() {
+	global $wp_admin_bar;
+	$wp_admin_bar->remove_menu('wp-logo');
+}
+add_action( 'wp_before_admin_bar_render', 'remove_wp_logo' );
+
+/*
+ * Change the Admin Bar logo
+ */
+function change_adminbar_logo() {
+	$change_adminbar_logo = '<style type="text/css">
+	.wp-admin #wpadminbar #wp-admin-bar-site-name > .ab-item:before {
+		content:"";
+		background-position: center 4px;
+		background-repeat: no-repeat;
+		padding: 0;
+		display: block;
+		background-image: url(\'/favicon-32x32.png\') !important;
+		-webkit-background-size: 20px;
+		background-size: 20px;
+		height: 24px;
+		width: 20px;
+	}
+	</style>';
+	echo $change_adminbar_logo;
+}
+/* wp-admin area */
+if ( is_admin() ) {
+	add_action( 'admin_head', 'change_adminbar_logo' );
+}
+/* websites */
+if ( !is_admin() ) {
+	add_action( 'wp_head', 'change_adminbar_logo' );
+
+}
+
+/**********************************/
 /*      Featured Image Stuff      */
 /**********************************/
 function featured_image($post_id, $featured_width=400, $featured_height = 1170, $quality = 60, $url=false) {
