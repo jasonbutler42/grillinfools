@@ -84,12 +84,13 @@
     "wpackagist-plugin/nofollow": "*",
     "wpackagist-plugin/wp-instagram-widget": "*",
     "wpackagist-plugin/easysnippet": "*",
+    "wpackagist-plugin/fancier-author-box": "*",
     "wpackagist-plugin/google-universal-analytics": "*",
     "wpackagist-plugin/wp-stripe-email-receipts": "*",
     "wpackagist-plugin/yet-another-related-posts-plugin": "*",
     "wpackagist-plugin/infinite-scroll": "*",
     "ooyala/ooyala-wordpress-plugin": "1.0",
-    "wpackagist-plugin/jetpack": "*"
+    "wpackagist-plugin/jetpack": "3.2.1"
   },
   "extra": {
     "installer-paths": {

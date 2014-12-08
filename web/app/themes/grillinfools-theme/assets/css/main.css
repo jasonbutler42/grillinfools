@@ -7261,6 +7261,35 @@ figure.alignnone {
 .login #login #login_error .alert-link {
   color: #843534;
 }
+.login #login .message {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  color: #31708f;
+}
+.login #login .message h4 {
+  margin-top: 0;
+  color: inherit;
+}
+.login #login .message .alert-link {
+  font-weight: bold;
+}
+.login #login .message > p,
+.login #login .message > ul {
+  margin-bottom: 0;
+}
+.login #login .message > p + p {
+  margin-top: 5px;
+}
+.login #login .message hr {
+  border-top-color: #a6e1ec;
+}
+.login #login .message .alert-link {
+  color: #245269;
+}
 .login #login #loginform {
   width: 100%;
   border-color: #d5d5cd;
@@ -7508,19 +7537,11 @@ textarea.login #login #loginform input[type*="password"] {
   border-top: 20px solid #470d0d;
   color: #c9c9c0;
   background: #a32828;
+  background-image: url('/app/themes/grillinfools-theme/assets/img/square_bg.png');
   margin-bottom: 2em;
   /* or @screen-sm */
   /* or @screen-md */
   /* Not sure if we will even use this on posts 
-		.author-pic {
-			transition: all 0.5s ease;
-			display:block;
-			width: 20%;
-			float: left;
-			margin-top: 1em;
-			margin-right: 1em;
-			margin-bottom: 1em;
-			border: 3px solid @gf-red-dark;
 			@media(min-width: @screen-tablet){
 				margin-top: -1em; 
 				
@@ -7545,8 +7566,53 @@ textarea.login #login #loginform input[type*="password"] {
     padding: 0 6.75em;
   }
 }
-.single .hentry header .entry-meta-wrap {
+.single .hentry header .author-pic {
   display: block;
+  float: left;
+  width: 20%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  position: relative;
+  /*
+			position:absolute;
+			width: 60px;
+			height: 60px;
+			left: 50%;
+			margin-left: -30px;
+			top: -40px;
+			*/
+}
+@media (min-width: 768px) {
+  .single .hentry header .author-pic {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+.single .hentry header .author-pic .meta-author {
+  display: none;
+}
+@media (min-width: 768px) {
+  .single .hentry header .author-pic .meta-author {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    opacity: 0.4;
+    position: absolute;
+    bottom: 0;
+  }
+}
+.single .hentry header .author-pic .avatar {
+  width: 100%;
+  height: 100%;
+}
+.single .hentry header .entry-meta-wrap {
+  padding-left: 1em;
+  display: block;
+  width: 80%;
+  float: left;
 }
 .single .hentry header .entry-meta-wrap h1 {
   font-size: 200%;
@@ -7559,6 +7625,14 @@ textarea.login #login #loginform input[type*="password"] {
 }
 .single .hentry header .entry-meta-wrap .byline .meta a {
   color: #c9c9c0;
+}
+.single .hentry header .entry-meta-wrap .byline .meta.meta-author {
+  /* or @screen-sm */
+}
+@media (min-width: 768px) {
+  .single .hentry header .entry-meta-wrap .byline .meta.meta-author {
+    display: none;
+  }
 }
 .single .hentry h2 {
   font-size: 150%;

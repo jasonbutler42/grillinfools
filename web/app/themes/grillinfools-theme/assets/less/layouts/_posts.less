@@ -37,20 +37,52 @@
 		border-top: 20px solid @gf-red-dark;
 		color: @text-color-on-red;
 		background: @gf-red-med;
+		background-image: url('@{theme-location}assets/img/square_bg.png');
 		margin-bottom: 2em;
+		
 		@media(min-width: @screen-tablet){padding: 0 5em;}     /* or @screen-sm */
 		@media(min-width: @screen-desktop){padding: 0 6.75em;}    /* or @screen-md */
-		
-		/* Not sure if we will even use this on posts 
 		.author-pic {
-			transition: all 0.5s ease;
 			display:block;
-			width: 20%;
 			float: left;
+			width: 20%;
 			margin-top: 1em;
-			margin-right: 1em;
 			margin-bottom: 1em;
-			border: 3px solid @gf-red-dark;
+			position: relative;
+			/*
+			position:absolute;
+			width: 60px;
+			height: 60px;
+			left: 50%;
+			margin-left: -30px;
+			top: -40px;
+			*/
+			@media(min-width: @screen-tablet){
+				margin-top: 0; 
+				margin-bottom: 0;
+				
+			}
+			.meta-author {
+				display: none;
+				@media(min-width: @screen-tablet){
+					display: block;
+					width: 100%;
+					padding: 5px;
+					background: #000000;
+					color: #ffffff;
+					text-align: center;
+					opacity: 0.4;
+					position:absolute;
+					bottom: 0;
+				}
+			}
+			.avatar {
+				width: 100%;
+				height: 100%;
+			}
+		}
+			//border: 3px solid @gf-red-dark;
+		/* Not sure if we will even use this on posts 
 			@media(min-width: @screen-tablet){
 				margin-top: -1em; 
 				
@@ -65,7 +97,10 @@
 		}
 		*/
 		.entry-meta-wrap {
+			padding-left: 1em;
 			display:block;
+			width: 80%;
+			float: left;
 			h1 {
 				font-size: 200%;
 			}
@@ -77,6 +112,10 @@
 					}
 					a {
 						color: @text-color-on-red;
+					}
+					&.meta-author {
+						
+						@media(min-width: @screen-tablet){display:none;}     /* or @screen-sm */
 					}
 				}
 			}
