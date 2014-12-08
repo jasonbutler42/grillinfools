@@ -6128,6 +6128,8 @@ button.close {
 .search .wrap .content .main .hentry .archive-content:after,
 .category .wrap .content .main .hentry .archive-content:before,
 .category .wrap .content .main .hentry .archive-content:after,
+.login:before,
+.login:after,
 .single .hentry header:before,
 .single .hentry header:after {
   content: " ";
@@ -6161,6 +6163,7 @@ button.close {
 .archive .wrap .content .main .hentry .archive-content:after,
 .search .wrap .content .main .hentry .archive-content:after,
 .category .wrap .content .main .hentry .archive-content:after,
+.login:after,
 .single .hentry header:after {
   clear: both;
 }
@@ -7157,6 +7160,304 @@ figure.alignnone {
     float: left;
     width: 33.33333333%;
   }
+}
+.login {
+  background-color: #d5d5cd;
+  background-image: url('/app/themes/grillinfools-theme/assets/img/gf-rose.png');
+  font-family: Georgia;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .login {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .login {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .login {
+    width: 1170px;
+  }
+}
+.login > .navbar-header,
+.login > .navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (min-width: 768px) {
+  .login > .navbar-header,
+  .login > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+.login #login {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: none !important;
+  padding: 8% 0 0;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .login #login {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+.login #login h1 a {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+  background-position: center top;
+  background-repeat: no-repeat;
+  margin: 0 auto 25px;
+  padding: 0;
+  display: block;
+  background-image: url('/app/themes/grillinfools-theme/assets/img/logo-min.svg');
+  -webkit-background-size: 130px;
+  background-size: 130px;
+  height: 130px;
+  width: 130px;
+}
+.login #login #login_error {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+}
+.login #login #login_error h4 {
+  margin-top: 0;
+  color: inherit;
+}
+.login #login #login_error .alert-link {
+  font-weight: bold;
+}
+.login #login #login_error > p,
+.login #login #login_error > ul {
+  margin-bottom: 0;
+}
+.login #login #login_error > p + p {
+  margin-top: 5px;
+}
+.login #login #login_error hr {
+  border-top-color: #e4b9c0;
+}
+.login #login #login_error .alert-link {
+  color: #843534;
+}
+.login #login #loginform {
+  width: 100%;
+  border-color: #d5d5cd;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-left: 0;
+  padding: 26px 24px 46px;
+  font-weight: 400;
+  overflow: hidden;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+}
+.login #login #loginform p {
+  margin-bottom: 15px;
+}
+.login #login #loginform p label {
+  width: 100%;
+}
+.login #login #loginform p.forgetmenot {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.login #login #loginform p.forgetmenot label {
+  min-height: 20px;
+  padding-left: 20px;
+  margin-bottom: 0;
+  font-weight: normal;
+  cursor: pointer;
+}
+.login #login #loginform p.forgetmenot.disabled label,
+fieldset[disabled] .login #login #loginform p.forgetmenot label {
+  cursor: not-allowed;
+}
+.login #login #loginform p.forgetmenot label {
+  font-weight: 400;
+}
+.login #login #loginform p.forgetmenot label #rememberme {
+  position: absolute;
+  margin-left: -20px;
+  min-width: initial;
+  height: 12px;
+  width: 12px;
+}
+.login #login #loginform p.submit #wp-submit {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #ffffff;
+  background-color: #27ae60;
+  border-color: #229955;
+}
+.login #login #loginform p.submit #wp-submit:focus,
+.login #login #loginform p.submit #wp-submit:active:focus,
+.login #login #loginform p.submit #wp-submit.active:focus,
+.login #login #loginform p.submit #wp-submit.focus,
+.login #login #loginform p.submit #wp-submit:active.focus,
+.login #login #loginform p.submit #wp-submit.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.login #login #loginform p.submit #wp-submit:hover,
+.login #login #loginform p.submit #wp-submit:focus,
+.login #login #loginform p.submit #wp-submit.focus {
+  color: #333333;
+  text-decoration: none;
+}
+.login #login #loginform p.submit #wp-submit:active,
+.login #login #loginform p.submit #wp-submit.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.login #login #loginform p.submit #wp-submit.disabled,
+.login #login #loginform p.submit #wp-submit[disabled],
+fieldset[disabled] .login #login #loginform p.submit #wp-submit {
+  cursor: not-allowed;
+  pointer-events: none;
+  filter: alpha(opacity=65);
+  -webkit-opacity: 0.65;
+  -moz-opacity: 0.65;
+  opacity: 0.65;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.login #login #loginform p.submit #wp-submit:hover,
+.login #login #loginform p.submit #wp-submit:focus,
+.login #login #loginform p.submit #wp-submit.focus,
+.login #login #loginform p.submit #wp-submit:active,
+.login #login #loginform p.submit #wp-submit.active,
+.open > .dropdown-toggle.login #login #loginform p.submit #wp-submit {
+  color: #ffffff;
+  background-color: #1e8449;
+  border-color: #176739;
+}
+.login #login #loginform p.submit #wp-submit:active,
+.login #login #loginform p.submit #wp-submit.active,
+.open > .dropdown-toggle.login #login #loginform p.submit #wp-submit {
+  background-image: none;
+}
+.login #login #loginform p.submit #wp-submit.disabled,
+.login #login #loginform p.submit #wp-submit[disabled],
+fieldset[disabled] .login #login #loginform p.submit #wp-submit,
+.login #login #loginform p.submit #wp-submit.disabled:hover,
+.login #login #loginform p.submit #wp-submit[disabled]:hover,
+fieldset[disabled] .login #login #loginform p.submit #wp-submit:hover,
+.login #login #loginform p.submit #wp-submit.disabled:focus,
+.login #login #loginform p.submit #wp-submit[disabled]:focus,
+fieldset[disabled] .login #login #loginform p.submit #wp-submit:focus,
+.login #login #loginform p.submit #wp-submit.disabled.focus,
+.login #login #loginform p.submit #wp-submit[disabled].focus,
+fieldset[disabled] .login #login #loginform p.submit #wp-submit.focus,
+.login #login #loginform p.submit #wp-submit.disabled:active,
+.login #login #loginform p.submit #wp-submit[disabled]:active,
+fieldset[disabled] .login #login #loginform p.submit #wp-submit:active,
+.login #login #loginform p.submit #wp-submit.disabled.active,
+.login #login #loginform p.submit #wp-submit[disabled].active,
+fieldset[disabled] .login #login #loginform p.submit #wp-submit.active {
+  background-color: #27ae60;
+  border-color: #229955;
+}
+.login #login #loginform p.submit #wp-submit .badge {
+  color: #27ae60;
+  background-color: #ffffff;
+}
+.login #login #loginform input[type*="text"],
+.login #login #loginform input[type*="password"] {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.login #login #loginform input[type*="text"]:focus,
+.login #login #loginform input[type*="password"]:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.login #login #loginform input[type*="text"]::-moz-placeholder,
+.login #login #loginform input[type*="password"]::-moz-placeholder {
+  color: #999999;
+  opacity: 1;
+}
+.login #login #loginform input[type*="text"]:-ms-input-placeholder,
+.login #login #loginform input[type*="password"]:-ms-input-placeholder {
+  color: #999999;
+}
+.login #login #loginform input[type*="text"]::-webkit-input-placeholder,
+.login #login #loginform input[type*="password"]::-webkit-input-placeholder {
+  color: #999999;
+}
+.login #login #loginform input[type*="text"][disabled],
+.login #login #loginform input[type*="password"][disabled],
+.login #login #loginform input[type*="text"][readonly],
+.login #login #loginform input[type*="password"][readonly],
+fieldset[disabled] .login #login #loginform input[type*="text"],
+fieldset[disabled] .login #login #loginform input[type*="password"] {
+  cursor: not-allowed;
+  background-color: #eeeeee;
+  opacity: 1;
+}
+textarea.login #login #loginform input[type*="text"],
+textarea.login #login #loginform input[type*="password"] {
+  height: auto;
 }
 .single .hentry .entry-content .wp-video {
   display: block;

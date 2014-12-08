@@ -32,12 +32,50 @@ function grillinfools_get_featured_posts() {
 }
 
 
+/**********************************/
+/*        Custom Login Page       */
+/**********************************/
+
+// Custom css
+
+add_filter( 'style_loader_src', 'hijack_login_src', 10, 2 );
+function hijack_login_src( $src, $handle ) {
+    if( 'login' == $handle ) {
+     	if (WP_ENV === 'development') {
+		$assets = array(
+    		'css'       => '/assets/css/main.css',
+    	);
+  	} else {
+    	$get_assets = file_get_contents(get_template_directory() . '/assets/manifest.json');
+    	$assets     = json_decode($get_assets, true);
+    	$assets     = array(
+      		'css'       => '/assets/css/main.min.css?' . $assets['assets/css/main.min.css']['hash'],
+    	);
+  	}
+         //$src = VP_URL . 'voodoo-login.css';
+  		$src = get_template_directory_uri() . $assets['css'];
+     }
+     return $src;
+ }
 
 
 
+  
+// Custom URL if you click the logo on the login page
+function gf_login_logo_url() {
+	return home_url();
+}
+add_filter( 'login_headerurl', 'gf_login_logo_url' );
 
+// Custom title for the login page logo
+function gf_login_logo_url_title() {
+	return 'Get back to Grillin\'';
+}
+add_filter( 'login_headertitle', 'gf_login_logo_url_title' );
 
-
+/**********************************/
+/*      Featured Image Stuff      */
+/**********************************/
 function featured_image($post_id, $featured_width=400, $featured_height = 1170, $quality = 60, $url=false) {
 	//mad props to this blog post: http://spotlesswebdesign.com/blog.php?id=1 for helping me figure out the logic.
 
@@ -138,11 +176,14 @@ if (!file_exists($wpcontent_image_path . '/' . $featured_image_filename)) {
     imagedestroy($featured_image);
 }
 
-
+	// Output either the image path...
 	if ($url) {
 		return $image_src_path . '/' . $featured_image_filename;
 	} else {
-		echo '<img src="'  . $image_src_path . '/' . $featured_image_filename . '" alt="" class="featured-image">';
+		// ...or the actual HTML itself
+		$thumb_id = get_post_thumbnail_id(get_the_ID());
+		$alt = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
+		echo '<img src="'  . $image_src_path . '/' . $featured_image_filename . '" alt="' . $alt . '" class="featured-image">';
 	}
 }
 
@@ -153,3 +194,4 @@ function if_featured_image_class($classes) {
 	}
 	return $classes;
 }
+

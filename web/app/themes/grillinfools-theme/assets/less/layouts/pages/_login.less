@@ -1,0 +1,81 @@
+// body.login
+.login {
+	background-color: @gf-background; 
+	background-image: url('@{theme-location}assets/img/gf-rose.png');
+	font-family: Georgia;
+	.container;
+	#login {
+		//width: 320px;
+		.make-sm-column(4);
+		.center-block;
+		float: none !important;
+		padding: 8% 0 0;
+		margin: auto;
+		h1 {
+			a {
+				.text-hide();
+				background-position: center top;
+				background-repeat: no-repeat;
+				margin: 0 auto 25px;
+				padding: 0;
+				display: block;
+				background-image: url('@{theme-location}assets/img/logo-min.svg');
+				-webkit-background-size: @gf-login-logo-size;
+				background-size: @gf-login-logo-size;
+				height: @gf-login-logo-size;
+				width: @gf-login-logo-size;
+			}
+		}
+		#login_error {
+			.alert;
+			.alert-danger;
+		}
+	
+		#loginform {
+			width: 100%;
+			border-color: @gf-background;
+			border-radius: 5px;
+			margin-top: 20px;
+			margin-left: 0;
+			padding: 26px 24px 46px;
+			font-weight: 400;
+			overflow: hidden;
+			background: #fff;
+			-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.13);
+			box-shadow: 0 1px 3px rgba(0,0,0,.13);
+			p {
+				.form-group;
+				label {
+					width: 100%;
+				}
+				&.forgetmenot {
+					.checkbox;
+					
+					label {
+						font-weight: 400;
+
+						//font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+						#rememberme {
+							position:absolute;
+							margin-left: -20px;
+							min-width:initial;
+							height: 12px;
+							width: 12px;
+						}	
+					}
+					
+				}
+				&.submit {
+					#wp-submit {
+						.btn;
+						.btn-primary;
+					}
+				}
+			}
+			input[type*="text"],
+			input[type*="password"] {
+				.form-control();
+			}
+		}
+	}
+}
