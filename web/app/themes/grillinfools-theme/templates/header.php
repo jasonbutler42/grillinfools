@@ -1,3 +1,4 @@
+<a href="https://plus.google.com/+Grillinfools1" rel="publisher"></a>
 <header class="banner navbar navbar-default navbar-static-top navbar-mobile" role="banner">
   <div class="container">
     <div class="navbar-header">
