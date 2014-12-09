@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "33398dcbca89589085423e006b707297",
+    "hash": "ca6985ae3f7d1427d1fe34f39caa0635",
     "packages": [
         {
             "name": "composer/installers",
@@ -688,6 +688,29 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/sabre/"
+        },
+        {
+            "name": "wpackagist-plugin/subscribe-to-comments-reloaded",
+            "version": 141103,
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/subscribe-to-comments-reloaded/",
+                "reference": "tags/141103"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/subscribe-to-comments-reloaded.141103.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/subscribe-to-comments-reloaded": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/subscribe-to-comments-reloaded/"
         },
         {
             "name": "wpackagist-plugin/w3-total-cache",
