@@ -8,23 +8,30 @@
 		color: @gf-red;
 		font-size: 200%;
 		.clearfix;
-		width:90%;
+		max-width:100%;
 		margin:auto;
 		text-align:center;
-		padding-top:1em;
-
+		margin:1em;
+		margin-bottom:0;
+		.text-shadow(0 1px 1px #000000);
+		background: rgba(255,255,255,0.2);
+		border: 1px solid white;
 		@media(min-width: @screen-tablet){ 		/* or @screen-sm */
 			font-size: 170%;
 			text-align: right;
 			padding-top: 0;
+			background: none;
+			border: none;
 			//.has-featured-image & {.text-shadow(0 1px 1px #000000);}
-			.text-shadow(0 1px 1px #000000);
+			//.text-shadow(0 1px 1px #000000);
 			
 		}     
 		@media(min-width: @screen-desktop){font-size: 200%}    /* or @screen-md */
 	}
 	.navbar-toggle {
 		margin-top: 42px;
+		background: @gf-background;
+		margin-left: 1em;
 	}
 	.navbar-brand { //<a> - link back to homepage
 		height: 125px;
@@ -82,12 +89,23 @@
 		}
 	}
 	&.navbar-mobile {
-		background: white;
+		//background: white;
 		.hidden-sm;
 		.hidden-md;
 		.hidden-lg;
 		transition: all 0.5s ease;
 		border-bottom-color: transparent;
+		margin-bottom:0;
+		padding-bottom:20px;
+		background-attachment: fixed;
+		background-position: 50% 0;
+		.has-featured-image & {
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+		}
+		.navbar-collapse {
+			background: white;
+		}
 	}
 	&.navbar-full { //header for the non-mobile site
 		transition: all 0.5s ease;

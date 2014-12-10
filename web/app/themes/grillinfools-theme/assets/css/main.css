@@ -6513,6 +6513,13 @@ figure.alignnone {
   background-attachment: fixed;
   -webkit-background-size: 100% auto;
           background-size: 100% auto;
+  background-position: 50% 0;
+}
+@media (min-width: 1200px) {
+  .content .featured-image {
+    -webkit-background-size: 1170px auto;
+            background-size: 1170px auto;
+  }
 }
 @media (min-width: 768px) {
   .content .featured-image {
@@ -6526,26 +6533,6 @@ figure.alignnone {
   -webkit-background-size: auto auto;
           background-size: auto;
   background-color: #d5d5cd;
-}
-.content .featured-image.featured-image-default.featured-random-2 {
-  background-color: #7f4400;
-  background-image: url('/app/themes/grillinfools-theme/assets/img/patterns/tr-food.png');
-}
-.content .featured-image.featured-image-default.featured-random-4 {
-  background-color: #548ba5;
-  background-image: url('/app/themes/grillinfools-theme/assets/img/patterns/tr-white-diamond-dark.png');
-}
-.content .featured-image.featured-image-default.featured-random-5 {
-  background-color: #a66010;
-  background-image: url('/app/themes/grillinfools-theme/assets/img/patterns/tr-green-gobbler.png');
-}
-.content .featured-image.featured-image-default.featured-random-3 {
-  background-color: #1b6183;
-  background-image: url('/app/themes/grillinfools-theme/assets/img/patterns/tr-wild-flowers.png');
-}
-.content .featured-image.featured-image-default.featured-random-1 {
-  background-color: #34728f;
-  background-image: url('/app/themes/grillinfools-theme/assets/img/patterns/tr-light-wool.png');
 }
 .content .sponsor {
   display: block;
@@ -6594,6 +6581,31 @@ figure.alignnone {
 .content .sponsor:before {
   content: "Sponsored Content";
   width: 100%;
+}
+.featured-random-1 .navbar-mobile,
+.featured-random-1 .featured-image.featured-image-default {
+  background-color: #7f4400;
+  background-image: url('/app/themes/grillinfools-theme/assets/img/patterns/tr-food.png');
+}
+.featured-random-2 .navbar-mobile,
+.featured-random-2 .featured-image.featured-image-default {
+  background-color: #a66010;
+  background-image: url('/app/themes/grillinfools-theme/assets/img/patterns/tr-green-gobbler.png');
+}
+.featured-random-3 .navbar-mobile,
+.featured-random-3 .featured-image.featured-image-default {
+  background-color: #34728f;
+  background-image: url('/app/themes/grillinfools-theme/assets/img/patterns/tr-light-wool.png');
+}
+.featured-random-4 .navbar-mobile,
+.featured-random-4 .featured-image.featured-image-default {
+  background-color: #548ba5;
+  background-image: url('/app/themes/grillinfools-theme/assets/img/patterns/tr-white-diamond-dark.png');
+}
+.featured-random-5 .navbar-mobile,
+.featured-random-5 .featured-image.featured-image-default {
+  background-color: #1b6183;
+  background-image: url('/app/themes/grillinfools-theme/assets/img/patterns/tr-wild-flowers.png');
 }
 .sidebar {
   position: relative;
@@ -6827,6 +6839,7 @@ figure.alignnone {
   -webkit-transition: all 0;
        -o-transition: all 0;
           transition: all 0;
+  background: none;
 }
 .home .wrap .content .main .hentry .archive-content .thumbnail .featured-image:hover,
 .archive .wrap .content .main .hentry .archive-content .thumbnail .featured-image:hover,
@@ -6877,10 +6890,14 @@ figure.alignnone {
   font-family: 'fawn_script';
   color: #c4203a;
   font-size: 200%;
-  width: 90%;
+  max-width: 100%;
   margin: auto;
   text-align: center;
-  padding-top: 1em;
+  margin: 1em;
+  margin-bottom: 0;
+  text-shadow: 0 1px 1px #000000;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid white;
   /* or @screen-md */
 }
 .banner .tagline:before,
@@ -6905,7 +6922,8 @@ figure.alignnone {
     font-size: 170%;
     text-align: right;
     padding-top: 0;
-    text-shadow: 0 1px 1px #000000;
+    background: none;
+    border: none;
   }
 }
 @media (min-width: 992px) {
@@ -6915,6 +6933,8 @@ figure.alignnone {
 }
 .banner .navbar-toggle {
   margin-top: 42px;
+  background: #d5d5cd;
+  margin-left: 1em;
 }
 .banner .navbar-brand {
   height: 125px;
@@ -6972,11 +6992,14 @@ figure.alignnone {
   display: none;
 }
 .banner.navbar-mobile {
-  background: white;
   -webkit-transition: all 0.5s ease;
        -o-transition: all 0.5s ease;
           transition: all 0.5s ease;
   border-bottom-color: transparent;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  background-attachment: fixed;
+  background-position: 50% 0;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .banner.navbar-mobile {
@@ -6992,6 +7015,14 @@ figure.alignnone {
   .banner.navbar-mobile {
     display: none !important;
   }
+}
+.has-featured-image .banner.navbar-mobile {
+  -webkit-background-size: 100% auto;
+          background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.banner.navbar-mobile .navbar-collapse {
+  background: white;
 }
 .banner.navbar-full {
   -webkit-transition: all 0.5s ease;

@@ -24,8 +24,11 @@
 	}
 }
 
+
+
 // Main content area
 .content {
+	//position: relative;
 	.featured-image { 
 		transition: all .75s ease-in;
 		opacity:0;
@@ -38,20 +41,28 @@
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		background-size: 100% auto;
+		background-position: 50% 0;
+		@media (min-width: @screen-sm-min) {
+		    
+		  }
+		  @media (min-width: @screen-md-min) {
+		    
+		  }
+		  @media (min-width: @screen-lg-min) {
+		    background-size: @container-lg auto;
+		  }
+
+
 		@media(min-width: @screen-tablet) {
 			display:block;
 			height:300px; 
 			opacity:1;
 		}
+		
 		&.featured-image-default {
 			background-repeat: repeat;
 			background-size: auto;
 			background-color: @gf-background; 
-			&.featured-random-2 {background-color: @gf-brown-darker; background-image: url('@{patterns-location}tr-food.png');}
-			&.featured-random-4 {background-color: @gf-blue-lighter; background-image: url('@{patterns-location}tr-white-diamond-dark.png');}
-			&.featured-random-5 {background-color: @gf-brown-dark; background-image: url('@{patterns-location}tr-green-gobbler.png');}
-			&.featured-random-3 {background-color: @gf-blue; background-image: url('@{patterns-location}tr-wild-flowers.png');}
-			&.featured-random-1 {background-color: @gf-blue-light; background-image: url('@{patterns-location}tr-light-wool.png');}
 		}
 	}
 	.sponsor {
@@ -81,6 +92,15 @@
 		}
 	}
 }
+.navbar-mobile,
+.featured-image.featured-image-default {
+	.featured-random-1 & {background-color: @gf-brown-darker; background-image: url('@{patterns-location}tr-food.png');}
+	.featured-random-2 & {background-color: @gf-brown-dark; background-image: url('@{patterns-location}tr-green-gobbler.png');}
+	.featured-random-3 & {background-color: @gf-blue-light; background-image: url('@{patterns-location}tr-light-wool.png');}
+	.featured-random-4 & {background-color: @gf-blue-lighter; background-image: url('@{patterns-location}tr-white-diamond-dark.png');}
+	.featured-random-5 & {background-color: @gf-blue; background-image: url('@{patterns-location}tr-wild-flowers.png');}
+}
+
 .main {
   	.sidebar-primary & { // if a parent has ".sidebar-primary"
   		
@@ -180,6 +200,7 @@
 							.featured-image {
 								display: block;
 								transition: all 0;
+								background: none;
 								&:hover {
 									background: @gf-background;
 									border-color: @gf-red;
