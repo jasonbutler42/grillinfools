@@ -6411,6 +6411,10 @@ button.close {
     display: none !important;
   }
 }
+/* Main Red */
+/* Main Brown */
+/* Main Blue */
+/* Main Green */
 @font-face {
   font-family: 'fawn_script';
   src: url('/app/themes/grillinfools-theme/assets/fonts/fawn-webfont.eot');
@@ -6419,15 +6423,15 @@ button.close {
   font-style: normal;
 }
 a:link {
-  color: #c4203b;
+  color: #c4203a;
 }
 a:hover,
 a:active {
-  color: #98192e;
+  color: #98192d;
   text-decoration: underline;
 }
 a:visited {
-  color: #e6647a;
+  color: #e66479;
 }
 .yarpp-related a:hover {
   text-decoration: underline !important;
@@ -6465,7 +6469,7 @@ figure.alignnone {
 @media (min-width: 768px) {
   .mega-wrapper {
     background-color: #d5d5cd;
-    background-image: url('/app/themes/grillinfools-theme/assets/img/gf-rose.png');
+    background-image: url('/app/themes/grillinfools-theme/assets/img/patterns/tr-gf-rose.png');
   }
 }
 .wrap {
@@ -6523,20 +6527,25 @@ figure.alignnone {
           background-size: auto;
   background-color: #d5d5cd;
 }
-.content .featured-image.featured-image-default.featured-random-1 {
-  background-image: url('/app/themes/grillinfools-theme/assets/img/bo_play_pattern.png');
-}
 .content .featured-image.featured-image-default.featured-random-2 {
-  background-image: url('/app/themes/grillinfools-theme/assets/img/restaurant_icons.png');
-}
-.content .featured-image.featured-image-default.featured-random-3 {
-  background-image: url('/app/themes/grillinfools-theme/assets/img/stacked_circles.png');
+  background-color: #7f4400;
+  background-image: url('/app/themes/grillinfools-theme/assets/img/patterns/tr-food.png');
 }
 .content .featured-image.featured-image-default.featured-random-4 {
-  background-image: url('/app/themes/grillinfools-theme/assets/img/agsquare.png');
+  background-color: #548ba5;
+  background-image: url('/app/themes/grillinfools-theme/assets/img/patterns/tr-white-diamond-dark.png');
 }
 .content .featured-image.featured-image-default.featured-random-5 {
-  background-image: url('/app/themes/grillinfools-theme/assets/img/pw_maze_white.png');
+  background-color: #a66010;
+  background-image: url('/app/themes/grillinfools-theme/assets/img/patterns/tr-green-gobbler.png');
+}
+.content .featured-image.featured-image-default.featured-random-3 {
+  background-color: #1b6183;
+  background-image: url('/app/themes/grillinfools-theme/assets/img/patterns/tr-wild-flowers.png');
+}
+.content .featured-image.featured-image-default.featured-random-1 {
+  background-color: #34728f;
+  background-image: url('/app/themes/grillinfools-theme/assets/img/patterns/tr-light-wool.png');
 }
 .content .sponsor {
   display: block;
@@ -6828,7 +6837,7 @@ figure.alignnone {
 .search .wrap .content .main .hentry .archive-content .wp-caption .featured-image:hover,
 .category .wrap .content .main .hentry .archive-content .wp-caption .featured-image:hover {
   background: #d5d5cd;
-  border-color: #c4203b;
+  border-color: #c4203a;
 }
 .home .wrap .content .main .hentry .archive-content .archive-wrap,
 .archive .wrap .content .main .hentry .archive-content .archive-wrap,
@@ -6866,7 +6875,7 @@ figure.alignnone {
 }
 .banner .tagline {
   font-family: 'fawn_script';
-  color: #c4203b;
+  color: #c4203a;
   font-size: 200%;
   width: 90%;
   margin: auto;
@@ -6956,7 +6965,7 @@ figure.alignnone {
   fill: #444444;
 }
 .banner .navbar-brand .logo .logo-svg:hover .letters path {
-  fill: #df3854;
+  fill: #d6475d;
 }
 .banner .navbar-brand .logo .logo-svg-alt {
   height: 100%;
@@ -7042,18 +7051,18 @@ figure.alignnone {
 }
 .banner.navbar-full .navbar-primary .container .navbar-nav > li > a:link,
 .banner.navbar-full .navbar-primary .container .navbar-nav > li > a:visited {
-  color: #470d0d;
+  color: #780013;
   background: white;
 }
 .banner.navbar-full .navbar-primary .container .navbar-nav > li > a:hover,
 .banner.navbar-full .navbar-primary .container .navbar-nav > li > a:active {
-  border: 1px solid #470d0d;
+  border: 1px solid #780013;
   margin: 0 1px 0 1px;
-  color: #c4203b;
+  color: #c4203a;
 }
 .banner.navbar-full .navbar-primary .container .navbar-nav > li.active a {
   background: #eeeeee;
-  color: #c4203b;
+  color: #c4203a;
 }
 .banner.navbar-full .navbar-primary .container .navbar-inner {
   text-align: center;
@@ -7091,15 +7100,19 @@ figure.alignnone {
   -webkit-opacity: 0.5;
   -moz-opacity: 0.5;
   opacity: 0.5;
-  border-color: #428bca;
+  border-color: #548ba5;
 }
 .banner.navbar-full .navbar-primary .search-form .search-submit {
-  background: #428bca;
+  background: #548ba5;
   color: white;
-  border-color: #428bca;
+  border-color: #548ba5;
 }
 .banner.navbar-full .navbar-category {
-  background: #470d0d;
+  border-top: 2px solid #34728f;
+  border-bottom: 2px solid #34728f;
+  background-color: #548ba5;
+  background-image: url('/app/themes/grillinfools-theme/assets/img/patterns/tr-slash-it.png');
+  background-image: url('/app/themes/grillinfools-theme/assets/img/patterns/tr-retina-dust.png');
 }
 .banner.navbar-full .navbar-category .container {
   text-align: center;
@@ -7137,11 +7150,12 @@ figure.alignnone {
   color: white;
 }
 .banner.navbar-full .navbar-category .container .nav > li > a:hover,
-.banner.navbar-full .navbar-category .container .nav > li > a:active {
-  color: #c4203b;
+.banner.navbar-full .navbar-category .container .nav > li > a:active,
+.banner.navbar-full .navbar-category .container .nav > li > a:focus {
+  color: #043750;
 }
 .banner.navbar-full .navbar-category .container .nav > li.open > a {
-  color: #c4203b;
+  color: #043750;
 }
 .banner.navbar-full .navbar-category .container .navbar-inner {
   text-align: center;
@@ -7534,27 +7548,13 @@ textarea.login #login #loginform input[type*="password"] {
   padding-right: 15px;
   margin-left: -15px;
   margin-right: -15px;
-  border-top: 20px solid #470d0d;
+  border-top: 20px solid #780013;
   color: #c9c9c0;
-  background: #a32828;
-  background-image: url('/app/themes/grillinfools-theme/assets/img/square_bg.png');
+  background: #9d0f25;
+  background-image: url('/app/themes/grillinfools-theme/assets/img/patterns/tr-random-grey-variations.png');
   margin-bottom: 2em;
   /* or @screen-sm */
   /* or @screen-md */
-  /* Not sure if we will even use this on posts 
-			@media(min-width: @screen-tablet){
-				margin-top: -1em; 
-				
-			}    
-			@media(min-width: @screen-desktop){
-				margin-top: -2em;
-			}    
-			.avatar {
-				width: 100%;
-				height: 100%;
-			}
-		}
-		*/
 }
 @media (min-width: 768px) {
   .single .hentry header {
@@ -7597,6 +7597,7 @@ textarea.login #login #loginform input[type*="password"] {
     width: 100%;
     padding: 5px;
     background: #000000;
+    background: #1d6c00;
     color: #ffffff;
     text-align: center;
     opacity: 0.4;

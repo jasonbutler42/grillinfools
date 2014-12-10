@@ -1,6 +1,6 @@
 .mega-wrapper {
 	background-color: white;
-	@media(min-width: @screen-tablet){background-color: @gf-background; background-image: url('@{theme-location}assets/img/gf-rose.png');}
+	@media(min-width: @screen-tablet){background-color: @gf-background; background-image: url('@{patterns-location}tr-gf-rose.png');}
 	font-family: Georgia;
 	
 }
@@ -47,11 +47,11 @@
 			background-repeat: repeat;
 			background-size: auto;
 			background-color: @gf-background; 
-			&.featured-random-1 {background-image: url('@{theme-location}assets/img/bo_play_pattern.png');}
-			&.featured-random-2 {background-image: url('@{theme-location}assets/img/restaurant_icons.png');}
-			&.featured-random-3 {background-image: url('@{theme-location}assets/img/stacked_circles.png');}
-			&.featured-random-4 {background-image: url('@{theme-location}assets/img/agsquare.png');}
-			&.featured-random-5 {background-image: url('@{theme-location}assets/img/pw_maze_white.png');}
+			&.featured-random-2 {background-color: @gf-brown-darker; background-image: url('@{patterns-location}tr-food.png');}
+			&.featured-random-4 {background-color: @gf-blue-lighter; background-image: url('@{patterns-location}tr-white-diamond-dark.png');}
+			&.featured-random-5 {background-color: @gf-brown-dark; background-image: url('@{patterns-location}tr-green-gobbler.png');}
+			&.featured-random-3 {background-color: @gf-blue; background-image: url('@{patterns-location}tr-wild-flowers.png');}
+			&.featured-random-1 {background-color: @gf-blue-light; background-image: url('@{patterns-location}tr-light-wool.png');}
 		}
 	}
 	.sponsor {
@@ -135,32 +135,18 @@
 .category {
 	.wrap {
 		.content {
-			
 			.make-row();
-			//border-top: 10px solid green;
-			//border-bottom: 10px solid green;
 			.main {
-				//border-top: 10px solid red;
-				//border-bottom: 10px solid orange;
 				@media(min-width: @screen-tablet){padding-left: 3em;}     /* or @screen-sm */
 				@media(min-width: @screen-desktop){padding-left: 5em;}    /* or @screen-md */
 				.make-sm-column(8);
 				position:relative;
 				.page-header {
 					border: none;
-					//display: none;
-					//position:relative;
-					//transition: all 0.5s ease;
-					//width: auto;
 					.container;
-					//border-top: 20px solid @gf-red-dark;
-					//color: @text-color-on-red;
-					//background: @gf-red-med;
 					margin-bottom: 2em;
 					margin-top: 0;
 					margin: 0 -15px 2em;
-					//@media(min-width: @screen-tablet){padding: 0 5em;}     /* or @screen-sm */
-					//@media(min-width: @screen-desktop){padding: 0 6.75em;}    /* or @screen-md */
 					h1 {
 						margin: 0;
 					}

@@ -1,3 +1,17 @@
+<a name="1.10.8"></a>
+### 1.10.8 (2014-12-10)
+
+
+#### Features
+
+* **composer.json:** Add subcribe-to-comments-reloaded plugin ([13ba318d](http://github.com/jasonbutler42/grillinfools/commit/13ba318d37db14b7e126e9522e257e7f8f76db48), closes [#12](http://github.com/jasonbutler42/grillinfools/issues/12))
+* **header.php:** Add Publisher link for Google Plus ([e692c9fd](http://github.com/jasonbutler42/grillinfools/commit/e692c9fd31a12a133ca0acbe8b0611a3aa0ea1b7), closes [#13](http://github.com/jasonbutler42/grillinfools/issues/13))
+* **robots.txt:** Add anti-bot security ([ca5f15fb](http://github.com/jasonbutler42/grillinfools/commit/ca5f15fbbcbe9306c4d998f27b1a6d11385089f1), closes [#19](http://github.com/jasonbutler42/grillinfools/issues/19))
+* **verifications:**
+  * Add verification files ([50c6c37e](http://github.com/jasonbutler42/grillinfools/commit/50c6c37e95b0cc5a778dd46b08f44733982547bb), closes [#20](http://github.com/jasonbutler42/grillinfools/issues/20))
+  * Add verification files ([0acd0bd9](http://github.com/jasonbutler42/grillinfools/commit/0acd0bd955412a1e2450093834141f95934b608b), closes [#20](http://github.com/jasonbutler42/grillinfools/issues/20))
+
+
 <a name="1.10.7"></a>
 ### 1.10.7 (2014-12-08)
 
