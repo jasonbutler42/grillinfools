@@ -13,10 +13,11 @@ set :deploy_to, -> { "/var/www/html/#{fetch(:application)}" }
 
 set :log_level, :info
 
-# Apache users with .htaccess files:
-# it needs to be added to linked_files so it persists across deploys:
-set :linked_files, %w{.env web/.htaccess}
-#set :linked_files, %w{.env}
+# Linked stuff gets automatically symbolically linked into the /current deployment folder from the shared folder
+# All files and folders are relative from webserver root (/current/)
+# Linked files
+set :linked_files, %w{.env web/.htaccess web/robots.txt}
+# Linked directories
 set :linked_dirs, %w{web/app/uploads web/app/aiowps_backups web/app/plugins/ad-injection-data}
 
 namespace :deploy do
