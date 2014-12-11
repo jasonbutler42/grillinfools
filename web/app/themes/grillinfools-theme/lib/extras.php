@@ -22,16 +22,6 @@ function roots_wp_title($title) {
 add_filter('wp_title', 'roots_wp_title', 10);
 
 
-add_theme_support( 'featured-content', array(
-    'filter'     => 'grillinfools_get_featured_posts',
-    'max_posts'  => 20
-) );
-
-function grillinfools_get_featured_posts() {
-    return apply_filters( 'grillinfools_get_featured_posts', array() );
-}
-
-
 /**********************************/
 /*        Custom Login Page       */
 /**********************************/
@@ -239,4 +229,49 @@ function if_featured_image_class($classes) {
 	}
 	return $classes;
 }
+//$featured_category = 'Featured Recipes';
+/****************************************/
+/*           Featured Content           */
+/****************************************/
+
+
+function featured_category() {
+	/* set featured category for global use - this should probably be done with a plugin or something */
+	$category = 'Featured Recipes';
+	return $category;
+}
+
+function exclude_category_home( $query ) {
+
+	// Set the category to be listed on the front page	
+	$featured = featured_category();
+	$featured_category_id = get_cat_ID($featured);
+	
+
+	/* remove posts in the set category from showing on the homepage */
+	if ( $query->is_home ) {
+		$query->set( 'cat', '-' . $featured_category_id );
+	}
+	return $query;
+}
+add_filter( 'pre_get_posts', 'exclude_category_home' );
+
+// add_theme_support( 'featured-content', array(
+//     'filter'     => 'grillinfools_get_featured_posts',
+//     'max_posts'  => 5
+// ) );
+
+// //function grillinfools_get_featured_posts() {
+// //    return apply_filters( 'grillinfools_get_featured_posts', array() );
+// //}
+
+// function grillinfools_get_featured_posts( $num = 1 ) {
+// 	global $featured;
+// 	$featured = apply_filters( 'grillinfools_get_featured_posts', array() );
+
+// 	if ( is_array( $featured ) || $num >= count( $featured ) )
+// 		return true;
+
+// 	return false;
+// }
 

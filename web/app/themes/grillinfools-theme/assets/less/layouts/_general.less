@@ -1,3 +1,63 @@
+/******************************/
+/*    Meta and byline stuff   */
+/******************************/
+
+.byline {
+	margin-bottom: 1em;
+	.meta {
+		white-space: nowrap;
+		clear:both;
+		float: left;
+		i {
+			font-weight: bold;
+		}
+		a {
+			.single-post & {
+				color: @text-color-on-red;
+			}
+		}
+		&.meta-author {
+			position:relative;
+			.single-post &,
+			.featured-post & {
+				@media(min-width: @screen-tablet){display:none;}     /* or @screen-sm */
+			}
+		}
+		@media(min-width: @screen-tablet){
+			float: none;
+			&:after {content: " |";}
+			&:last-child {
+				&:after {content:"";}
+			}
+		}     /* or @screen-sm */
+
+	}
+}
+.entry-summary {
+	float: left;
+}
+.author-pic {
+	.meta-author {
+		display: none;
+		@media(min-width: @screen-tablet) {
+			display: block;
+			width: 100%;
+			padding: 5px;
+			background: #000000;
+			background: @gf-blue-darker;
+			color: #ffffff;
+			text-align: center;
+			opacity: 0.6;
+			position:absolute;
+			bottom: 0;
+		}
+	}
+	.avatar {
+		width: 100%;
+		height: 100%;
+	}
+}
+
 .mega-wrapper {
 	background-color: white;
 	@media(min-width: @screen-tablet){background-color: @gf-background; background-image: url('@{patterns-location}tr-gf-rose.png');}
@@ -84,7 +144,6 @@
 			@media (min-width: @screen-xs-min) {
 				padding: 4px 6px;	
   			}
-  			
 		}
 		&:before { 
 			content: "Sponsored Content";
@@ -178,7 +237,7 @@
 					padding-bottom: 1em;
 					margin-bottom: 1em;
 					.featured-image {
-						position:initial;
+					/*	position:initial;
 						opacity: 1;
 						.img-responsive; // make the images scale appropriately 
 						display:none;
@@ -187,7 +246,7 @@
 						margin: auto;
 						@media (min-width: @screen-xs-min) {
 							padding: 4px 6px;	
-				  		}
+				  		}*/
 					}
 					.archive-content {
 						.make-row();
@@ -201,6 +260,16 @@
 								display: block;
 								transition: all 0;
 								background: none;
+								position:initial;
+								opacity: 1;
+								.img-responsive; // make the images scale appropriately 
+								//display:none;
+								border: 1px solid @border-color;
+								padding: 2px 3px;	
+								margin: auto;
+								@media (min-width: @screen-xs-min) {
+									padding: 4px 6px;	
+						  		}
 								&:hover {
 									background: @gf-background;
 									border-color: @gf-red;
@@ -227,11 +296,7 @@
 				}
 			}
 			.sidebar {
-				
-				//display: none;
-				//padding-top: 6em;
-				//border-top: 10px solid purple;
-				//border-bottom: 10px solid gray;
+
 				.make-sm-column(4);
 			}
 

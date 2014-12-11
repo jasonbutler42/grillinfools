@@ -17,8 +17,14 @@
 			.img-responsive; // make the images scale appropriately 
 			border: 1px solid @border-color;
 			padding: 2px 3px;	
+			border-radius: 0;
 			@media (min-width: @screen-xs-min) {
 				padding: 4px 6px;	
+  			}
+
+  			img {
+  				border: none;
+  				padding: 0;
   			}
 		}
 	}
@@ -62,25 +68,7 @@
 				margin-bottom: 0;
 				
 			}
-			.meta-author {
-				display: none;
-				@media(min-width: @screen-tablet){
-					display: block;
-					width: 100%;
-					padding: 5px;
-					background: #000000;
-					background: @gf-green-darker;
-					color: #ffffff;
-					text-align: center;
-					opacity: 0.4;
-					position:absolute;
-					bottom: 0;
-				}
-			}
-			.avatar {
-				width: 100%;
-				height: 100%;
-			}
+			// refactored author pic to _general.less
 		}
 		.entry-meta-wrap {
 			padding-left: 1em;
@@ -90,21 +78,7 @@
 			h1 {
 				font-size: 200%;
 			}
-			.byline {
-				margin-bottom: 1em;
-				.meta {
-					i {
-						font-weight: bold;
-					}
-					a {
-						color: @text-color-on-red;
-					}
-					&.meta-author {
-						
-						@media(min-width: @screen-tablet){display:none;}     /* or @screen-sm */
-					}
-				}
-			}
+			// byline stuff was refactored out to _general.less
 		}
 	}
 	h2 {
