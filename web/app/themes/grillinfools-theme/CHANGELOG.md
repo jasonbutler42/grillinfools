@@ -1,4 +1,14 @@
 <a name="1.10.11"></a>
+### 1.10.11 (2014-12-11)
+
+
+#### Features
+
+* **header.php:** Additional Styles for Featured Images ([9eb6fbdf](http://github.com/jasonbutler42/grillinfools/commit/9eb6fbdf2e26a3a05975761e3ef3b948a250cbec))
+* **homepage:** Featured images ([ddcf412e](http://github.com/jasonbutler42/grillinfools/commit/ddcf412ed5f5462009939c4ce9e4204ff052c97e))
+
+
+<a name="1.10.11"></a>
 ### 1.10.11 (2014-12-10)
 
 

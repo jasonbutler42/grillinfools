@@ -1,10 +1,120 @@
 .home {
 	 .wrap {
+	 	position: relative; 
+	 	@media(min-width: @screen-tablet){    /* or @screen-md */
+	 		padding-top: 475px;
+	 	}
+	 	@media(min-width: @screen-desktop){    /* or @screen-md */
+	 		padding-top: 800px;
+	 	}
+		/***********************************************/
+		/*     Primary Featured posts or JUMBOTRON     */
+		/***********************************************/
+		.stage {
+			display: none;
+			@media(min-width: @screen-tablet){
+				position:relative;
+				display:block;
+				background: @gf-background;
+				
+				.container;
+				padding: 0;
+				//.clearfix;
+				//margin-left: -15px;
+				//margin-right: -15px;
+				height: 475px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				.carousel {
+					height: 100%;
+					.carousel-indicators {
+						bottom: 175px;
+					}
+					.carousel-control {
+						width: 8%;
+					}
+					.carousel-inner {
+						height: 100%;
+						.item {
+							height: 100%;
+							width: 100%;
+							//background: green;
+							.featured-image-wrapper {
+								height: 100%;
+								width: 100%;
+								position:relative;
+								//background: blue;
+								.featured-image {
+									width: 100%;
+
+								}
+								.featured-image.featured-image-default {
+									display:block;
+									height:100%;
+									background:@gf-background;
+								}
+								
+							}
+							.entry-meta-wrap {
+								position: absolute;
+								bottom: 0;
+								left:0;
+								width: 100%;
+								border-top: 20px solid @gf-red-darker;
+								background: @gf-red;
+								min-height: 120px;
+								padding-bottom: 1em;
+								color: @text-color-on-red;
+								a {
+									color: @text-color-on-red;
+								}
+								.author-pic {
+									z-index: 1;
+									position: absolute;
+									top: -75px;
+									left: 100px;
+									left: 8%;
+									width: 125px;
+									//height: 125px;
+									@media(min-width: @screen-desktop){width: 175px;}
+									}
+								.entry-title,
+								.byline,
+								.entry-summary {
+									float: left;
+									margin: 0 8%;
+									padding-left: 145px;
+									@media(min-width: @screen-desktop){padding-left: 195px;}
+								} 
+								.entry-title {
+									font-size: 175%;
+									padding-top: .5em;
+									@media(min-width: @screen-desktop){font-size: 200%;}
+								}
+							}
+						}
+					}
+				}
+			}
+			@media(min-width: @screen-desktop){
+				//.container;
+				height: 800px;
+			}
+		}
 	 	.content {
 	 		.main {
+
+
+
+
+
+
+				/***********************************************/
+	 			/*  Secondary Featured posts on the home page  */
+	 			/***********************************************/
 				.featured-post {
 					border: none;
-					
 					overflow: hidden;
 					.featured-image-wrapper {
 						position:relative;

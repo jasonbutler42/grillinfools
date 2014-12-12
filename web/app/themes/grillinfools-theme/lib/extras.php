@@ -234,6 +234,11 @@ function if_featured_image_class($classes) {
 /*           Featured Content           */
 /****************************************/
 
+function jumbotron_number() {
+	/* set number of slides in jumbortron - this should probably be done with a plugin or something */
+	$jumbotron_number = 5;
+	return $jumbotron_number;
+}
 
 function featured_category() {
 	/* set featured category for global use - this should probably be done with a plugin or something */
@@ -255,23 +260,4 @@ function exclude_category_home( $query ) {
 	return $query;
 }
 add_filter( 'pre_get_posts', 'exclude_category_home' );
-
-// add_theme_support( 'featured-content', array(
-//     'filter'     => 'grillinfools_get_featured_posts',
-//     'max_posts'  => 5
-// ) );
-
-// //function grillinfools_get_featured_posts() {
-// //    return apply_filters( 'grillinfools_get_featured_posts', array() );
-// //}
-
-// function grillinfools_get_featured_posts( $num = 1 ) {
-// 	global $featured;
-// 	$featured = apply_filters( 'grillinfools_get_featured_posts', array() );
-
-// 	if ( is_array( $featured ) || $num >= count( $featured ) )
-// 		return true;
-
-// 	return false;
-// }
 

@@ -7284,6 +7284,159 @@ figure.alignnone {
     width: 33.33333333%;
   }
 }
+.home .wrap {
+  position: relative;
+  /***********************************************/
+  /*     Primary Featured posts or JUMBOTRON     */
+  /***********************************************/
+}
+@media (min-width: 768px) {
+  .home .wrap {
+    /* or @screen-md */
+    padding-top: 475px;
+  }
+}
+@media (min-width: 992px) {
+  .home .wrap {
+    /* or @screen-md */
+    padding-top: 800px;
+  }
+}
+.home .wrap .stage {
+  display: none;
+}
+@media (min-width: 768px) {
+  .home .wrap .stage {
+    position: relative;
+    display: block;
+    background: #d5d5cd;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 0;
+    height: 475px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .home .wrap .stage > .navbar-header,
+  .home .wrap .stage > .navbar-collapse {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .home .wrap .stage .carousel {
+    height: 100%;
+  }
+  .home .wrap .stage .carousel .carousel-indicators {
+    bottom: 175px;
+  }
+  .home .wrap .stage .carousel .carousel-control {
+    width: 8%;
+  }
+  .home .wrap .stage .carousel .carousel-inner {
+    height: 100%;
+  }
+  .home .wrap .stage .carousel .carousel-inner .item {
+    height: 100%;
+    width: 100%;
+  }
+  .home .wrap .stage .carousel .carousel-inner .item .featured-image-wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  .home .wrap .stage .carousel .carousel-inner .item .featured-image-wrapper .featured-image {
+    width: 100%;
+  }
+  .home .wrap .stage .carousel .carousel-inner .item .featured-image-wrapper .featured-image.featured-image-default {
+    display: block;
+    height: 100%;
+    background: #d5d5cd;
+  }
+  .home .wrap .stage .carousel .carousel-inner .item .entry-meta-wrap {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 20px solid #780013;
+    background: #c4203a;
+    min-height: 120px;
+    padding-bottom: 1em;
+    color: #c9c9c0;
+  }
+  .home .wrap .stage .carousel .carousel-inner .item .entry-meta-wrap a {
+    color: #c9c9c0;
+  }
+  .home .wrap .stage .carousel .carousel-inner .item .entry-meta-wrap .author-pic {
+    z-index: 1;
+    position: absolute;
+    top: -75px;
+    left: 100px;
+    left: 8%;
+    width: 125px;
+  }
+  .home .wrap .stage .carousel .carousel-inner .item .entry-meta-wrap .entry-title,
+  .home .wrap .stage .carousel .carousel-inner .item .entry-meta-wrap .byline,
+  .home .wrap .stage .carousel .carousel-inner .item .entry-meta-wrap .entry-summary {
+    float: left;
+    margin: 0 8%;
+    padding-left: 145px;
+  }
+  .home .wrap .stage .carousel .carousel-inner .item .entry-meta-wrap .entry-title {
+    font-size: 175%;
+    padding-top: .5em;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  .home .wrap .stage {
+    width: 750px;
+  }
+}
+@media (min-width: 768px) and (min-width: 992px) {
+  .home .wrap .stage {
+    width: 970px;
+  }
+}
+@media (min-width: 768px) and (min-width: 1200px) {
+  .home .wrap .stage {
+    width: 1170px;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  .home .wrap .stage > .navbar-header,
+  .home .wrap .stage > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+@media (min-width: 768px) and (min-width: 992px) {
+  .home .wrap .stage .carousel .carousel-inner .item .entry-meta-wrap .author-pic {
+    width: 175px;
+  }
+}
+@media (min-width: 768px) and (min-width: 992px) {
+  .home .wrap .stage .carousel .carousel-inner .item .entry-meta-wrap .entry-title,
+  .home .wrap .stage .carousel .carousel-inner .item .entry-meta-wrap .byline,
+  .home .wrap .stage .carousel .carousel-inner .item .entry-meta-wrap .entry-summary {
+    padding-left: 195px;
+  }
+}
+@media (min-width: 768px) and (min-width: 992px) {
+  .home .wrap .stage .carousel .carousel-inner .item .entry-meta-wrap .entry-title {
+    font-size: 200%;
+  }
+}
+@media (min-width: 992px) {
+  .home .wrap .stage {
+    height: 800px;
+  }
+}
+.home .wrap .content .main {
+  /***********************************************/
+  /*  Secondary Featured posts on the home page  */
+  /***********************************************/
+}
 .home .wrap .content .main .featured-post {
   border: none;
   overflow: hidden;
@@ -7749,14 +7902,6 @@ textarea.login #login #loginform input[type*="password"] {
   margin-top: 1em;
   margin-bottom: 1em;
   position: relative;
-  /*
-			position:absolute;
-			width: 60px;
-			height: 60px;
-			left: 50%;
-			margin-left: -30px;
-			top: -40px;
-			*/
 }
 @media (min-width: 768px) {
   .single .hentry header .author-pic {
