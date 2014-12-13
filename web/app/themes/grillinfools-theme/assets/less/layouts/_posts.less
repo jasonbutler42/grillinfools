@@ -11,9 +11,9 @@
   	}
 	img,
 	figure {
-		&[class*="size-"],
-		&.alignnone,
-		&.aligncenter {
+		//&[class*="size-"],
+		//&.alignnone,
+		//&.aligncenter {
 			.img-responsive; // make the images scale appropriately 
 			border: 1px solid @border-color;
 			padding: 2px 3px;	
@@ -26,7 +26,12 @@
   				border: none;
   				padding: 0;
   			}
-		}
+  			&.wp-smiley {
+  				display: initial;
+  				border: none;
+  				padding: 0;
+  			}
+		//}
 	}
 }
 .hentry footer { }

@@ -1,3 +1,12 @@
+<a name="1.10.12"></a>
+### 1.10.12 (2014-12-11)
+
+
+#### Features
+
+* **jumbotron:** add support for jumbotron on homepage ([432432bb](http://github.com/jasonbutler42/grillinfools/commit/432432bb96267907b5dc91e588c7558ff48cbc24), closes [#1](http://github.com/jasonbutler42/grillinfools/issues/1))
+
+
 <a name="1.10.11"></a>
 ### 1.10.11 (2014-12-11)
 

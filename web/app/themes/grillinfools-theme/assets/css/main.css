@@ -7834,12 +7834,8 @@ textarea.login #login #loginform input[type*="password"] {
     padding: 4px 6px;
   }
 }
-.single .hentry .entry-content img[class*="size-"],
-.single .hentry .entry-content figure[class*="size-"],
-.single .hentry .entry-content img.alignnone,
-.single .hentry .entry-content figure.alignnone,
-.single .hentry .entry-content img.aligncenter,
-.single .hentry .entry-content figure.aligncenter {
+.single .hentry .entry-content img,
+.single .hentry .entry-content figure {
   display: block;
   max-width: 100%;
   height: auto;
@@ -7848,21 +7844,19 @@ textarea.login #login #loginform input[type*="password"] {
   border-radius: 0;
 }
 @media (min-width: 480px) {
-  .single .hentry .entry-content img[class*="size-"],
-  .single .hentry .entry-content figure[class*="size-"],
-  .single .hentry .entry-content img.alignnone,
-  .single .hentry .entry-content figure.alignnone,
-  .single .hentry .entry-content img.aligncenter,
-  .single .hentry .entry-content figure.aligncenter {
+  .single .hentry .entry-content img,
+  .single .hentry .entry-content figure {
     padding: 4px 6px;
   }
 }
-.single .hentry .entry-content img[class*="size-"] img,
-.single .hentry .entry-content figure[class*="size-"] img,
-.single .hentry .entry-content img.alignnone img,
-.single .hentry .entry-content figure.alignnone img,
-.single .hentry .entry-content img.aligncenter img,
-.single .hentry .entry-content figure.aligncenter img {
+.single .hentry .entry-content img img,
+.single .hentry .entry-content figure img {
+  border: none;
+  padding: 0;
+}
+.single .hentry .entry-content img.wp-smiley,
+.single .hentry .entry-content figure.wp-smiley {
+  display: initial;
   border: none;
   padding: 0;
 }

@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "ca6985ae3f7d1427d1fe34f39caa0635",
+    "hash": "6ab54b76e1962677c180868cce991dff",
     "packages": [
         {
             "name": "composer/installers",
@@ -274,6 +274,29 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/ad-injection/"
+        },
+        {
+            "name": "wpackagist-plugin/advanced-responsive-video-embedder",
+            "version": "5.1.1",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/advanced-responsive-video-embedder/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/advanced-responsive-video-embedder.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/advanced-responsive-video-embedder": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/advanced-responsive-video-embedder/"
         },
         {
             "name": "wpackagist-plugin/akismet",
