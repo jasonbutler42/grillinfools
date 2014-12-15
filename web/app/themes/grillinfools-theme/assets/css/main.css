@@ -7375,6 +7375,7 @@ figure.alignnone {
     left: 100px;
     left: 8%;
     width: 125px;
+    height: 125px;
   }
   .home .wrap .stage .carousel .carousel-inner .item .entry-meta-wrap .entry-title,
   .home .wrap .stage .carousel .carousel-inner .item .entry-meta-wrap .byline,
@@ -7413,6 +7414,7 @@ figure.alignnone {
 @media (min-width: 768px) and (min-width: 992px) {
   .home .wrap .stage .carousel .carousel-inner .item .entry-meta-wrap .author-pic {
     width: 175px;
+    height: 175px;
   }
 }
 @media (min-width: 768px) and (min-width: 992px) {
@@ -7876,8 +7878,39 @@ textarea.login #login #loginform input[type*="password"] {
   background: #9d0f25;
   background-image: url('/app/themes/grillinfools-theme/assets/img/patterns/tr-random-grey-variations.png');
   margin-bottom: 2em;
-  /* or @screen-sm */
-  /* or @screen-md */
+  min-height: 150px;
+  /*
+		.author-pic {
+			display:block;
+			float: left;
+			width: 20%;
+			margin-top: 1em;
+			margin-bottom: 1em;
+			position: relative;
+			@media(min-width: @screen-tablet){
+				margin-top: 0; 
+				margin-bottom: 0;
+				
+			}
+			// refactored author pic to _general.less
+		}
+		.entry-meta-wrap {
+			padding-left: 1em;
+			display:block;
+			//width: 80%;
+			margin-left: 20%;
+			float: left;
+			h1 {
+				font-size: 200%;
+			}
+			// byline stuff was refactored out to _general.less
+		}
+		*/
+}
+@media (min-width: 768px) {
+  .single .hentry header {
+    min-height: 195px;
+  }
 }
 @media (min-width: 768px) {
   .single .hentry header {
@@ -7890,27 +7923,42 @@ textarea.login #login #loginform input[type*="password"] {
   }
 }
 .single .hentry header .author-pic {
-  display: block;
-  float: left;
-  width: 20%;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  position: relative;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 100px;
+  left: 8%;
+  width: 125px;
+  height: 125px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .single .hentry header .author-pic {
-    margin-top: 0;
-    margin-bottom: 0;
+    width: 175px;
+    height: 175px;
   }
 }
-.single .hentry header .entry-meta-wrap {
-  padding-left: 1em;
-  display: block;
-  width: 80%;
+.single .hentry header .entry-title,
+.single .hentry header .byline,
+.single .hentry header .entry-summary {
   float: left;
+  margin: 0 8%;
+  padding-left: 145px;
 }
-.single .hentry header .entry-meta-wrap h1 {
-  font-size: 200%;
+@media (min-width: 992px) {
+  .single .hentry header .entry-title,
+  .single .hentry header .byline,
+  .single .hentry header .entry-summary {
+    padding-left: 195px;
+  }
+}
+.single .hentry header .entry-title {
+  font-size: 175%;
+  padding-top: .5em;
+}
+@media (min-width: 992px) {
+  .single .hentry header .entry-title {
+    font-size: 200%;
+  }
 }
 .single .hentry h2 {
   font-size: 150%;

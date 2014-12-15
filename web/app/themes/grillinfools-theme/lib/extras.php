@@ -224,7 +224,8 @@ function if_featured_image_class($classes) {
 	if ( has_post_thumbnail() && strlen($img = get_the_post_thumbnail( get_the_ID(), array( 150, 150 ) ) ) ) {
 		array_push($classes, 'has-featured-image');
 	} else {
-		$alt_featured = 'featured-random-' . rand(1,5);
+		//$alt_featured = 'featured-random-' . rand(1,5);
+		$alt_featured = 'featured-random-' . (1 + (get_the_ID() % 5));
 		array_push($classes, $alt_featured);
 	}
 	return $classes;

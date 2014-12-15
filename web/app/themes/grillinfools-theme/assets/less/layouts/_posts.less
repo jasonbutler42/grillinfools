@@ -48,9 +48,35 @@
 		background: @gf-red-dark;
 		background-image: url('@{patterns-location}tr-random-grey-variations.png'); 
 		margin-bottom: 2em;
-		
-		@media(min-width: @screen-tablet){padding: 0 5em;}     /* or @screen-sm */
-		@media(min-width: @screen-desktop){padding: 0 6.75em;}    /* or @screen-md */
+		min-height: 150px;
+		@media(min-width: @screen-tablet){min-height: 195px;}
+		@media(min-width: @screen-tablet){padding: 0 5em;}
+		@media(min-width: @screen-desktop){padding: 0 6.75em;}
+		.author-pic {
+			z-index: 1;
+			position: absolute;
+			top: 0;
+			left: 100px;
+			left: 8%;
+			width: 125px;
+			height: 125px;
+			@media(min-width: @screen-desktop){width: 175px; height: 175px;}
+			}
+		.entry-title,
+		.byline,
+		.entry-summary {
+			float: left;
+			margin: 0 8%;
+			padding-left: 145px;
+			@media(min-width: @screen-desktop){padding-left: 195px;}
+		} 
+		.entry-title {
+			font-size: 175%;
+			padding-top: .5em;
+			@media(min-width: @screen-desktop){font-size: 200%;}
+		}
+
+		/*
 		.author-pic {
 			display:block;
 			float: left;
@@ -68,13 +94,15 @@
 		.entry-meta-wrap {
 			padding-left: 1em;
 			display:block;
-			width: 80%;
+			//width: 80%;
+			margin-left: 20%;
 			float: left;
 			h1 {
 				font-size: 200%;
 			}
 			// byline stuff was refactored out to _general.less
 		}
+		*/
 	}
 	h2 {
 		font-size: 150%;
