@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   width="400"
+   height="8"
+   viewbox="0 0 400 8"
+   class="divider-svg"
+   id="svg2">
+  <defs
+     id="defs4" />
+<style type="text/css">
+<![CDATA[
+  .wings {fill:#000000;fill-opacity:1;stroke:none}
+  .line {fill:none;stroke:#000000;stroke-width:1}
+  .ball {fill:#000000;stroke:none;}
+]]>
+</style>
+  <g
+     transform="translate(0,-1044.3622)"
+     id="layer1">
+    <path
+       class="wings"
+       d="m 186.84375,1046.1747 c 0,0 -50.34375,2.6875 -140.34375,2.6875 90,0 140.34375,2.6875 140.34375,2.6875 0,0 4.98697,-2.4986 19.65625,-2.6875 -14.66928,-0.1889 -19.65625,-2.6875 -19.65625,-2.6875 z"
+       id="path2874" />
+    <path
+       class="line"
+       d="m 5,1048.8622 195,0"
+       id="path2870" />
+    <path
+       class="ball"
+       d="m 205,12.5 a 2.5,2.5 0 1 1 -5,0 2.5,2.5 0 1 1 5,0 z"
+       transform="translate(-2.5,1036.3622)"
+       id="path2872" />
+    <use
+       transform="matrix(-1,0,0,1,400,0)"
+       id="use2879"
+       x="0"
+       y="0"
+       width="400"
+       height="20"
+       xlink:href="#path2874" />
+    <use
+       transform="matrix(-1,0,0,1,400,0)"
+       id="use2881"
+       x="0"
+       y="0"
+       width="400"
+       height="20"
+       xlink:href="#path2870" />
+  </g>
+</svg>

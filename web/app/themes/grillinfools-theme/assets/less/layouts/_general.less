@@ -50,11 +50,16 @@
 			opacity: 0.6;
 			position:absolute;
 			bottom: 0;
+			border-radius: 3px;
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+			border-top: 2px dashed darken(@gf-brown-darker, 10%)
 		}
 	}
 	.avatar {
 		width: 100%;
 		height: 100%;
+		border-radius: 3px;
 	}
 }
 
@@ -137,12 +142,12 @@
 		text-decoration: none;
 		color: @gf-background;
 		img {
-			.img-responsive; // make the images scale appropriately 
-			border: 1px solid @border-color;
-			padding: 2px 3px;	
-			margin:auto;
+			//.img-responsive; // make the images scale appropriately 
+			//border: 1px solid @border-color;
+			//padding: 2px 3px;	
+			//margin:auto;
 			@media (min-width: @screen-xs-min) {
-				padding: 4px 6px;	
+			//	padding: 4px 6px;	
   			}
 		}
 		&:before { 
@@ -237,16 +242,7 @@
 					padding-bottom: 1em;
 					margin-bottom: 1em;
 					.featured-image {
-					/*	position:initial;
-						opacity: 1;
-						.img-responsive; // make the images scale appropriately 
-						display:none;
-						border: 1px solid @border-color;
-						padding: 2px 3px;	
-						margin: auto;
-						@media (min-width: @screen-xs-min) {
-							padding: 4px 6px;	
-				  		}*/
+					
 					}
 					.archive-content {
 						.make-row();
@@ -264,15 +260,22 @@
 								opacity: 1;
 								.img-responsive; // make the images scale appropriately 
 								//display:none;
-								border: 1px solid @border-color;
-								padding: 2px 3px;	
+								//border: 1px solid @border-color;
+								border-radius: 3px;
+								padding: 0;
+								box-shadow: 0 0 0 3px white, 0 0 0 4px @border-color;
+								//padding: 2px 3px;	
 								margin: auto;
 								@media (min-width: @screen-xs-min) {
-									padding: 4px 6px;	
+									box-shadow: 0 0 0 6px white, 0 0 0 7px @border-color;
 						  		}
 								&:hover {
 									background: @gf-background;
 									border-color: @gf-red;
+									box-shadow: 0 0 0 3px @gf-background, 0 0 0 4px @gf-red;
+									@media (min-width: @screen-xs-min) {
+										box-shadow: 0 0 0 6px @gf-background, 0 0 0 7px @gf-red;
+							  		}
 								}
 							}
 						}
