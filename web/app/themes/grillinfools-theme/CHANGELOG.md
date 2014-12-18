@@ -1,3 +1,12 @@
+<a name="1.10.18"></a>
+### 1.10.18 (2014-12-17)
+
+
+#### Bug Fixes
+
+* **.comment-author:** reduce size ([01bedac4](http://github.com/jasonbutler42/grillinfools/commit/01bedac4fd89ed6dc6733547da45d265ec6141c6))
+
+
 <a name="1.10.15"></a>
 ### 1.10.15 (2014-12-17)
 
