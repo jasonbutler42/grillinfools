@@ -6723,6 +6723,11 @@ figure.alignnone {
   margin: auto;
   border: 1px solid #d5d5cd;
 }
+.sidebar .adinjwidget img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .home .wrap .content,
 .archive .wrap .content,
 .search .wrap .content,
@@ -7297,7 +7302,7 @@ figure.alignnone {
 @media (min-width: 992px) {
   .home .wrap {
     /* or @screen-md */
-    padding-top: 800px;
+    padding-top: 575px;
   }
 }
 .home .wrap .stage {

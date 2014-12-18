@@ -27,7 +27,7 @@ for ($i=0; $i < $jumbotron_posts; $i++) {
 
 		<div class="featured-image-wrapper">
 			<?php if ( has_post_thumbnail() && strlen($img = get_the_post_thumbnail( get_the_ID(), array( 150, 150 ) ) ) ) : ?>
-				<a href="<?php the_permalink(); ?>"><?php featured_image($post->ID, 1170, 650, 80); ?></a>
+				<a href="<?php the_permalink(); ?>"><?php featured_image($post->ID, 1170, 600, 80); ?></a>
 		    <?php else : ?>
 		      		<a href="<?php the_permalink(); ?>" class="featured-image featured-image-default"></a>
 		   	<?php endif; ?>
