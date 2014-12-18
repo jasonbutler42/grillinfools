@@ -7,8 +7,7 @@
 <section id="comments" class="comments">
   <?php if (have_comments()) : ?>
     <h2 class="comments-number"><?php comments_number( '<i>no comments</i>', '<i>one</i> comment', '<i>%</i> comments' ); ?></h2>
-
-    <!-- <div class="comment-list"> -->
+      
       <?php wp_list_comments(array(
         'style' => 'div', 
         'short_ping' => true,
@@ -16,7 +15,6 @@
         'max_depth' => 2,
         'walker' => new gf_comment_walker()
       )); ?>
-    <!--</div>-->
 
     <?php if (get_comment_pages_count() > 1 && get_option('page_comments')) : ?>
       <nav>

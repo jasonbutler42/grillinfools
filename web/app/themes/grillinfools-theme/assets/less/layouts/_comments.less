@@ -36,7 +36,6 @@
 					color: @gf-blue;
 				}
 			}
-
 			h2 {
 				font-size: 120%;
 				span {}
@@ -53,7 +52,6 @@
 						position: absolute;
 						width:0;
 						height:0;
-
 					}
 					&:before {
 						left: 1em;
@@ -229,7 +227,7 @@
 				}
 			}
 			.comment-respond {
-				border: 1px solid blue;
+				//border: 1px solid blue;
 				overflow: hidden;
 				width: 100%;
 				.comment-reply-title {
@@ -244,15 +242,6 @@
 					}
 				}
 				.comment-form {
-					.comment-notes {}
-					.comment-form-author {}
-					.comment-form-email {}
-					.comment-form-url {}
-					.comment-form-comment textarea {.form-control;}
-					.form-allowed-tags {}
-					.form-submit {}
-					// subscribe to plugin
-					.comment-form-subscription {}
 					.comment-form-author,
 					.comment-form-email,
 					.comment-form-url {
@@ -260,6 +249,26 @@
 						input {
 							.form-control;
 						}
+					}
+					.comment-notes {}
+					.comment-form-author {}
+					.comment-form-email {}
+					.comment-form-url {}
+					.comment-form-comment textarea {
+						.form-control;
+						min-height: 4em;
+					}
+					.form-allowed-tags {}
+					.form-submit {
+						input {
+							.btn;
+							.btn-lg;
+							.btn-success;
+						}
+					}
+					// subscribe to plugin
+					.comment-form-subscriptions {
+						.checkbox;
 					}
 				}
 			}
