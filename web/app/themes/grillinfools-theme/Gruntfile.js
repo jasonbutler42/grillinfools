@@ -200,7 +200,8 @@ module.exports = function(grunt) {
   ]);
   grunt.registerTask('release',[
     'build',
+    'bump-only',
     'changelog',
-    'bump'
+    'bump-commit'
   ]);
 };
