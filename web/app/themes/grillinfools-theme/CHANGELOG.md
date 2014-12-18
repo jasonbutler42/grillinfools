@@ -1,3 +1,12 @@
+<a name="1.10.19"></a>
+### 1.10.19 (2014-12-17)
+
+
+#### Bug Fixes
+
+* **jumbotron:** reduce featured image height ([e78585c6](http://github.com/jasonbutler42/grillinfools/commit/e78585c6e058f76bb564a3f1bdcdcfe3c6433b8f))
+
+
 <a name="1.10.18"></a>
 ### 1.10.18 (2014-12-17)
 
