@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "6ab54b76e1962677c180868cce991dff",
+    "hash": "6ba4cec24af2b4eec6d893ccca937f91",
     "packages": [
         {
             "name": "composer/installers",
@@ -483,29 +483,6 @@
             "homepage": "http://wordpress.org/plugins/fancier-author-box/"
         },
         {
-            "name": "wpackagist-plugin/google-universal-analytics",
-            "version": "2.4.2",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/google-universal-analytics/",
-                "reference": "tags/2.4.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/google-universal-analytics.2.4.2.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "replace": {
-                "wpackagist/google-universal-analytics": "self.version"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/google-universal-analytics/"
-        },
-        {
             "name": "wpackagist-plugin/honeypot-comments",
             "version": "1.1.0",
             "source": {
@@ -576,23 +553,20 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "3.2.1",
+            "version": "3.3",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/3.2.1"
+                "reference": "tags/3.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/jetpack.3.2.1.zip",
+                "url": "http://downloads.wordpress.org/plugin/jetpack.3.3.zip",
                 "reference": null,
                 "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"
-            },
-            "replace": {
-                "wpackagist/jetpack": "self.version"
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/jetpack/"
@@ -645,23 +619,20 @@
         },
         {
             "name": "wpackagist-plugin/raw-html",
-            "version": "1.4.13",
+            "version": "1.4.14",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/raw-html/",
-                "reference": "tags/1.4.13"
+                "reference": "tags/1.4.14"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/raw-html.1.4.13.zip",
+                "url": "http://downloads.wordpress.org/plugin/raw-html.1.4.14.zip",
                 "reference": null,
                 "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"
-            },
-            "replace": {
-                "wpackagist/raw-html": "self.version"
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/raw-html/"
