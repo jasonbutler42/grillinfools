@@ -8036,10 +8036,14 @@ textarea.login #login #loginform input[type*="password"] {
   margin-bottom: 1em;
   border-top: 1px solid #d5d5cd;
 }
+.comments .bypostauthor .comment-author a {
+  font-size: 90%;
+}
 .comments .bypostauthor .comment-author a:after {
   content: " (post author)";
   font-weight: normal;
   color: #1b6183;
+  font-size: 75%;
 }
 .comments h2 {
   font-size: 120%;
