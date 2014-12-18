@@ -1,3 +1,17 @@
+<a name="1.10.20"></a>
+### 1.10.20 (2014-12-17)
+
+
+#### Bug Fixes
+
+* **.adinjwidget:** make ads responsive ([65f7d693](http://github.com/jasonbutler42/grillinfools/commit/65f7d693b24251dfa9c457171ac2747d07e3dd07))
+
+
+#### Features
+
+* **_footer.less:** initial footer styles ([23f31b49](http://github.com/jasonbutler42/grillinfools/commit/23f31b4967919e4ba5c5fcf6ed08e4a6549a570d), closes [#27](http://github.com/jasonbutler42/grillinfools/issues/27))
+
+
 <a name="1.10.19"></a>
 ### 1.10.19 (2014-12-17)
 

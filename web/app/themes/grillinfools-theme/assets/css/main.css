@@ -6128,6 +6128,8 @@ button.close {
 .search .wrap .content .main .hentry .archive-content:after,
 .category .wrap .content .main .hentry .archive-content:before,
 .category .wrap .content .main .hentry .archive-content:after,
+.content-info:before,
+.content-info:after,
 .login:before,
 .login:after,
 .single .hentry header:before,
@@ -6163,6 +6165,7 @@ button.close {
 .archive .wrap .content .main .hentry .archive-content:after,
 .search .wrap .content .main .hentry .archive-content:after,
 .category .wrap .content .main .hentry .archive-content:after,
+.content-info:after,
 .login:after,
 .single .hentry header:after {
   clear: both;
@@ -6635,6 +6638,9 @@ figure.alignnone {
   .content .sponsor {
     display: none !important;
   }
+}
+.content .sponsor img {
+  border-radius: 5px;
 }
 .content .sponsor:before {
   content: "Sponsored Content";
@@ -7283,6 +7289,33 @@ figure.alignnone {
 }
 @media (min-width: 768px) {
   .sidebar {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+.content-info {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.content-info .container {
+  border-top: 2px solid #34728f;
+  border-bottom: 2px solid #34728f;
+  background-color: #89db6a;
+  background-image: url('/app/themes/grillinfools-theme/assets/img/patterns/tr-retina-dust.png');
+}
+.content-info .container a {
+  color: #043750;
+}
+.content-info .container .widget {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .content-info .container .widget {
     float: left;
     width: 33.33333333%;
   }
