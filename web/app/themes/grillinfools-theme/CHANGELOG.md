@@ -1,3 +1,17 @@
+<a name="1.10.24"></a>
+### 1.10.24 (2014-12-18)
+
+
+#### Bug Fixes
+
+* **composer.json:** plugin cleanup ([0aef884d](http://github.com/jasonbutler42/grillinfools/commit/0aef884d5fa191dd2a170803b216fa25229e8bf1), closes [#29](http://github.com/jasonbutler42/grillinfools/issues/29))
+
+
+#### Features
+
+* **GOOGLE_ANALYTICS_ID:** add UA property ([30b63d7c](http://github.com/jasonbutler42/grillinfools/commit/30b63d7cf29250b7343668ccc991636874ba25f3))
+
+
 <a name="1.10.23"></a>
 ### 1.10.23 (2014-12-18)
 
