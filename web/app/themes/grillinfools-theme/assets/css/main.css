@@ -7302,6 +7302,9 @@ figure.alignnone {
 }
 .home .wrap .stage {
   display: none;
+  -webkit-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+          transition: all 0.5s ease;
 }
 @media (min-width: 768px) {
   .home .wrap .stage {
@@ -7367,6 +7370,9 @@ figure.alignnone {
     color: #c9c9c0;
   }
   .home .wrap .stage .carousel .carousel-inner .item .entry-meta-wrap .author-pic {
+    -webkit-transition: all 0.5s ease;
+         -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
     z-index: 1;
     position: absolute;
     top: -75px;
@@ -7411,8 +7417,8 @@ figure.alignnone {
 }
 @media (min-width: 768px) and (min-width: 992px) {
   .home .wrap .stage .carousel .carousel-inner .item .entry-meta-wrap .author-pic {
-    width: 175px;
-    height: 175px;
+    width: 150px;
+    height: 150px;
   }
 }
 @media (min-width: 768px) and (min-width: 992px) {
@@ -7429,7 +7435,7 @@ figure.alignnone {
 }
 @media (min-width: 992px) {
   .home .wrap .stage {
-    height: 800px;
+    height: 575px;
   }
 }
 .home .wrap .content .main {
