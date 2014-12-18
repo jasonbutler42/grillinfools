@@ -198,4 +198,9 @@ module.exports = function(grunt) {
     'modernizr',
     'version'
   ]);
+  grunt.registerTask('release',[
+    'build',
+    'changelog',
+    'bump'
+  ]);
 };
