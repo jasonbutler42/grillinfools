@@ -136,7 +136,7 @@ module.exports = function(grunt) {
       options: {
         files: ['package.json','style.css','bower.json'],
         updateConfigs: [],
-        commit: false,
+        commit: true,
         commitMessage: 'Release v%VERSION%',
         commitFiles: ['-a'],
         createTag: true,

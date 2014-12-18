@@ -1,4 +1,15 @@
 <a name="1.10.15"></a>
+### 1.10.15 (2014-12-17)
+
+
+#### Features
+
+* **comments:**
+  * final changes for response ([2b78bf13](http://github.com/jasonbutler42/grillinfools/commit/2b78bf13503afd4cbb6a3e0be68d4d02662512c3), closes [#25](http://github.com/jasonbutler42/grillinfools/issues/25))
+  * style comments ([b320e1f9](http://github.com/jasonbutler42/grillinfools/commit/b320e1f9bce9c142bde1deed0d65cc098ec74205))
+
+
+<a name="1.10.15"></a>
 ### 1.10.15 (2014-12-15)
 
 
