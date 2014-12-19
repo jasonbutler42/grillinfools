@@ -262,3 +262,13 @@ function exclude_category_home( $query ) {
 }
 add_filter( 'pre_get_posts', 'exclude_category_home' );
 
+
+
+
+// Get src URL from avatar <img> tag
+function get_avatar_url($author_id, $size){
+    $get_avatar = get_avatar( $author_id, $size );
+    preg_match("/src='(.*?)'/i", $get_avatar, $matches);
+    return ( $matches[1] );
+}
+

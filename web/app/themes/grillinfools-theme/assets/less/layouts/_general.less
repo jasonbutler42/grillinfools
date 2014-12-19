@@ -5,7 +5,7 @@
 .byline {
 	margin-bottom: 1em;
 	.meta {
-		white-space: nowrap;
+		//white-space: nowrap;
 		clear:both;
 		float: left;
 		i {
@@ -37,6 +37,31 @@
 	float: left;
 }
 .author-pic {
+	.author-pic-slice {
+		display: block;
+		overflow: hidden;
+		float:left;
+		height: 100%;
+		background-position: 50% 0;
+		background-size: cover;
+		border-left: 1px solid @border-color;
+		//border-radius: 10px;
+		&:first-of-type {
+			border-left: none;
+			border-radius: 3px;
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+		&:last-of-type {
+			border-radius: 3px;
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+		.avatar {
+			width: auto;
+			margin-left: -50%;
+		}
+	}
 	.meta-author {
 		display: none;
 		@media(min-width: @screen-tablet) {

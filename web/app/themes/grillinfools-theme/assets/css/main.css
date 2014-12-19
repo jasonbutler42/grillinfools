@@ -6472,7 +6472,6 @@ figure.alignnone {
   margin-bottom: 1em;
 }
 .byline .meta {
-  white-space: nowrap;
   clear: both;
   float: left;
   /* or @screen-sm */
@@ -6509,6 +6508,31 @@ figure.alignnone {
 }
 .entry-summary {
   float: left;
+}
+.author-pic .author-pic-slice {
+  display: block;
+  overflow: hidden;
+  float: left;
+  height: 100%;
+  background-position: 50% 0;
+  -webkit-background-size: cover;
+          background-size: cover;
+  border-left: 1px solid #bbbbbb;
+}
+.author-pic .author-pic-slice:first-of-type {
+  border-left: none;
+  border-radius: 3px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.author-pic .author-pic-slice:last-of-type {
+  border-radius: 3px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.author-pic .author-pic-slice .avatar {
+  width: auto;
+  margin-left: -50%;
 }
 .author-pic .meta-author {
   display: none;
@@ -7512,12 +7536,14 @@ figure.alignnone {
   position: absolute;
   display: block;
   width: 75px;
+  height: 75px;
   left: 15px;
   bottom: -37.5px;
 }
 @media (min-width: 768px) {
   .home .wrap .content .main .featured-post .featured-image-wrapper .author-pic {
     width: 100px;
+    height: 100px;
     left: 20px;
     bottom: -50px;
   }

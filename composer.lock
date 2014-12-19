@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "6ba4cec24af2b4eec6d893ccca937f91",
+    "hash": "89364eee22d6c0da8357861e1b2ad974",
     "packages": [
         {
             "name": "composer/installers",
@@ -412,6 +412,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/askapache-debug-viewer/"
+        },
+        {
+            "name": "wpackagist-plugin/co-authors-plus",
+            "version": "3.1.1",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/co-authors-plus/",
+                "reference": "tags/3.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/co-authors-plus.3.1.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/co-authors-plus/"
         },
         {
             "name": "wpackagist-plugin/easyrecipe",

@@ -1,11 +1,7 @@
 <?php while (have_posts()) : the_post(); ?>
-  
   <article <?php post_class(); ?>>
     <header>
-      <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>" rel="author" class="author-pic">
-        <?php echo get_avatar( get_the_author_meta( 'ID' ), 175 ); ?>
-        <span class="meta meta-author vcard"><i><?php echo get_the_author(); ?></i></span>
-      </a>
+<?php get_template_part('templates/author-image'); ?>
       <div class="entry-meta-wrap">
         <h1 class="entry-title"><?php the_title(); ?></h1>
         <?php get_template_part('templates/entry-meta'); ?>
