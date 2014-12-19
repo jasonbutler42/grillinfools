@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "f5c49c9b3c7e0dca8ad06a5e95aded46",
+    "hash": "3f815325893580731eba524df95fac1e",
     "packages": [
         {
             "name": "composer/installers",
@@ -240,10 +240,10 @@
         },
         {
             "name": "wordpress/wordpress",
-            "version": "4.0.1",
+            "version": "4.1",
             "dist": {
                 "type": "zip",
-                "url": "https://wordpress.org/wordpress-4.0.1.zip",
+                "url": "https://wordpress.org/wordpress-4.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -323,23 +323,20 @@
         },
         {
             "name": "wpackagist-plugin/all-in-one-seo-pack",
-            "version": "2.2.3.1",
+            "version": "2.2.4",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/all-in-one-seo-pack/",
-                "reference": "tags/2.2.3.1"
+                "reference": "tags/2.2.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/all-in-one-seo-pack.2.2.3.1.zip",
+                "url": "http://downloads.wordpress.org/plugin/all-in-one-seo-pack.2.2.4.zip",
                 "reference": null,
                 "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"
-            },
-            "replace": {
-                "wpackagist/all-in-one-seo-pack": "self.version"
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/all-in-one-seo-pack/"

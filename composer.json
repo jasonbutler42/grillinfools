@@ -45,11 +45,11 @@
       "type": "package",
       "package": {
         "name": "wordpress/wordpress",
-        "version": "4.0.1",
+        "version": "4.1",
         "type": "webroot",
         "dist": {
           "type": "zip",
-          "url": "https://wordpress.org/wordpress-4.0.1.zip"
+          "url": "https://wordpress.org/wordpress-4.1.zip"
         },
         "require" : {
           "fancyguy/webroot-installer": "1.1.0"
@@ -59,14 +59,14 @@
   ],
   "require": {
     "php": ">=5.3.2",
-    "wordpress/wordpress": "4.0.1",
+    "wordpress/wordpress": "4.1",
     "fancyguy/webroot-installer": "1.1.0",
     "composer/installers": "v1.0.12",
     "vlucas/phpdotenv": "~1.0.6",
     "wpackagist-plugin/ad-injection": "1.2.0.17",
     "wpackagist-plugin/advanced-responsive-video-embedder": "5.1.1",
     "wpackagist-plugin/akismet": "3.0.4",
-    "wpackagist-plugin/all-in-one-seo-pack": "2.2.3.1",
+    "wpackagist-plugin/all-in-one-seo-pack": "2.2.4",
     "wpackagist-plugin/all-in-one-wp-security-and-firewall": "3.8.7",
     "wpackagist-plugin/ap-honeypot": "1.4",
     "wpackagist-plugin/askapache-debug-viewer": "3.1",
