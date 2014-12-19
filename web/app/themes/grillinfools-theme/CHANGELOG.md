@@ -1,3 +1,12 @@
+<a name="1.10.25"></a>
+### 1.10.25 (2014-12-18)
+
+
+#### Features
+
+* **.author-pic:** support multiple authors ([31876913](http://github.com/jasonbutler42/grillinfools/commit/318769134e1652d01322d458b9838ff2e6fbdacb))
+
+
 <a name="1.10.24"></a>
 ### 1.10.24 (2014-12-18)
 
