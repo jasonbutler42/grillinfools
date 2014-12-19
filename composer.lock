@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "89364eee22d6c0da8357861e1b2ad974",
+    "hash": "f5c49c9b3c7e0dca8ad06a5e95aded46",
     "packages": [
         {
             "name": "composer/installers",
@@ -346,7 +346,7 @@
         },
         {
             "name": "wpackagist-plugin/all-in-one-wp-security-and-firewall",
-            "version": "3.8.6",
+            "version": "v3.8.7",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/all-in-one-wp-security-and-firewall/",
@@ -360,9 +360,6 @@
             },
             "require": {
                 "composer/installers": "~1.0"
-            },
-            "replace": {
-                "wpackagist/all-in-one-wp-security-and-firewall": "self.version"
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/all-in-one-wp-security-and-firewall/"
