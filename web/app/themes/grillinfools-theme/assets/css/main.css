@@ -6554,6 +6554,10 @@ figure.alignnone {
     border-top-right-radius: 0;
     border-top: 2px dashed #4c2900;
   }
+  .author-pic .meta-author.meta-authors {
+    background-color: white;
+    color: #4c4c4c;
+  }
 }
 .author-pic .avatar {
   width: 100%;

@@ -8,7 +8,7 @@ $author_count = count($coauthors);
     $avatar_url = get_avatar_url ( $coauthor->user_email, $size = '175' ); 
     echo '<div class="author-pic-slice" style="width: ' . 100 / $author_count . '%; background-image:url(' . $avatar_url . ');"></div>';
   endforeach;  ?>
-  <span class="meta meta-author vcard"><i><?php coauthors_posts_links(); ?></i></span>
+  <span class="meta meta-author meta-authors vcard"><i><?php coauthors_posts_links(); ?></i></span>
   </div>
 <?php else: ?>
       <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>" rel="author" class="author-pic">
