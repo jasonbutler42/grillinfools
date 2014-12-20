@@ -18,7 +18,7 @@ set :log_level, :info
 # Linked files
 set :linked_files, %w{.env web/.htaccess web/robots.txt}
 # Linked directories
-set :linked_dirs, %w{web/app/uploads web/app/aiowps_backups web/app/plugins/ad-injection-data}
+set :linked_dirs, %w{web/app/uploads web/app/aiowps_backups web/app/plugins/ad-injection-data web/app/plugins/fanciest-author-box}
 
 namespace :deploy do
   desc 'Restart application'
