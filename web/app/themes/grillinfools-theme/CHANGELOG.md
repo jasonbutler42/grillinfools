@@ -1,3 +1,12 @@
+<a name="1.10.28"></a>
+### 1.10.28 (2014-12-20)
+
+
+#### Features
+
+* **.meta-author:** minor styles ([39132609](http://github.com/jasonbutler42/grillinfools/commit/3913260917b0638d5330d1b04d7c190e3db21470))
+
+
 <a name="1.10.27"></a>
 ### 1.10.27 (2014-12-20)
 
