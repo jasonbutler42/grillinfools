@@ -6509,7 +6509,16 @@ figure.alignnone {
 .entry-summary {
   float: left;
 }
-.author-pic .author-pic-slice {
+.author-pic,
+a.author-pic {
+  color: white;
+}
+.author-pic a,
+a.author-pic a {
+  color: white;
+}
+.author-pic .author-pic-slice,
+a.author-pic .author-pic-slice {
   display: block;
   overflow: hidden;
   float: left;
@@ -6519,47 +6528,57 @@ figure.alignnone {
           background-size: cover;
   border-left: 1px solid #bbbbbb;
 }
-.author-pic .author-pic-slice:first-of-type {
+.author-pic .author-pic-slice:first-of-type,
+a.author-pic .author-pic-slice:first-of-type {
   border-left: none;
   border-radius: 3px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.author-pic .author-pic-slice:last-of-type {
+.author-pic .author-pic-slice:last-of-type,
+a.author-pic .author-pic-slice:last-of-type {
   border-radius: 3px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-.author-pic .author-pic-slice .avatar {
+.author-pic .author-pic-slice .avatar,
+a.author-pic .author-pic-slice .avatar {
   width: auto;
   margin-left: -50%;
 }
-.author-pic .meta-author {
+.author-pic .meta-author,
+a.author-pic .meta-author {
   display: none;
 }
 @media (min-width: 768px) {
-  .author-pic .meta-author {
+  .author-pic .meta-author,
+  a.author-pic .meta-author {
     display: block;
     width: 100%;
     padding: 5px;
-    background: #000000;
     background: #043750;
-    color: #ffffff;
     text-align: center;
-    opacity: 0.6;
+    opacity: 0.8;
     position: absolute;
     bottom: 0;
     border-radius: 3px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     border-top: 2px dashed #4c2900;
+    font-weight: bold;
   }
-  .author-pic .meta-author.meta-authors {
-    background-color: white;
-    color: #4c4c4c;
+  .author-pic .meta-author.meta-authors,
+  a.author-pic .meta-author.meta-authors {
+    font-weight: normal;
+    color: #c9c9c0;
+  }
+  .author-pic .meta-author.meta-authors a,
+  a.author-pic .meta-author.meta-authors a {
+    font-weight: bold;
   }
 }
-.author-pic .avatar {
+.author-pic .avatar,
+a.author-pic .avatar {
   width: 100%;
   height: 100%;
   border-radius: 3px;
@@ -7432,7 +7451,7 @@ figure.alignnone {
     padding-bottom: 1em;
     color: #c9c9c0;
   }
-  .home .wrap .stage .carousel .carousel-inner .item .entry-meta-wrap a {
+  .home .wrap .stage .carousel .carousel-inner .item .entry-meta-wrap .entry-title a {
     color: #c9c9c0;
   }
   .home .wrap .stage .carousel .carousel-inner .item .entry-meta-wrap .author-pic {

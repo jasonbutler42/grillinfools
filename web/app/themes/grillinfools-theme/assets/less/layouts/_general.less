@@ -36,7 +36,13 @@
 .entry-summary {
 	float: left;
 }
-.author-pic {
+
+.author-pic,
+a.author-pic {
+	color: white;
+	a {
+		color: white;
+	}
 	.author-pic-slice {
 		display: block;
 		overflow: hidden;
@@ -68,20 +74,21 @@
 			display: block;
 			width: 100%;
 			padding: 5px;
-			background: #000000;
 			background: @gf-blue-darker;
-			color: #ffffff;
+			
 			text-align: center;
-			opacity: 0.6;
+			opacity: 0.8;
 			position:absolute;
 			bottom: 0;
 			border-radius: 3px;
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
 			border-top: 2px dashed darken(@gf-brown-darker, 10%);
+			font-weight: bold;
 			&.meta-authors {
-				background-color: white;
-				color: @text-color;
+				font-weight: normal;
+				color: @text-color-on-red;
+				a {font-weight:bold;}
 			}
 		}
 	}
