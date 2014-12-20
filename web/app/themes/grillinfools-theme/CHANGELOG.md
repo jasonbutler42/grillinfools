@@ -1,3 +1,12 @@
+<a name="1.10.26"></a>
+### 1.10.26 (2014-12-20)
+
+
+#### Features
+
+* **wordpress:** upgrade wordpress to 4.1 ([e758897c](http://github.com/jasonbutler42/grillinfools/commit/e758897c2aaebe991f74ee483cf78bca6d0c628c))
+
+
 <a name="1.10.25"></a>
 ### 1.10.25 (2014-12-18)
 
