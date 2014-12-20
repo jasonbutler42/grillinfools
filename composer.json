@@ -63,7 +63,7 @@
     "fancyguy/webroot-installer": "1.1.0",
     "composer/installers": "v1.0.12",
     "vlucas/phpdotenv": "~1.0.6",
-    "wpackagist-plugin/ad-injection": "1.2.0.17",
+    "wpackagist-plugin/ad-injection": "1.2.0.18",
     "wpackagist-plugin/advanced-responsive-video-embedder": "5.1.1",
     "wpackagist-plugin/akismet": "3.0.4",
     "wpackagist-plugin/all-in-one-seo-pack": "2.2.4",
