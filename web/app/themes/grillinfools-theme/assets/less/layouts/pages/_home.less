@@ -60,7 +60,7 @@
 								padding-bottom: 1em;
 								color: @text-color-on-red;
 								.entry-title a { // article title
-									color: @text-color-on-red;
+									
 								}
 								.author-pic {
 									transition: all 0.5s ease;
@@ -80,7 +80,11 @@
 									float: left;
 									margin: 0 8%;
 									padding-left: 145px;
+									font-weight: normal;
 									@media(min-width: @screen-desktop){padding-left: 195px;}
+									a {
+										color: @text-color-on-red;
+									}
 								} 
 								.entry-title {
 									font-size: 175%;
@@ -135,7 +139,10 @@
 							display:block;
 							.author-pic-sizing(@phone-avatar);
 							@media(min-width: @screen-tablet) {.author-pic-sizing(@tablet-avatar);}
-							// refactored author pic to _general.less
+							// refactored .author-pic to _general.less
+							.meta-authors {
+								font-size: 80%;
+							}
 						}
 					}
 					.entry-meta-wrap {

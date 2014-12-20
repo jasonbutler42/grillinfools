@@ -24,24 +24,9 @@ for ($i=0; $i < $jumbotron_posts; $i++) {
 		    <?php else : ?>
 		      		<a href="<?php the_permalink(); ?>" class="featured-image featured-image-default"></a>
 		   	<?php endif; ?>
-      		 	
     	</div>
 	    <div class="entry-meta-wrap">
-
-
 <?php get_template_part('templates/author-image'); ?>
-
-
-
-	    
-
-<!--
-	    	<a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>" rel="author" class="author-pic">
-	        	<?php echo get_avatar( get_the_author_meta( 'ID' ), 175 ); ?>
-	        	<span class="meta meta-author vcard"><i><?php echo get_the_author(); ?></i></span>
-    		</a>  
-	-->    
-
 	        <h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 	        <?php get_template_part('templates/entry-meta'); ?>
 	    </div>

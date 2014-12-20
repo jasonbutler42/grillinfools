@@ -4,5 +4,4 @@
 	      <?php else : ?>
 	      		<div class="featured-image featured-image-default"></div>
         	<?php endif; ?>
-    	<?php //endif; ?>
       <?php endwhile; ?>

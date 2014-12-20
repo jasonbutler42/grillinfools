@@ -1,10 +1,6 @@
 <div class="byline">
-<?php if ( function_exists( 'coauthors_posts_links' ) ) : ?>
-	<?php if ( count( get_coauthors( get_the_id() ) ) > 1 ): ?>
-<span class="meta meta-author vcard"><?php echo __('authors', 'roots'); ?> <i><?php coauthors_posts_links(); ?></i></span>
-	<?php else: ?>
-<span class="meta meta-author vcard"><?php echo __('author', 'roots'); ?> <i><?php coauthors_posts_links(); ?></i></span>
-	<?php endif; ?>
+<?php if ( function_exists( 'coauthors_posts_links' ) && count( get_coauthors( get_the_id() ) ) > 1) : ?>
+<span class="meta meta-author meta-authors vcard"><?php echo __('authors', 'roots'); ?> <i><?php coauthors_posts_links(); ?></i></span>
 <?php else: ?>
     <span class="meta meta-author vcard"><?php echo __('author', 'roots'); ?> <i><?php the_author_posts_link(); ?></i></span>
 <?php endif; ?>
