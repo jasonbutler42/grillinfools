@@ -6569,9 +6569,11 @@ a.author-pic .meta-author {
     border-top-right-radius: 0;
     border-top: 2px dashed #4c2900;
     font-weight: bold;
+    font-size: 90%;
   }
   .author-pic .meta-author.meta-authors,
   a.author-pic .meta-author.meta-authors {
+    font-size: 80%;
     font-weight: normal;
     color: #c9c9c0;
   }
@@ -7576,9 +7578,6 @@ a.author-pic .avatar {
     left: 20px;
     bottom: -50px;
   }
-}
-.home .wrap .content .main .featured-post .featured-image-wrapper .author-pic .meta-authors {
-  font-size: 80%;
 }
 .home .wrap .content .main .featured-post .entry-meta-wrap {
   margin-left: 105px;
