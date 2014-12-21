@@ -92,9 +92,24 @@
 			@media(min-width: @screen-tablet){margin-left: 3em;}     /* or @screen-sm */
 			@media(min-width: @screen-desktop){margin-left: 5em;}    /* or @screen-md */
 		}
+
+		/*******************************/
+		/*     Fanciest Author Box     */  
+		/*******************************/
+
 		.ts-fab-wrapper {
+			.ts-fab-list {
+				li a {
+					border-top-left-radius: 3px;
+					border-top-right-radius: 3px;
+				}
+			}
 			.ts-fab-tab {
 				border-radius: 3px;
+				border-top-left-radius: 0;
+				.ts-fab-avatar {
+					margin-bottom: 1em;
+				}
 			}
 			img {
 				box-shadow: none;

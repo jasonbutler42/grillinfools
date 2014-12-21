@@ -7971,6 +7971,11 @@ textarea.login #login #loginform input[type*="password"] {
 .single .hentry .entry-content figure.wp-caption {
   border: none;
 }
+.single .hentry {
+  /*******************************/
+  /*     Fanciest Author Box     */
+  /*******************************/
+}
 .single .hentry header {
   position: relative;
   -webkit-transition: all 0.5s ease;
@@ -8091,8 +8096,16 @@ textarea.login #login #loginform input[type*="password"] {
     margin-left: 5em;
   }
 }
+.single .hentry .ts-fab-wrapper .ts-fab-list li a {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
 .single .hentry .ts-fab-wrapper .ts-fab-tab {
   border-radius: 3px;
+  border-top-left-radius: 0;
+}
+.single .hentry .ts-fab-wrapper .ts-fab-tab .ts-fab-avatar {
+  margin-bottom: 1em;
 }
 .single .hentry .ts-fab-wrapper img {
   -webkit-box-shadow: none;
