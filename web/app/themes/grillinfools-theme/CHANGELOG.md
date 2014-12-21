@@ -1,3 +1,12 @@
+<a name="1.10.30"></a>
+### 1.10.30 (2014-12-21)
+
+
+#### Features
+
+* **.meta-author:** author pics ([cf570701](http://github.com/jasonbutler42/grillinfools/commit/cf570701edb67f7c243dec3dd429c81d9355a939), closes [#33](http://github.com/jasonbutler42/grillinfools/issues/33))
+
+
 <a name="1.10.29"></a>
 ### 1.10.29 (2014-12-20)
 
