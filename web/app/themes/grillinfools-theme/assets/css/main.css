@@ -8255,10 +8255,9 @@ textarea.login #login #loginform input[type*="password"] {
 .single .hentry .ts-fab-wrapper .ts-fab-tab {
   border-radius: 3px;
   border-top-left-radius: 0;
-  padding-bottom: 2em;
 }
 .single .hentry .ts-fab-wrapper .ts-fab-tab .ts-fab-avatar {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 .single .hentry .ts-fab-wrapper img {
   -webkit-box-shadow: none;
