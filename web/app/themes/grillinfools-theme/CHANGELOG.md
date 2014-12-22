@@ -1,3 +1,13 @@
+<a name="1.10.34"></a>
+### 1.10.34 (2014-12-22)
+
+
+#### Features
+
+* **.home-widget:** widget box on home page ([addda9e1](http://github.com/jasonbutler42/grillinfools/commit/addda9e1e0d46efd6826af1afab691b9275dc7ce))
+* **require:** recent posts from category widget ([5063ebfb](http://github.com/jasonbutler42/grillinfools/commit/5063ebfb52bf1ddf7f3469dc19dc04e0f1a035be))
+
+
 <a name="1.10.33"></a>
 ### 1.10.33 (2014-12-22)
 
