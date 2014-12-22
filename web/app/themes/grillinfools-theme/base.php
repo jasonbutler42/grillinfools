@@ -14,7 +14,11 @@
     <div class="wrap container" role="document">
     <?php if(is_home()):  ?>
     <?php get_template_part('templates/jumbotron'); ?>
+    <div class="home-widget">
+    <?php dynamic_sidebar('home-widget'); ?>
+    </div>
     <?php endif;?>
+
       <div class="content">
       <?php if (!is_category() && !is_search() && !is_archive() && !is_home()): ?>
       <?php get_template_part('templates/featured-image'); ?>

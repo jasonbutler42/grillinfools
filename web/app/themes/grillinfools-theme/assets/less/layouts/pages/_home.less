@@ -101,6 +101,35 @@
 				height: 575px;
 			}
 		}
+		.home-widget {
+			display: none;
+			@media(min-width: @screen-tablet) {
+				display: inline-block;
+				.container;
+				.make-row();
+				padding-bottom: 2em;
+				.widget {
+					.make-sm-column(3);
+					h3 {
+						border-top: 1px solid @border-color;
+						border-bottom: 1px solid @border-color;
+						text-align: center;
+						text-transform: uppercase;
+						font-size: 80%;
+						padding: .5em 0;
+						@media(min-width: @screen-desktop) {
+							font-size: 100%;
+						}
+					}
+					ul {
+						list-style: none;
+						padding: 0;
+						text-align: center;
+					}
+				}
+			}
+			
+		}
 	 	.content {
 	 		.main {
 				/***********************************************/
