@@ -236,7 +236,7 @@ function if_featured_image_class($classes) {
 /****************************************/
 
 function jumbotron_number() {
-	/* set number of slides in jumbortron - this should probably be done with a plugin or something */
+	/* set number of slides in jumbotron - this should probably be done with a plugin or something */
 	$jumbotron_number = 5;
 	return $jumbotron_number;
 }
@@ -248,7 +248,6 @@ function featured_category() {
 }
 
 function exclude_category_home( $query ) {
-
 	// Set the category to be listed on the front page	
 	$featured = featured_category();
 	$featured_category_id = get_cat_ID($featured);
@@ -263,12 +262,9 @@ function exclude_category_home( $query ) {
 add_filter( 'pre_get_posts', 'exclude_category_home' );
 
 
-
-
 // Get src URL from avatar <img> tag
 function get_avatar_url($author_id, $size){
     $get_avatar = get_avatar( $author_id, $size );
     preg_match("/src='(.*?)'/i", $get_avatar, $matches);
     return ( $matches[1] );
 }
-

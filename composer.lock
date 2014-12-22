@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "96bffc95aa0c63376d47754ebe366f6c",
+    "hash": "90e30394f2f2968d5b13d09d015fa6ed",
     "packages": [
         {
             "name": "composer/installers",
@@ -130,6 +130,20 @@
             "description": "A composer installer for libraries that live in an application webroot.",
             "homepage": "http://fancyguy.github.com/webroot-installer/",
             "time": "2013-03-15 17:51:14"
+        },
+        {
+            "name": "jasonbutler42/pinterest-pin-it",
+            "version": "1.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/jasonbutler42/pinterest-pin-it/blob/master/pinterest-pin-it.zip?raw=true",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "v1.0.12"
+            },
+            "type": "wordpress-plugin"
         },
         {
             "name": "ooyala/ooyala-wordpress-plugin",

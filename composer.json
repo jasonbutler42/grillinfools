@@ -44,6 +44,21 @@
     {
       "type": "package",
       "package": {
+        "name": "jasonbutler42/pinterest-pin-it",
+        "version": "1.0.0",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://github.com/jasonbutler42/pinterest-pin-it/blob/master/pinterest-pin-it.zip?raw=true"
+        },
+        "require" : {
+          "composer/installers": "v1.0.12"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
         "name": "wordpress/wordpress",
         "version": "4.1",
         "type": "webroot",
@@ -77,6 +92,7 @@
     "wpackagist-plugin/infinite-scroll": "2.6.2",
     "wpackagist-plugin/iq-block-country": "1.1.15",
     "wpackagist-plugin/jetpack": "3.3",
+    "jasonbutler42/pinterest-pin-it": "1.0.0",
     "ooyala/ooyala-wordpress-plugin": "1.0",
     "wpackagist-plugin/page-links-to": "2.9.4",
     "wpackagist-plugin/raw-html": "1.4.14",

@@ -7966,6 +7966,8 @@ textarea.login #login #loginform input[type*="password"] {
   display: initial;
   border: none;
   padding: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 .single .hentry .entry-content img.wp-caption,
 .single .hentry .entry-content figure.wp-caption {
