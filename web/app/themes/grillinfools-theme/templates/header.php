@@ -1,4 +1,3 @@
-<a href="https://plus.google.com/+Grillinfools1" rel="publisher"></a>
 <?php if ( has_post_thumbnail() && strlen($img = get_the_post_thumbnail( get_the_ID(), array( 150, 150 ) ) ) ) : ?>
 <header class="banner navbar navbar-default navbar-static-top navbar-mobile" role="banner" style="background-image: url(<?php echo featured_image($post->ID, 768, 600, 60, true); ?>);">
 <?php else : ?>

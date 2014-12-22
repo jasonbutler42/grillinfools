@@ -1,9 +1,6 @@
 .banner {
-	//border-bottom: 3px solid brown;
 	background: none;
-	// tagline
 	.tagline {
-		//transition: all 0.5s ease-in;
 		font-family: 'fawn_script';
 		color: @gf-red;
 		font-size: 200%;
@@ -15,27 +12,15 @@
 		margin-bottom:0;
 		.text-shadow(0 1px 1px #000000);
 		background: rgba(255,255,255,0.2);
-		border: 1px solid white;
-		
-		/* experimental */
-
-		//background: radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
-		border: none;
-
-		
-		/****************/
-		
-		@media(min-width: @screen-tablet){ 		/* or @screen-sm */
+		border-radius: 5px;
+		@media(min-width: @screen-tablet){
 			font-size: 170%;
 			text-align: right;
 			padding-top: 0;
 			background: none;
-			border: none;
-			//.has-featured-image & {.text-shadow(0 1px 1px #000000);}
-			//.text-shadow(0 1px 1px #000000);
-			
+			border: none;			
 		}     
-		@media(min-width: @screen-desktop){font-size: 200%}    /* or @screen-md */
+		@media(min-width: @screen-desktop){font-size: 200%}
 	}
 	.navbar-toggle {
 		margin-top: 42px;
@@ -48,14 +33,14 @@
 		width: 150px;
 		transition: all 0.5s ease-in;
 		margin-top: 1em;
-		@media(min-width: @screen-tablet){		/* or @screen-sm */
+		@media(min-width: @screen-tablet){
 			margin-top: 0;
 			&:hover {
 				height: 120px;
 				padding-top: 10px;
 			}
 		}     
-		@media(min-width: @screen-desktop){		/* or @screen-md */
+		@media(min-width: @screen-desktop){
 			width:200px; 
 			height: 186px;
 			
@@ -74,13 +59,10 @@
 			 	&:hover {
 			 		.grate path {
   						fill: #444444;
-  						//fill: none;
-  						
   						//filter: url(#pictureFilter);
 			 		}
 			 		.letters path {
 			 			fill: @gf-red-light;
-
 			 		}
 			 		.letter-outline path {
 			 			
@@ -89,7 +71,6 @@
 
 			 		}
 			 	}
-			 	//display:none;
 			 }
 			 .logo-svg-alt {
 			 	height: 100%;
@@ -98,7 +79,6 @@
 		}
 	}
 	&.navbar-mobile {
-		//background: white;
 		.hidden-sm;
 		.hidden-md;
 		.hidden-lg;
