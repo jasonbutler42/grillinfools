@@ -1,3 +1,12 @@
+<a name="1.10.32"></a>
+### 1.10.32 (2014-12-22)
+
+
+#### Bug Fixes
+
+* **.ts-fab-tab:** author image spacing ([24e3cbf4](http://github.com/jasonbutler42/grillinfools/commit/24e3cbf458045179c62d0640470c74de4b3fd605))
+
+
 <a name="1.10.31"></a>
 ### 1.10.31 (2014-12-22)
 
