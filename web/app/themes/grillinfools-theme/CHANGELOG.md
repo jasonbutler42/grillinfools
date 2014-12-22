@@ -1,3 +1,12 @@
+<a name="1.10.33"></a>
+### 1.10.33 (2014-12-22)
+
+
+#### Bug Fixes
+
+* **ts-fab-tab:** finicky things ([2e57e22e](http://github.com/jasonbutler42/grillinfools/commit/2e57e22efd717099ca8279fb2b89a37f5c4c55d7))
+
+
 <a name="1.10.32"></a>
 ### 1.10.32 (2014-12-22)
 
