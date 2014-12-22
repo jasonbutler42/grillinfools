@@ -7019,6 +7019,9 @@ a.author-pic .avatar {
     width: 33.33333333%;
   }
 }
+.admin-bar #fsb-social-bar.fsb-fixed {
+  top: 32px;
+}
 .banner {
   background: none;
 }

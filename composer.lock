@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "90e30394f2f2968d5b13d09d015fa6ed",
+    "hash": "03f6fba2e3c19289a0e1465117178615",
     "packages": [
         {
             "name": "composer/installers",
@@ -130,20 +130,6 @@
             "description": "A composer installer for libraries that live in an application webroot.",
             "homepage": "http://fancyguy.github.com/webroot-installer/",
             "time": "2013-03-15 17:51:14"
-        },
-        {
-            "name": "jasonbutler42/pinterest-pin-it",
-            "version": "1.0.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/jasonbutler42/pinterest-pin-it/blob/master/pinterest-pin-it.zip?raw=true",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "v1.0.12"
-            },
-            "type": "wordpress-plugin"
         },
         {
             "name": "ooyala/ooyala-wordpress-plugin",
@@ -483,6 +469,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/easysnippet/"
+        },
+        {
+            "name": "wpackagist-plugin/floating-social-bar",
+            "version": "1.1.5",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/floating-social-bar/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/floating-social-bar.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/floating-social-bar/"
         },
         {
             "name": "wpackagist-plugin/honeypot-comments",
