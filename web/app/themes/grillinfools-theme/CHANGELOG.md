@@ -1,3 +1,20 @@
+<a name="1.10.31"></a>
+### 1.10.31 (2014-12-22)
+
+
+#### Bug Fixes
+
+* **.ts-fab-wrapper:** minor styles for Fanciest Author Box plugin ([440229a5](http://github.com/jasonbutler42/grillinfools/commit/440229a515dba9b2be6ea04cc1a16e42c394fa4a))
+* **pinterest.php:** remove bad call to missing file ([3c53e65d](http://github.com/jasonbutler42/grillinfools/commit/3c53e65d20639e64f6bac68b36786db3137d6dac))
+
+
+#### Features
+
+* **floating-social-bar:** add FSB ([7d639839](http://github.com/jasonbutler42/grillinfools/commit/7d639839448d06bc353fd2ec0b51481a7069755a))
+* **pages:** page template ([754aaeaf](http://github.com/jasonbutler42/grillinfools/commit/754aaeaf6d84c776a3869c4938238fad1dd39477), closes [#26](http://github.com/jasonbutler42/grillinfools/issues/26))
+* **pinterest:** image links ([a44bbb8b](http://github.com/jasonbutler42/grillinfools/commit/a44bbb8badda5f35b6b2558e9ffe06be0a33e818))
+
+
 <a name="1.10.30"></a>
 ### 1.10.30 (2014-12-21)
 
