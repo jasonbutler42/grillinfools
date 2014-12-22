@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "03f6fba2e3c19289a0e1465117178615",
+    "hash": "12309ac67e3f1a58c0e48902e08e3c0d",
     "packages": [
         {
             "name": "composer/installers",
@@ -646,6 +646,26 @@
             "homepage": "http://wordpress.org/plugins/raw-html/"
         },
         {
+            "name": "wpackagist-plugin/recent-posts-by-category-widget",
+            "version": "1.1",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/recent-posts-by-category-widget/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/recent-posts-by-category-widget.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/recent-posts-by-category-widget/"
+        },
+        {
             "name": "wpackagist-plugin/remove-image-links",
             "version": "1.2",
             "source": {
@@ -782,6 +802,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/wp-instagram-widget/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-recent-posts-from-category",
+            "version": "1.1.0",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/wp-recent-posts-from-category/",
+                "reference": "tags/1.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/wp-recent-posts-from-category.1.1.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-recent-posts-from-category/"
         },
         {
             "name": "wpackagist-plugin/wp-smushit",
