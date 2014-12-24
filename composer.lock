@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "12309ac67e3f1a58c0e48902e08e3c0d",
+    "hash": "36cebee5c6fd5fd83cd36e082e9747d0",
     "packages": [
         {
             "name": "composer/installers",
@@ -405,6 +405,46 @@
             "homepage": "http://wordpress.org/plugins/askapache-debug-viewer/"
         },
         {
+            "name": "wpackagist-plugin/attachment-importer",
+            "version": "0.6.0",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/attachment-importer/",
+                "reference": "tags/0.6.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/attachment-importer.0.6.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/attachment-importer/"
+        },
+        {
+            "name": "wpackagist-plugin/broken-link-checker",
+            "version": "1.10.4",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/broken-link-checker/",
+                "reference": "tags/1.10.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/broken-link-checker.1.10.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/broken-link-checker/"
+        },
+        {
             "name": "wpackagist-plugin/co-authors-plus",
             "version": "3.1.1",
             "source": {
@@ -644,26 +684,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/raw-html/"
-        },
-        {
-            "name": "wpackagist-plugin/recent-posts-by-category-widget",
-            "version": "1.1",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/recent-posts-by-category-widget/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/recent-posts-by-category-widget.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/recent-posts-by-category-widget/"
         },
         {
             "name": "wpackagist-plugin/remove-image-links",
