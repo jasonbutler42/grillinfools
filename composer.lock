@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "206b6fe6a8d30096eda67bbb168278fc",
+    "hash": "6fe18c032d0fd1e0391fe317bf1dd2c6",
     "packages": [
         {
             "name": "composer/installers",
@@ -687,6 +687,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/sabre/"
+        },
+        {
+            "name": "wpackagist-plugin/search-and-replace",
+            "version": "2.7.0",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/search-and-replace/",
+                "reference": "tags/2.7.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/search-and-replace.2.7.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/search-and-replace/"
         },
         {
             "name": "wpackagist-plugin/subscribe-to-comments-reloaded",
