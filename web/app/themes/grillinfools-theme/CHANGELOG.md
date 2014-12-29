@@ -1,3 +1,21 @@
+<a name="1.11.1"></a>
+### 1.11.1 (2014-12-29)
+
+
+#### Bug Fixes
+
+* **.divider:** fix for #36 ([cc64eea8](http://github.com/jasonbutler42/grillinfools/commit/cc64eea89b0b8dc848ae663d85f9119f7e46771a), closes [#36](http://github.com/jasonbutler42/grillinfools/issues/36))
+* **.meta-author:** fix for #37 ([1ee9a2f6](http://github.com/jasonbutler42/grillinfools/commit/1ee9a2f6a3737ad0125651fd2e80cf1dab5d8a65), closes [#37](http://github.com/jasonbutler42/grillinfools/issues/37))
+* **newrelic:** Remove New Relic :( ([eceddd76](http://github.com/jasonbutler42/grillinfools/commit/eceddd764cec1beda892f1172aca26f2b245cb00))
+
+
+#### Features
+
+* remove unused plugins ([e73b8c94](http://github.com/jasonbutler42/grillinfools/commit/e73b8c9490c69d079a7ba2cf4a6cb833d2ee184f))
+* **composer:** broken link checker plugin ([36079112](http://github.com/jasonbutler42/grillinfools/commit/36079112f73c1841288ed43bc9bdfa4c86e40c2a))
+* **newrelic:** New Relic ([9a13a017](http://github.com/jasonbutler42/grillinfools/commit/9a13a01733e01b2b544213f58b351492ab590c8e))
+
+
 <a name="1.10.34"></a>
 ### 1.10.34 (2014-12-22)
 
