@@ -6508,6 +6508,7 @@ figure.alignnone {
 }
 .author-pic,
 a.author-pic {
+  overflow: hidden;
   color: white;
 }
 .author-pic a,
@@ -6551,7 +6552,8 @@ a.author-pic .meta-author {
   .author-pic .meta-author,
   a.author-pic .meta-author {
     display: block;
-    width: 100%;
+    width: 110%;
+    margin-left: -2.5%;
     padding: 5px;
     background: #043750;
     text-align: center;
