@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "36cebee5c6fd5fd83cd36e082e9747d0",
+    "hash": "206b6fe6a8d30096eda67bbb168278fc",
     "packages": [
         {
             "name": "composer/installers",
@@ -340,7 +340,7 @@
         },
         {
             "name": "wpackagist-plugin/all-in-one-wp-security-and-firewall",
-            "version": "v3.8.7",
+            "version": "v3.8.8",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/all-in-one-wp-security-and-firewall/",
@@ -356,7 +356,7 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/all-in-one-wp-security-and-firewall/"
+            "homepage": "https://wordpress.org/plugins/all-in-one-wp-security-and-firewall/"
         },
         {
             "name": "wpackagist-plugin/ap-honeypot",
@@ -403,26 +403,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/askapache-debug-viewer/"
-        },
-        {
-            "name": "wpackagist-plugin/attachment-importer",
-            "version": "0.6.0",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/attachment-importer/",
-                "reference": "tags/0.6.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/attachment-importer.0.6.0.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/attachment-importer/"
         },
         {
             "name": "wpackagist-plugin/broken-link-checker",
@@ -486,29 +466,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/easyrecipe/"
-        },
-        {
-            "name": "wpackagist-plugin/easysnippet",
-            "version": "2.0.0105",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/easysnippet/",
-                "reference": "tags/2.0.0105"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/easysnippet.2.0.0105.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "replace": {
-                "wpackagist/easysnippet": "self.version"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/easysnippet/"
         },
         {
             "name": "wpackagist-plugin/floating-social-bar",
