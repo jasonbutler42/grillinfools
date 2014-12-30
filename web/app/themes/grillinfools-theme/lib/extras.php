@@ -146,6 +146,7 @@ if (!file_exists($wpcontent_image_path . '/' . $featured_image_filename)) {
 	// Create image to be manipulated from source image
 	switch ($source_image_ext) {
 		case 'jpg':
+		case 'jpeg':
 			$source_image = imagecreatefromjpeg($wpcontent_image_path . '/' . $image_src_filename);
 			break;
 		case 'png':
