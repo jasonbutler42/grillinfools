@@ -6712,6 +6712,9 @@ a.author-pic .avatar {
 }
 .content .sponsor img {
   border-radius: 5px;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .content .sponsor:before {
   content: "Sponsored Content";
@@ -7738,6 +7741,11 @@ a.author-pic .avatar {
     text-transform: uppercase;
     font-size: 80%;
     padding: .5em 0;
+  }
+  .home .wrap .home-widget .widget img {
+    border: 1px solid #bbbbbb;
+    padding: 2px;
+    border-radius: 3px;
   }
   .home .wrap .home-widget .widget ul {
     list-style: none;
