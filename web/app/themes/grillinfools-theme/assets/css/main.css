@@ -6715,6 +6715,7 @@ a.author-pic .avatar {
   display: block;
   max-width: 100%;
   height: auto;
+  margin-bottom: 1em;
 }
 .content .sponsor:before {
   content: "Sponsored Content";
