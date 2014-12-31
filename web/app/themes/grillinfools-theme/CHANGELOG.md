@@ -1,3 +1,19 @@
+<a name="1.11.2"></a>
+### 1.11.2 (2014-12-31)
+
+
+#### Bug Fixes
+
+* **jpeg:** add jpeg logic ([119fbb11](http://github.com/jasonbutler42/grillinfools/commit/119fbb11ad48101d0543ae516f75e6b0fd429e7b))
+
+
+#### Features
+
+* home page work ([c304fecf](http://github.com/jasonbutler42/grillinfools/commit/c304fecf358b3ee9041e3957dfcb1ea32d8f569d), closes [#44](http://github.com/jasonbutler42/grillinfools/issues/44))
+* **blackhole:** add kill switch to head.php ([b21b1ff5](http://github.com/jasonbutler42/grillinfools/commit/b21b1ff5b287a9720bfe688ac4e8651b77af4f6e))
+* **search-and-replace:** add search and replace plugin ([e964fcb8](http://github.com/jasonbutler42/grillinfools/commit/e964fcb8e55d4daf6e521010669b91452fee1583))
+
+
 <a name="1.11.1"></a>
 ### 1.11.1 (2014-12-29)
 
