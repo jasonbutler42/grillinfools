@@ -108,6 +108,13 @@ if ( !is_admin() ) {
 /**********************************/
 /*      Featured Image Stuff      */
 /**********************************/
+// homepage featured four columns
+
+add_image_size( 'Home Image', 350, 150, array('left','top') ); 
+
+
+
+
 function featured_image($post_id, $featured_width=400, $featured_height = 1170, $quality = 60, $url=false) {
 	//mad props to this blog post: http://spotlesswebdesign.com/blog.php?id=1 for helping me figure out the logic.
 

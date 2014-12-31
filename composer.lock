@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "6fe18c032d0fd1e0391fe317bf1dd2c6",
+    "hash": "e70f67cd8105ec014bcde85eab19791d",
     "packages": [
         {
             "name": "composer/installers",
@@ -535,26 +535,23 @@
         },
         {
             "name": "wpackagist-plugin/iq-block-country",
-            "version": "1.1.15",
+            "version": "1.1.16",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/iq-block-country/",
-                "reference": "tags/1.1.15"
+                "reference": "tags/1.1.16"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/iq-block-country.1.1.15.zip",
+                "url": "http://downloads.wordpress.org/plugin/iq-block-country.1.1.16.zip",
                 "reference": null,
                 "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"
             },
-            "replace": {
-                "wpackagist/iq-block-country": "self.version"
-            },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/iq-block-country/"
+            "homepage": "https://wordpress.org/plugins/iq-block-country/"
         },
         {
             "name": "wpackagist-plugin/jetpack",
@@ -730,6 +727,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/subscribe-to-comments-reloaded/"
+        },
+        {
+            "name": "wpackagist-plugin/ultimate-posts-widget",
+            "version": "2.0.3",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/ultimate-posts-widget/",
+                "reference": "tags/2.0.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/ultimate-posts-widget.2.0.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/ultimate-posts-widget/"
         },
         {
             "name": "wpackagist-plugin/w3-total-cache",
