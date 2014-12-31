@@ -1,3 +1,17 @@
+<a name="1.11.3"></a>
+### 1.11.3 (2014-12-31)
+
+
+#### Bug Fixes
+
+* **img:** homepage and sidebar ([741387cb](http://github.com/jasonbutler42/grillinfools/commit/741387cb311f0ad5b9663350d5f8b379d952e87e))
+
+
+#### Features
+
+* **regen-thumbnails:** add plugin ([2b9bc721](http://github.com/jasonbutler42/grillinfools/commit/2b9bc7217c8aaac9273f7df789c7b15c7d067d49))
+
+
 <a name="1.11.2"></a>
 ### 1.11.2 (2014-12-31)
 
