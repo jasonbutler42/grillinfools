@@ -81,6 +81,7 @@
     "ooyala/ooyala-wordpress-plugin": "1.0",
     "wpackagist-plugin/page-links-to": "2.9.4",
     "wpackagist-plugin/raw-html": "1.4.14",
+    "wpackagist-plugin/regenerate-thumbnails": "2.2.4",
     "wpackagist-plugin/remove-image-links": "1.2",
     "wpackagist-plugin/sabre": "1.2.2",
     "roots/soil": "3.0.1",
