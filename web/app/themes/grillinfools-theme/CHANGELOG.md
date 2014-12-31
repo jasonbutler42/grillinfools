@@ -1,3 +1,12 @@
+<a name="1.11.4"></a>
+### 1.11.4 (2014-12-31)
+
+
+#### Bug Fixes
+
+* **.sponsor:** margin on sidebar images ([d03cf5b8](http://github.com/jasonbutler42/grillinfools/commit/d03cf5b8fb7af5cd7ab708dd0c43f164c0686704))
+
+
 <a name="1.11.3"></a>
 ### 1.11.3 (2014-12-31)
 
