@@ -1,3 +1,17 @@
+<a name="1.11.5"></a>
+### 1.11.5 (2015-01-07)
+
+
+#### Bug Fixes
+
+* **all-in-one-seo-pack:** update ([e7d90362](http://github.com/jasonbutler42/grillinfools/commit/e7d90362687297132ba46eaa90159b39123b7db8))
+
+
+#### Features
+
+* **triplelift:** Add Triple Lift Code ([a7d3592c](http://github.com/jasonbutler42/grillinfools/commit/a7d3592cc2daee72a189ddb1c0e1ae902e71d279))
+
+
 <a name="1.11.4"></a>
 ### 1.11.4 (2014-12-31)
 
