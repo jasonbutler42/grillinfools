@@ -7,7 +7,11 @@
   <?php get_search_form(); ?>
 <?php endif; ?>
 
+<?php //************** Line 1/2 of TripleLIft Code ***************// ?>
+<?php $tl_count = 0; $tl_offset = 2; $tl_interval = 5; $tl_script = '<script src="http://ib.3lift.com/ttj?inv_code=grillinfools_main_feed"></script>'; ?>
 <?php while (have_posts()) : the_post(); ?>
+      <?php //************** Line 2/2 of TripleLIft Code ***************// ?>
+    <?php $tl_count++; if( ($tl_count-$tl_offset) % $tl_interval == 0) { echo $tl_script; } ?>
   <?php get_template_part('templates/content', get_post_format()); ?>
 <?php endwhile; ?>
 
