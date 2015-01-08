@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "d2409982aaf62dec357875814b6b245f",
+    "hash": "00358d7d00f48d8194b565e45f72b67b",
     "packages": [
         {
             "name": "composer/installers",
@@ -320,15 +320,15 @@
         },
         {
             "name": "wpackagist-plugin/all-in-one-seo-pack",
-            "version": "2.2.4.1",
+            "version": "2.2.4.2",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/all-in-one-seo-pack/",
-                "reference": "tags/2.2.4.1"
+                "reference": "tags/2.2.4.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/all-in-one-seo-pack.2.2.4.1.zip",
+                "url": "http://downloads.wordpress.org/plugin/all-in-one-seo-pack.2.2.4.2.zip",
                 "reference": null,
                 "shasum": null
             },
