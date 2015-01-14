@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "9e5079ad9bd01787b2e4c4e3363833ff",
+    "hash": "2b886749f626b1d6bbf7fdbd96c80190",
     "packages": [
         {
             "name": "composer/installers",
@@ -340,7 +340,7 @@
         },
         {
             "name": "wpackagist-plugin/all-in-one-wp-security-and-firewall",
-            "version": "v3.8.8",
+            "version": "v3.8.9",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/all-in-one-wp-security-and-firewall/",
@@ -423,26 +423,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/broken-link-checker/"
-        },
-        {
-            "name": "wpackagist-plugin/category-pagination-fix",
-            "version": "3.2.2",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/category-pagination-fix/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/category-pagination-fix.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/category-pagination-fix/"
         },
         {
             "name": "wpackagist-plugin/co-authors-plus",
@@ -879,26 +859,23 @@
         },
         {
             "name": "wpackagist-plugin/wp-smushit",
-            "version": "1.6.5.4",
+            "version": "1.7",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wp-smushit/",
-                "reference": "tags/1.6.5.4"
+                "reference": "tags/1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/wp-smushit.1.6.5.4.zip",
+                "url": "http://downloads.wordpress.org/plugin/wp-smushit.1.7.zip",
                 "reference": null,
                 "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"
             },
-            "replace": {
-                "wpackagist/wp-smushit": "self.version"
-            },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/wp-smushit/"
+            "homepage": "https://wordpress.org/plugins/wp-smushit/"
         },
         {
             "name": "wpackagist-plugin/wp-stripe",
