@@ -15,6 +15,7 @@
       <div class="tagline"><?php echo get_bloginfo ( 'description' ); ?></div>
     </div>
     <nav class="collapse navbar-collapse navbar-primary" role="navigation">
+      <?php get_template_part('templates/searchform'); ?>
       <?php
         if (has_nav_menu('primary_navigation')) :
           wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav'));
