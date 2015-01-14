@@ -1,3 +1,17 @@
+<a name="1.11.7"></a>
+### 1.11.7 (2015-01-14)
+
+
+#### Bug Fixes
+
+* composer rollback ([6fd0189a](http://github.com/jasonbutler42/grillinfools/commit/6fd0189ab4bed9b104eef13f1fba87b803774bc0))
+
+
+#### Features
+
+* **.main:** extra spacing and mobile search ([6aa70131](http://github.com/jasonbutler42/grillinfools/commit/6aa7013106e9e155e436aca0416c457ed9b75290))
+
+
 <a name="1.11.6"></a>
 ### 1.11.6 (2015-01-14)
 

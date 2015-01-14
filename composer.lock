@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "00358d7d00f48d8194b565e45f72b67b",
+    "hash": "9e5079ad9bd01787b2e4c4e3363833ff",
     "packages": [
         {
             "name": "composer/installers",
@@ -423,6 +423,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/broken-link-checker/"
+        },
+        {
+            "name": "wpackagist-plugin/category-pagination-fix",
+            "version": "3.2.2",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/category-pagination-fix/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/category-pagination-fix.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/category-pagination-fix/"
         },
         {
             "name": "wpackagist-plugin/co-authors-plus",
