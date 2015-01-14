@@ -6485,6 +6485,10 @@ figure.alignnone {
 /******************************/
 /*    Meta and byline stuff   */
 /******************************/
+.org,
+.role {
+  display: none;
+}
 .byline {
   margin-bottom: 1em;
 }
@@ -6498,6 +6502,7 @@ figure.alignnone {
 }
 .byline .meta a {
   font-weight: bold;
+  font-style: italic;
 }
 .single-post .byline .meta a {
   color: #c9c9c0;
@@ -6579,6 +6584,7 @@ a.author-pic .meta-author {
     margin-left: -2.5%;
     padding: 5px;
     background: #043750;
+    font-style: italic;
     text-align: center;
     opacity: 0.8;
     position: absolute;

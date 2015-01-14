@@ -1,3 +1,18 @@
+<a name="1.11.6"></a>
+### 1.11.6 (2015-01-14)
+
+
+#### Bug Fixes
+
+* **the_author_meta:** add fn to author ([d82d33f1](http://github.com/jasonbutler42/grillinfools/commit/d82d33f192eaeb6d064e386d45c01f3369014c82))
+
+
+#### Features
+
+* **aiows:** update all in one security plugin ([8f197758](http://github.com/jasonbutler42/grillinfools/commit/8f19775811dee13cff1875799b004869e1b2c6e5))
+* **schema.org:** schema.org additions ([292cfeaa](http://github.com/jasonbutler42/grillinfools/commit/292cfeaa0d95a002f3f03098345c37d9a0e766b0))
+
+
 <a name="1.11.5"></a>
 ### 1.11.5 (2015-01-07)
 
