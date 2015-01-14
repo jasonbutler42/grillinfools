@@ -23,6 +23,11 @@
 /*    Meta and byline stuff   */
 /******************************/
 
+//schema.org extras that don't need to be seen by anyone but Google
+.org,
+.role {
+	display: none;
+}
 .byline {
 	margin-bottom: 1em;
 	.meta {
@@ -36,6 +41,7 @@
 		}
 		a {
 			font-weight: bold;
+			font-style: italic;
 			.single-post & {
 				color: @text-color-on-red;
 			}
@@ -101,7 +107,7 @@ a.author-pic {
 			margin-left: -2.5%;
 			padding: 5px;
 			background: @gf-blue-darker;
-			
+			font-style: italic;
 			text-align: center;
 			opacity: 0.8;
 			position:absolute;
