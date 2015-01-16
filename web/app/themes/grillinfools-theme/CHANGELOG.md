@@ -1,3 +1,13 @@
+<a name="1.11.11"></a>
+### 1.11.11 (2015-01-16)
+
+
+#### Bug Fixes
+
+* **dumbass_robots:** bad bots ([6fb76601](http://github.com/jasonbutler42/grillinfools/commit/6fb76601ec7afc20bd5167104486094bd86e08a9))
+* **tastytreats:** honeypot change ([b3496e3f](http://github.com/jasonbutler42/grillinfools/commit/b3496e3f4a456955cf1e45752540659c6b18c6ca))
+
+
 <a name="1.11.10"></a>
 ### 1.11.10 (2015-01-16)
 
