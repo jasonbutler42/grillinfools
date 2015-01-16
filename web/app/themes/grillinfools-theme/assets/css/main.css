@@ -7642,6 +7642,7 @@ a.author-pic .avatar {
   .home .wrap .stage .carousel .carousel-inner .item .entry-meta-wrap .entry-title {
     font-size: 175%;
     padding-top: .5em;
+    max-width: 575px;
   }
 }
 @media (min-width: 768px) and (min-width: 768px) {
@@ -7666,13 +7667,13 @@ a.author-pic .avatar {
     margin-left: 0;
   }
 }
-@media (min-width: 768px) and (min-width: 992px) {
+@media (min-width: 768px) and (min-width: 1200px) {
   .home .wrap .stage .carousel .carousel-inner .item .entry-meta-wrap .author-pic {
     width: 150px;
     height: 150px;
   }
 }
-@media (min-width: 768px) and (min-width: 992px) {
+@media (min-width: 768px) and (min-width: 1200px) {
   .home .wrap .stage .carousel .carousel-inner .item .entry-meta-wrap .entry-title,
   .home .wrap .stage .carousel .carousel-inner .item .entry-meta-wrap .byline,
   .home .wrap .stage .carousel .carousel-inner .item .entry-meta-wrap .entry-summary {
@@ -7681,10 +7682,16 @@ a.author-pic .avatar {
 }
 @media (min-width: 768px) and (min-width: 992px) {
   .home .wrap .stage .carousel .carousel-inner .item .entry-meta-wrap .entry-title {
+    max-width: 775px;
+  }
+}
+@media (min-width: 768px) and (min-width: 1200px) {
+  .home .wrap .stage .carousel .carousel-inner .item .entry-meta-wrap .entry-title {
+    max-width: 910px;
     font-size: 200%;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .home .wrap .stage {
     height: 575px;
   }
@@ -7692,19 +7699,20 @@ a.author-pic .avatar {
 .home .wrap .stage .allstars {
   position: absolute;
   z-index: 99;
-  bottom: 10em;
+  bottom: 5em;
   right: 2em;
-  width: 50px;
-  height: 50px;
-  -webkit-background-size: 50px 50px;
-          background-size: 50px 50px;
+  width: 100px;
+  height: 100px;
+  -webkit-background-size: 100px 100px;
+          background-size: 100px 100px;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .home .wrap .stage .allstars {
-    width: 100px;
-    height: 100px;
-    -webkit-background-size: 100px 100px;
-            background-size: 100px 100px;
+    width: 150px;
+    height: 150px;
+    -webkit-background-size: 150px 150px;
+            background-size: 150px 150px;
+    bottom: 3em;
   }
 }
 .home .wrap .home-widget {
