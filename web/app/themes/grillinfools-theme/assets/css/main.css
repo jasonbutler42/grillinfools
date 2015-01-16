@@ -6459,6 +6459,14 @@ figure.alignnone {
     margin-left: 10px;
   }
 }
+.allstars {
+  display: block;
+  width: 75px;
+  height: 75px;
+  background-image: url('/app/themes/grillinfools-theme/assets/img/AllStarLogo_BLK.png');
+  -webkit-background-size: 75px 75px;
+          background-size: 75px 75px;
+}
 .divider {
   padding: 0;
   width: 50%;
@@ -7679,6 +7687,24 @@ a.author-pic .avatar {
 @media (min-width: 992px) {
   .home .wrap .stage {
     height: 575px;
+  }
+}
+.home .wrap .stage .allstars {
+  position: absolute;
+  z-index: 99;
+  bottom: 10em;
+  right: 2em;
+  width: 50px;
+  height: 50px;
+  -webkit-background-size: 50px 50px;
+          background-size: 50px 50px;
+}
+@media (min-width: 992px) {
+  .home .wrap .stage .allstars {
+    width: 100px;
+    height: 100px;
+    -webkit-background-size: 100px 100px;
+            background-size: 100px 100px;
   }
 }
 .home .wrap .home-widget {

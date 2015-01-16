@@ -1,4 +1,5 @@
 <div class="stage">
+<span class="allstars"></span>
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
 <?php
