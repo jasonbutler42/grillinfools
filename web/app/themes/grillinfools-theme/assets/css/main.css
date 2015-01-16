@@ -6490,6 +6490,9 @@ figure.alignnone {
 .divider .divider-svg .ball {
   fill: #e1e1db;
 }
+#infscr-loading {
+  text-align: center;
+}
 /******************************/
 /*    Meta and byline stuff   */
 /******************************/
