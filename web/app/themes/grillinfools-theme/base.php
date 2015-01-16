@@ -15,7 +15,9 @@
     <?php if(is_home()):  ?>
     <?php get_template_part('templates/jumbotron'); ?>
     <div class="home-widget">
+    <?php if(is_home() && !is_paged()):  ?>
     <?php dynamic_sidebar('home-widget'); ?>
+    <?php endif;?>
     </div>
     <?php endif;?>
 
