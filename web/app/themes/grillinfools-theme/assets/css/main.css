@@ -6467,6 +6467,13 @@ figure.alignnone {
   -webkit-background-size: 75px 75px;
           background-size: 75px 75px;
 }
+.tastytreats {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
 .divider {
   padding: 0;
   width: 50%;
