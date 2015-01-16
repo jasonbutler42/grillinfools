@@ -1,3 +1,12 @@
+<a name="1.11.9"></a>
+### 1.11.9 (2015-01-16)
+
+
+#### Features
+
+* **allstar:** minor adjustments ([2b7b3f48](http://github.com/jasonbutler42/grillinfools/commit/2b7b3f480a4c3e3eb51cfec1c5725212f554db79))
+
+
 <a name="1.11.8"></a>
 ### 1.11.8 (2015-01-16)
 
