@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "2b886749f626b1d6bbf7fdbd96c80190",
+    "hash": "9aa85d644fe00274e9a739592222c052",
     "packages": [
         {
             "name": "composer/installers",
@@ -486,6 +486,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/floating-social-bar/"
+        },
+        {
+            "name": "wpackagist-plugin/go-newrelic",
+            "version": "0.3",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/go-newrelic/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/go-newrelic.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/go-newrelic/"
         },
         {
             "name": "wpackagist-plugin/honeypot-comments",
