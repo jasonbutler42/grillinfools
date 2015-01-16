@@ -1,5 +1,5 @@
 <div class="stage">
-<span class="allstars"></span>
+<a href="http://live.charbroil.com/articles/grillin-fools?utm_source=scott-thomas-web&utm_medium=article-link&utm_campaign=all-star-blogger" target="_blank" class="allstars"></a>
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
 <?php
