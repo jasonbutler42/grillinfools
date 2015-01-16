@@ -1,3 +1,18 @@
+<a name="1.11.10"></a>
+### 1.11.10 (2015-01-16)
+
+
+#### Bug Fixes
+
+* **allstar:** add allstar link ([ce4e042e](http://github.com/jasonbutler42/grillinfools/commit/ce4e042e85fa3005242e186d86a4af97518e3e74))
+* **home-widget:** infinite scroll ([3b512bff](http://github.com/jasonbutler42/grillinfools/commit/3b512bff4cf9668fc1e4ff00d26a94b63ee9117b))
+
+
+#### Features
+
+* **plugins:** Go New Relic ([d9efc99f](http://github.com/jasonbutler42/grillinfools/commit/d9efc99f0e12531cd56dc03aca515a50215da0fa))
+
+
 <a name="1.11.9"></a>
 ### 1.11.9 (2015-01-16)
 
