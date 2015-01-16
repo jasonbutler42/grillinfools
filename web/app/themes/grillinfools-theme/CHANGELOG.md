@@ -1,3 +1,12 @@
+<a name="1.11.8"></a>
+### 1.11.8 (2015-01-16)
+
+
+#### Features
+
+* **allstar:** charbroil allstar ([49def228](http://github.com/jasonbutler42/grillinfools/commit/49def22878559037b95f24ac196ea96301de69fb))
+
+
 <a name="1.11.7"></a>
 ### 1.11.7 (2015-01-14)
 
