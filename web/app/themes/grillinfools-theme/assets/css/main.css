@@ -6129,7 +6129,11 @@ button.close {
 .login:before,
 .login:after,
 .single .hentry header:before,
-.single .hentry header:after {
+.single .hentry header:after,
+.yarpp-related .yarpp-posts:before,
+.yarpp-related .yarpp-posts:after,
+.yarpp-related .yarpp-posts:before,
+.yarpp-related .yarpp-posts:after {
   content: " ";
   display: table;
 }
@@ -6161,7 +6165,9 @@ button.close {
 .page .wrap .content:after,
 .page .wrap .content .main .page-header:after,
 .login:after,
-.single .hentry header:after {
+.single .hentry header:after,
+.yarpp-related .yarpp-posts:after,
+.yarpp-related .yarpp-posts:after {
   clear: both;
 }
 .center-block {
@@ -6429,9 +6435,6 @@ a:active {
 }
 a:visited {
   color: #e66479;
-}
-.yarpp-related a:hover {
-  text-decoration: underline !important;
 }
 .gallery-row {
   padding: 10px 0;
@@ -8345,6 +8348,105 @@ textarea.login #login #loginform input[type*="password"] {
 .single .hentry .ts-fab-wrapper img {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+.yarpp-related {
+  border: 1px solid #bbbbbb;
+  border-radius: 3px;
+}
+.yarpp-related .yarpp-title {
+  margin: 1em !important;
+}
+.yarpp-related .yarpp-posts {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.yarpp-related .yarpp-posts .yarpp-post {
+  border-top: 1px solid #bbbbbb;
+  display: inline-block;
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.yarpp-related .yarpp-posts .yarpp-post:before,
+.yarpp-related .yarpp-posts .yarpp-post:after {
+  content: " ";
+  display: table;
+}
+.yarpp-related .yarpp-posts .yarpp-post:after {
+  clear: both;
+}
+.yarpp-related .yarpp-posts .yarpp-post:before,
+.yarpp-related .yarpp-posts .yarpp-post:after {
+  content: " ";
+  display: table;
+}
+.yarpp-related .yarpp-posts .yarpp-post:after {
+  clear: both;
+}
+@media (min-width: 768px) {
+  .yarpp-related .yarpp-posts .yarpp-post {
+    float: left;
+    width: 25%;
+  }
+}
+@media (min-width: 768px) {
+  .yarpp-related .yarpp-posts .yarpp-post {
+    text-align: center;
+    border: none;
+  }
+}
+.yarpp-related .yarpp-posts .yarpp-post .yarpp-post-thumbnail {
+  width: 5em;
+  float: left;
+  margin-right: 1em;
+  -webkit-box-shadow: 0 0 0 3px #ffffff, 0 0 0 4px #bbbbbb;
+          box-shadow: 0 0 0 3px #ffffff, 0 0 0 4px #bbbbbb;
+  border-radius: 3px;
+}
+@media (min-width: 768px) {
+  .yarpp-related .yarpp-posts .yarpp-post .yarpp-post-thumbnail {
+    width: 7em;
+    margin: auto;
+    float: none;
+  }
+}
+@media (min-width: 768px) {
+  .yarpp-related .yarpp-posts .yarpp-post .yarpp-post-thumbnail {
+    width: 9em;
+  }
+}
+.yarpp-related .yarpp-posts .yarpp-post .yarpp-post-thumbnail .featured-image {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  opacity: 1;
+}
+.yarpp-related .yarpp-posts .yarpp-post .yarpp-post-title {
+  padding-top: .5em;
+}
+.ooyala-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 35px;
+  height: 0;
+  overflow: hidden;
+}
+.ooyala-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 /**************************************/
 /*   Comments begin in earnest here   */

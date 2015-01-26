@@ -127,3 +127,76 @@
 
 	}
 }
+// YARPP related stuff
+.yarpp-related {
+	border: 1px solid @border-color;
+	border-radius: 3px;
+	.yarpp-title {margin: 1em !important;}
+	.yarpp-posts {
+		.make-row();
+		.container-fixed();
+		.yarpp-post {
+			.clearfix;
+			border-top: 1px solid @border-color;
+			display: inline-block;
+			width: 100%;
+			padding-top: 1em;
+			padding-bottom: 1em;
+			.make-sm-column(3);
+			@media(min-width: @screen-tablet){
+				text-align: center;
+				border: none;
+			}
+			.yarpp-post-thumbnail {
+					width: 5em;
+					float: left;
+					margin-right: 1em;
+					box-shadow: 0 0 0 3px #ffffff, 0 0 0 4px #bbbbbb;
+					border-radius: 3px;
+					@media(min-width: @screen-tablet){
+						width: 7em;
+						margin: auto;
+						float: none;
+					}
+					@media(min-width: @screen-tablet){
+						width: 9em;
+					}
+				.featured-image {
+					//strip out defaults from other places
+					margin: 0;
+					padding: 0;
+					position: relative;
+					box-shadow: none;
+					opacity: 1;
+				}
+				.yarpp-default-image {
+					
+				}
+			}
+			.yarpp-post-title {
+				padding-top: .5em;
+			}
+		}
+	}
+	
+	//a:hover {text-decoration: underline !important;} //ugh, plugin overwriting. :(
+
+}
+
+// Stupid OOYALA video player stuff
+.ooyala-container {
+	position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+	iframe {
+		position: absolute;
+	    top:0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	}
+}
+
+
