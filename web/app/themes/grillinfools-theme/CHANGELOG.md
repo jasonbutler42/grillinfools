@@ -1,3 +1,12 @@
+<a name="1.11.12"></a>
+### 1.11.12 (2015-01-26)
+
+
+#### Bug Fixes
+
+* **sosweet:** add nofollow ([480bf4a2](http://github.com/jasonbutler42/grillinfools/commit/480bf4a214af99354abb0887e5a155890f3f803a))
+
+
 <a name="1.11.11"></a>
 ### 1.11.11 (2015-01-16)
 
