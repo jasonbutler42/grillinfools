@@ -276,3 +276,17 @@ function get_avatar_url($author_id, $size){
     preg_match("/src='(.*?)'/i", $get_avatar, $matches);
     return ( $matches[1] );
 }
+
+add_action( 'template_redirect', 'wpsites_attachment_redirect' );
+function wpsites_attachment_redirect(){
+	global $post;
+	if ( is_attachment() && isset($post->post_parent) && is_numeric($post->post_parent) && ($post->post_parent != 0) ) {
+		wp_redirect(get_permalink($post->post_parent), 301); // permanent redirect to post/page where image or document was uploaded
+		exit;
+	} elseif ( is_attachment() && isset($post->post_parent) && is_numeric($post->post_parent) && ($post->post_parent < 1) ) {   // for some reason it doesnt works checking for 0, so checking lower than 1 instead...
+		wp_redirect(get_bloginfo('url'), 302); // temp redirect to home for image or document not associated to any post/page
+		exit;       
+    }
+}
+
+
