@@ -1,3 +1,17 @@
+<a name="1.11.13"></a>
+### 1.11.13 (2015-02-02)
+
+
+#### Bug Fixes
+
+* **.navbar-category:** remove unused background-image ([868026e7](http://github.com/jasonbutler42/grillinfools/commit/868026e783e812e2425dbcb9a79a6a6d9aeb397f))
+
+
+#### Features
+
+* **attachment:** Attachment page redirect ([52b7d176](http://github.com/jasonbutler42/grillinfools/commit/52b7d176328e0ebd9b1d5dbf934a90b731869540))
+
+
 <a name="1.11.12"></a>
 ### 1.11.12 (2015-01-26)
 
