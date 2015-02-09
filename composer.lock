@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "846f2a64c3e3a7404294dec4d2c3d4e0",
+    "hash": "b369f8e96f9aeafbf554a0da2ab63415",
     "packages": [
         {
             "name": "composer/installers",
@@ -747,26 +747,23 @@
         },
         {
             "name": "wpackagist-plugin/subscribe-to-comments-reloaded",
-            "version": 141103,
+            "version": 150207,
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/subscribe-to-comments-reloaded/",
-                "reference": "tags/141103"
+                "reference": "tags/150207"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/subscribe-to-comments-reloaded.141103.zip",
+                "url": "http://downloads.wordpress.org/plugin/subscribe-to-comments-reloaded.150207.zip",
                 "reference": null,
                 "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"
             },
-            "replace": {
-                "wpackagist/subscribe-to-comments-reloaded": "self.version"
-            },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/subscribe-to-comments-reloaded/"
+            "homepage": "https://wordpress.org/plugins/subscribe-to-comments-reloaded/"
         },
         {
             "name": "wpackagist-plugin/ultimate-posts-widget",
