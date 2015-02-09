@@ -1,3 +1,14 @@
+<a name="1.11.14"></a>
+### 1.11.14 (2015-02-09)
+
+
+#### Bug Fixes
+
+* **jquery:**
+  * add jquery dist for prod ([fe7822a2](http://github.com/jasonbutler42/grillinfools/commit/fe7822a2ae5936e65df76bc5b4c979632e460e74))
+  * add jquery dist for prod ([267856fd](http://github.com/jasonbutler42/grillinfools/commit/267856fd829716d5b81379e8ef9276d2ea7f99e1))
+
+
 <a name="1.11.13"></a>
 ### 1.11.13 (2015-02-02)
 
