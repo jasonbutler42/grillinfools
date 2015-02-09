@@ -5,9 +5,10 @@ assets/vendor/*
 !assets/vendor/bootstrap
 assets/vendor/bootstrap/*
 !assets/vendor/bootstrap/fonts/
+
 !assets/vendor/jquery
-assets/vendor/jquery*
-!assets/vendor/jquery/dist
+assets/vendor/jquery/*
+!assets/vendor/jquery/dist/
 
 assets/img/patterns/unused/*
 *debug*
