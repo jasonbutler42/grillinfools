@@ -40,7 +40,30 @@
 					//@media(min-width: @screen-tablet){padding: 0 5em;}
 					//@media(min-width: @screen-desktop){padding: 0 6.75em;}
 				}
-
+				.gf-badges {
+					.make-row();
+					.gf-badge {
+						.make-sm-column(4);
+						.clearfix;
+						text-align: center;
+						margin-bottom: 1em;
+						&.gf-badge-farmland {
+							img {background: #083e7b;}
+						}
+						&.gf-badge-rockwood {
+							img {background: #000;}
+						}
+						img {
+							box-shadow: none;
+							.img-responsive;
+							background: none;
+							margin:auto;
+							border-radius: 5px;
+							border: 1px solid @border-color;
+							padding: .5em;
+						}
+					}
+				}
 
 				/*
 		header {

@@ -6126,6 +6126,8 @@ button.close {
 .page .wrap .content:after,
 .page .wrap .content .main .page-header:before,
 .page .wrap .content .main .page-header:after,
+.page .wrap .content .main .gf-badges:before,
+.page .wrap .content .main .gf-badges:after,
 .login:before,
 .login:after,
 .single .hentry header:before,
@@ -6164,6 +6166,7 @@ button.close {
 .content-info:after,
 .page .wrap .content:after,
 .page .wrap .content .main .page-header:after,
+.page .wrap .content .main .gf-badges:after,
 .login:after,
 .single .hentry header:after,
 .yarpp-related .yarpp-posts:after,
@@ -7528,6 +7531,58 @@ a.author-pic .avatar {
     margin-right: 0;
     margin-left: 0;
   }
+}
+.page .wrap .content .main .gf-badges {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.page .wrap .content .main .gf-badges .gf-badge {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  margin-bottom: 1em;
+}
+@media (min-width: 768px) {
+  .page .wrap .content .main .gf-badges .gf-badge {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+.page .wrap .content .main .gf-badges .gf-badge:before,
+.page .wrap .content .main .gf-badges .gf-badge:after {
+  content: " ";
+  display: table;
+}
+.page .wrap .content .main .gf-badges .gf-badge:after {
+  clear: both;
+}
+.page .wrap .content .main .gf-badges .gf-badge:before,
+.page .wrap .content .main .gf-badges .gf-badge:after {
+  content: " ";
+  display: table;
+}
+.page .wrap .content .main .gf-badges .gf-badge:after {
+  clear: both;
+}
+.page .wrap .content .main .gf-badges .gf-badge.gf-badge-farmland img {
+  background: #083e7b;
+}
+.page .wrap .content .main .gf-badges .gf-badge.gf-badge-rockwood img {
+  background: #000;
+}
+.page .wrap .content .main .gf-badges .gf-badge img {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  background: none;
+  margin: auto;
+  border-radius: 5px;
+  border: 1px solid #bbbbbb;
+  padding: .5em;
 }
 .page .wrap .content .sidebar {
   position: relative;
