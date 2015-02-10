@@ -1,3 +1,12 @@
+<a name="1.11.16"></a>
+### 1.11.16 (2015-02-10)
+
+
+#### Bug Fixes
+
+* **gf-badges:** add styles for sponsor badges ([dcdb1796](http://github.com/jasonbutler42/grillinfools/commit/dcdb1796db140ce00609455ccbd91c84623e59d6), closes [#16](http://github.com/jasonbutler42/grillinfools/issues/16))
+
+
 <a name="1.11.15"></a>
 ### 1.11.15 (2015-02-09)
 
