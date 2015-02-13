@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "9eaf34bd48fff942034f169e193094a5",
+    "hash": "9838c61d33ec191f189a644671753a66",
     "packages": [
         {
             "name": "composer/installers",
@@ -463,6 +463,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/co-authors-plus/"
+        },
+        {
+            "name": "wpackagist-plugin/dk-new-medias-image-rotator-widget",
+            "version": "1.0.2",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/dk-new-medias-image-rotator-widget/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/dk-new-medias-image-rotator-widget.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/dk-new-medias-image-rotator-widget/"
         },
         {
             "name": "wpackagist-plugin/easyrecipe",
