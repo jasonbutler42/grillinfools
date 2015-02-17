@@ -1,3 +1,12 @@
+<a name="1.11.17"></a>
+### 1.11.17 (2015-02-17)
+
+
+#### Bug Fixes
+
+* **upw:** add custom template ([5be46553](http://github.com/jasonbutler42/grillinfools/commit/5be465532832bc00846378b3f40960a849ee33a9))
+
+
 <a name="1.11.16"></a>
 ### 1.11.16 (2015-02-10)
 
