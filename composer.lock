@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "77758b7dc71ba13f6b246c97395c1683",
+    "hash": "08b0ca1b220543d03f0a5d878fec7ebb",
     "packages": [
         {
             "name": "composer/installers",
@@ -240,10 +240,10 @@
         },
         {
             "name": "wordpress/wordpress",
-            "version": "4.1",
+            "version": "4.1.1",
             "dist": {
                 "type": "zip",
-                "url": "https://wordpress.org/wordpress-4.1.zip",
+                "url": "https://wordpress.org/wordpress-4.1.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -274,7 +274,7 @@
         },
         {
             "name": "wpackagist-plugin/advanced-responsive-video-embedder",
-            "version": "5.3.0",
+            "version": "5.3.3",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/advanced-responsive-video-embedder/",
@@ -337,7 +337,7 @@
         },
         {
             "name": "wpackagist-plugin/all-in-one-wp-security-and-firewall",
-            "version": "v3.8.9",
+            "version": "v3.9.0",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/all-in-one-wp-security-and-firewall/",
@@ -463,26 +463,23 @@
         },
         {
             "name": "wpackagist-plugin/easyrecipe",
-            "version": "3.2.2885",
+            "version": "3.2.2929",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/easyrecipe/",
-                "reference": "tags/3.2.2885"
+                "reference": "tags/3.2.2929"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/easyrecipe.3.2.2885.zip",
+                "url": "http://downloads.wordpress.org/plugin/easyrecipe.3.2.2929.zip",
                 "reference": null,
                 "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"
             },
-            "replace": {
-                "wpackagist/easyrecipe": "self.version"
-            },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/easyrecipe/"
+            "homepage": "https://wordpress.org/plugins/easyrecipe/"
         },
         {
             "name": "wpackagist-plugin/floating-social-bar",
@@ -592,15 +589,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "3.3.1",
+            "version": "3.3.2",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/3.3.1"
+                "reference": "tags/3.3.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/jetpack.3.3.1.zip",
+                "url": "http://downloads.wordpress.org/plugin/jetpack.3.3.2.zip",
                 "reference": null,
                 "shasum": null
             },
