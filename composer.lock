@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "08b0ca1b220543d03f0a5d878fec7ebb",
+    "hash": "478c2000ca07be1fb13638d1fc594bbd",
     "packages": [
         {
             "name": "composer/installers",
@@ -294,26 +294,23 @@
         },
         {
             "name": "wpackagist-plugin/akismet",
-            "version": "3.0.4",
+            "version": "3.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/akismet/",
-                "reference": "tags/3.0.4"
+                "reference": "tags/3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/akismet.3.0.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/akismet.3.1.zip",
                 "reference": null,
                 "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"
             },
-            "replace": {
-                "wpackagist/akismet": "self.version"
-            },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/akismet/"
+            "homepage": "https://wordpress.org/plugins/akismet/"
         },
         {
             "name": "wpackagist-plugin/all-in-one-seo-pack",
@@ -483,7 +480,7 @@
         },
         {
             "name": "wpackagist-plugin/floating-social-bar",
-            "version": "1.1.5",
+            "version": "1.1.6",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/floating-social-bar/",
@@ -491,7 +488,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/floating-social-bar.zip",
+                "url": "https://downloads.wordpress.org/plugin/floating-social-bar.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -569,15 +566,15 @@
         },
         {
             "name": "wpackagist-plugin/iq-block-country",
-            "version": "1.1.16",
+            "version": "1.1.19",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/iq-block-country/",
-                "reference": "tags/1.1.16"
+                "reference": "tags/1.1.19"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/iq-block-country.1.1.16.zip",
+                "url": "https://downloads.wordpress.org/plugin/iq-block-country.1.1.19.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -632,26 +629,23 @@
         },
         {
             "name": "wpackagist-plugin/page-links-to",
-            "version": "2.9.4",
+            "version": "2.9.6",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/page-links-to/",
-                "reference": "tags/2.9.4"
+                "reference": "tags/2.9.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/page-links-to.2.9.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/page-links-to.2.9.6.zip",
                 "reference": null,
                 "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"
             },
-            "replace": {
-                "wpackagist/page-links-to": "self.version"
-            },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/page-links-to/"
+            "homepage": "https://wordpress.org/plugins/page-links-to/"
         },
         {
             "name": "wpackagist-plugin/raw-html",
