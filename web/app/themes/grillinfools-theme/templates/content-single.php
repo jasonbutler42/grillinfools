@@ -14,6 +14,7 @@
       <footer>
         <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'roots'), 'after' => '</p></nav>')); ?>
       </footer>
+  <script src=" http://ib.3lift.com/ttj?inv_code=grillinfools_article_sub "></script>
       <?php comments_template('/templates/comments.php'); ?>
     </div>
   </article>
