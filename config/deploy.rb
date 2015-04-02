@@ -18,7 +18,7 @@ set :log_level, :info
 # Linked files
 set :linked_files, %w{.env web/.htaccess web/wp/.htaccess web/robots.txt web/dumbass_robots/blackhole.dat web/app/plugins/all-in-one-wp-security-and-firewall/logs/wp-security-log-cron-job.txt web/app/plugins/all-in-one-wp-security-and-firewall/logs/wp-security-log.txt}
 # Linked directories
-set :linked_dirs, %w{web/app/uploads web/app/w3tc-config web/app/cache web/app/aiowps_backups web/app/plugins/ad-injection-data web/app/plugins/fanciest-author-box web/app/plugins/pinterest-pin-it}
+set :linked_dirs, %w{web/app/uploads web/app/wfcache web/app/w3tc-config web/app/cache web/app/aiowps_backups web/app/plugins/ad-injection-data web/app/plugins/fanciest-author-box web/app/plugins/pinterest-pin-it}
 
 namespace :deploy do
   desc 'Restart application'
