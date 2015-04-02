@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "478c2000ca07be1fb13638d1fc594bbd",
+    "hash": "bb77fc66fcce1a02be4ba13766e2804e",
     "packages": [
         {
             "name": "composer/installers",
@@ -294,15 +294,15 @@
         },
         {
             "name": "wpackagist-plugin/akismet",
-            "version": "3.1",
+            "version": "3.1.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/akismet/",
-                "reference": "tags/3.1"
+                "reference": "tags/3.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/akismet.3.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/akismet.3.1.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -314,15 +314,15 @@
         },
         {
             "name": "wpackagist-plugin/all-in-one-seo-pack",
-            "version": "2.2.5.1",
+            "version": "2.2.6.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/all-in-one-seo-pack/",
-                "reference": "tags/2.2.5.1"
+                "reference": "tags/2.2.6.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/all-in-one-seo-pack.2.2.5.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/all-in-one-seo-pack.2.2.6.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -586,15 +586,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "3.3.2",
+            "version": "3.4.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/3.3.2"
+                "reference": "tags/3.4.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/jetpack.3.3.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/jetpack.3.4.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -837,6 +837,26 @@
             "homepage": "https://wordpress.org/plugins/weptile-image-slider-widget/"
         },
         {
+            "name": "wpackagist-plugin/wordfence",
+            "version": "5.3.8",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/wordfence/",
+                "reference": "tags/5.3.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wordfence.5.3.8.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wordfence/"
+        },
+        {
             "name": "wpackagist-plugin/wordpress-importer",
             "version": "0.6.1",
             "source": {
@@ -904,15 +924,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-smushit",
-            "version": "1.7",
+            "version": "1.7.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wp-smushit/",
-                "reference": "tags/1.7"
+                "reference": "tags/1.7.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/wp-smushit.1.7.zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-smushit.1.7.1.zip",
                 "reference": null,
                 "shasum": null
             },
