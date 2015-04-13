@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "f05aa9d1b119d6fc4b63c853deb9ae9f",
+    "hash": "d8473d5c35b24e4c3bb9876140ecd707",
     "packages": [
         {
             "name": "composer/installers",
@@ -380,15 +380,15 @@
         },
         {
             "name": "wpackagist-plugin/broken-link-checker",
-            "version": "1.10.4",
+            "version": "1.10.5",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/broken-link-checker/",
-                "reference": "tags/1.10.4"
+                "reference": "tags/1.10.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/broken-link-checker.1.10.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/broken-link-checker.1.10.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -400,15 +400,15 @@
         },
         {
             "name": "wpackagist-plugin/business-directory-plugin",
-            "version": "3.6.2.2",
+            "version": "3.6.3",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/business-directory-plugin/",
-                "reference": "tags/3.6.2.2"
+                "reference": "tags/3.6.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/business-directory-plugin.3.6.2.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/business-directory-plugin.3.6.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -798,15 +798,15 @@
         },
         {
             "name": "wpackagist-plugin/weptile-image-slider-widget",
-            "version": "1.1.3",
+            "version": "1.1.4",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/weptile-image-slider-widget/",
-                "reference": "tags/1.1.3"
+                "reference": "tags/1.1.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/weptile-image-slider-widget.1.1.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/weptile-image-slider-widget.1.1.4.zip",
                 "reference": null,
                 "shasum": null
             },
