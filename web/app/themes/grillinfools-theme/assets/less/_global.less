@@ -46,6 +46,10 @@
 @tablet-avatar: 		100px;
 @desktop-avatar: 		150px;
 
+@link-color:			@heading-color;
+@link-hover-color:      darken(@heading-color,10%);
+@link-visited-color:    lighten(@heading-color,20%);
+
 @font-face {
     font-family: 'fawn_script';
     src: url('@{fonts-location}fawn-webfont.eot');
@@ -71,15 +75,9 @@
 }
 
 a {
-	&:link {
-		color: @heading-color;
-	}
-	&:hover,
-	&:active {
-		color: darken(@heading-color,10%);
-		text-decoration: underline;
-	}
 	&:visited {
-		color: lighten(@heading-color,20%);
+		&:not(.btn) {
+			color: @link-visited-color;
+		}
 	}
 }
