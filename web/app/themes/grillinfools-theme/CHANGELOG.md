@@ -1,3 +1,12 @@
+<a name="1.11.18"></a>
+### 1.11.18 (2015-04-12)
+
+
+#### Bug Fixes
+
+* fix CCN "responsiveness" ([be2ea7cf](http://github.com/jasonbutler42/grillinfools/commit/be2ea7cfc272fdb3deb72acbeb70737c9bd525b2))
+
+
 <a name="1.11.17"></a>
 ### 1.11.17 (2015-02-17)
 
