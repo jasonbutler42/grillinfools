@@ -70,14 +70,15 @@ function whois_lookup($ipaddress) {
 			$buffer .= fgets($sock, 10240); 
 			fclose($sock);
 		}
-		if (eregi('RIPE.NET', $buffer)) {
+		//if(!preg_match("/^[_\.0-9a-zA-Z-]+@([0-9a-zA-Z][0-9a-zA-Z-]+\.)+[a-zA-Z]{2,6}$/i", $str))
+		if (preg_match('/RIPE.NET/i', $buffer)) {
 			$nextServer = 'whois.ripe.net';
-		} else if (eregi('whois.apnic.net', $buffer)) {
+		} else if (preg_match('/whois.apnic.net/i', $buffer)) {
 			$nextServer = 'whois.apnic.net';
-		} else if (eregi('nic.ad.jp', $buffer)) {
+		} else if (preg_match('/nic.ad.jp/i', $buffer)) {
 			$nextServer = 'whois.nic.ad.jp';
 			$extra = '/e'; // suppress JaPaNIC characters
-		} else if (eregi('whois.registro.br', $buffer)) {
+		} else if (preg_match('/whois.registro.br/i', $buffer)) {
 			$nextServer = 'whois.registro.br';
 		}
 		if (isset($nextServer)) {
@@ -95,7 +96,7 @@ function whois_lookup($ipaddress) {
 		}
 		$msg .= nl2br($buffer);
 	}
-	$msg = htmlspecialchars(trim(ereg_replace('#', '', strip_tags($msg))));
+	$msg = htmlspecialchars(trim(preg_replace('/#/', '', strip_tags($msg))));
 	$msg = preg_replace("/\\n\\n\\n\\n/i", "\n", $msg);
 	$msg = preg_replace("/\\n\\n\\n/i", "\n\n", $msg);
 	return $msg;
