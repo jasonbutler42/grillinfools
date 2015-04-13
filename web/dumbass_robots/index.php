@@ -159,7 +159,7 @@ if ($badbot == 0) {
 // 2nd+ visit (banned)
 } else if ($badbot > 0) {
 	echo '<h1>You have been banned from this domain because we mistook you for a dumbass robot</h1>';
-	echo '<p>If you think there has been a mistake, <a href="/contact/">contact the administrator</a> via proxy server.</p>';
+	echo '<p>If you think there has been a mistake, <a href="mailto:jasonbutler42@gmail.com">contact the administrator</a> via proxy server.</p>';
 } else { 
 	die(); 
 }
