@@ -81,3 +81,27 @@ a {
 		}
 	}
 }
+.content-network-link-title {
+	display: none !important;
+	@media(min-width: @screen-desktop){
+		display: table-cell !important;
+	}
+}
+.content-network-widget {
+	overflow:hidden;
+	.content-network {
+		@media(min-width: @screen-tablet){
+			.content-network-sidebar,
+			.content-network-button {
+				display:none;
+			}
+			.content-network-links {
+				margin-left: 75px;
+			}
+			.content-network-logo {
+				left: -90px !important;
+			}
+			
+		}
+	}
+}
