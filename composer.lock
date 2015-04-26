@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "33164065cf0baf3ccd8a778e3a428915",
+    "hash": "faae6d5a5f1629fa0113ad4096a9bfc3",
     "packages": [
         {
             "name": "composer/installers",
@@ -240,10 +240,10 @@
         },
         {
             "name": "wordpress/wordpress",
-            "version": "4.1.2",
+            "version": "4.2",
             "dist": {
                 "type": "zip",
-                "url": "https://wordpress.org/wordpress-4.1.2.zip",
+                "url": "https://wordpress.org/wordpress-4.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -380,15 +380,15 @@
         },
         {
             "name": "wpackagist-plugin/broken-link-checker",
-            "version": "1.10.6",
+            "version": "1.10.7",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/broken-link-checker/",
-                "reference": "tags/1.10.6"
+                "reference": "tags/1.10.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/broken-link-checker.1.10.6.zip",
+                "url": "https://downloads.wordpress.org/plugin/broken-link-checker.1.10.7.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -440,15 +440,15 @@
         },
         {
             "name": "wpackagist-plugin/easyrecipe",
-            "version": "3.2.2929",
+            "version": "3.3.2998",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/easyrecipe/",
-                "reference": "tags/3.2.2929"
+                "reference": "tags/3.3.2998"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/easyrecipe.3.2.2929.zip",
+                "url": "https://downloads.wordpress.org/plugin/easyrecipe.3.3.2998.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -586,15 +586,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "3.4.3",
+            "version": "3.5",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/3.4.3"
+                "reference": "tags/3.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.3.4.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/jetpack.3.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -649,15 +649,15 @@
         },
         {
             "name": "wpackagist-plugin/raw-html",
-            "version": "1.4.14",
+            "version": "1.4.15",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/raw-html/",
-                "reference": "tags/1.4.14"
+                "reference": "tags/1.4.15"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/raw-html.1.4.14.zip",
+                "url": "https://downloads.wordpress.org/plugin/raw-html.1.4.15.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -665,7 +665,7 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/raw-html/"
+            "homepage": "https://wordpress.org/plugins/raw-html/"
         },
         {
             "name": "wpackagist-plugin/regenerate-thumbnails",

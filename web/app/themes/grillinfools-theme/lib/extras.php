@@ -271,11 +271,11 @@ add_filter( 'pre_get_posts', 'exclude_category_home' );
 
 
 // Get src URL from avatar <img> tag
-function get_avatar_url($author_id, $size){
-    $get_avatar = get_avatar( $author_id, $size );
-    preg_match("/src='(.*?)'/i", $get_avatar, $matches);
-    return ( $matches[1] );
-}
+// function get_avatar_url($author_id, $size){
+    // $get_avatar = get_avatar( $author_id, $size );
+    // preg_match("/src='(.*?)'/i", $get_avatar, $matches);
+    // return ( $matches[1] );
+// }
 
 add_action( 'template_redirect', 'wpsites_attachment_redirect' );
 function wpsites_attachment_redirect(){
