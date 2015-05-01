@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "faae6d5a5f1629fa0113ad4096a9bfc3",
+    "hash": "65b2052c284e9222e4bee63cc6bc957f",
     "packages": [
         {
             "name": "composer/installers",
@@ -240,10 +240,10 @@
         },
         {
             "name": "wordpress/wordpress",
-            "version": "4.2",
+            "version": "4.2.1",
             "dist": {
                 "type": "zip",
-                "url": "https://wordpress.org/wordpress-4.2.zip",
+                "url": "https://wordpress.org/wordpress-4.2.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -380,15 +380,15 @@
         },
         {
             "name": "wpackagist-plugin/broken-link-checker",
-            "version": "1.10.7",
+            "version": "1.10.8",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/broken-link-checker/",
-                "reference": "tags/1.10.7"
+                "reference": "tags/1.10.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/broken-link-checker.1.10.7.zip",
+                "url": "https://downloads.wordpress.org/plugin/broken-link-checker.1.10.8.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -440,15 +440,15 @@
         },
         {
             "name": "wpackagist-plugin/easyrecipe",
-            "version": "3.3.2998",
+            "version": "3.3.3070",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/easyrecipe/",
-                "reference": "tags/3.3.2998"
+                "reference": "tags/3.3.3070"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/easyrecipe.3.3.2998.zip",
+                "url": "https://downloads.wordpress.org/plugin/easyrecipe.3.3.3070.zip",
                 "reference": null,
                 "shasum": null
             },

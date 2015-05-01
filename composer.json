@@ -45,11 +45,11 @@
       "type": "package",
       "package": {
         "name": "wordpress/wordpress",
-        "version": "4.2",
+        "version": "4.2.1",
         "type": "webroot",
         "dist": {
           "type": "zip",
-          "url": "https://wordpress.org/wordpress-4.2.zip"
+          "url": "https://wordpress.org/wordpress-4.2.1.zip"
         },
         "require" : {
           "fancyguy/webroot-installer": "1.1.0"
@@ -59,7 +59,7 @@
   ],
   "require": {
     "php": ">=5.3.2",
-    "wordpress/wordpress": "4.2",
+    "wordpress/wordpress": "4.2.1",
     "fancyguy/webroot-installer": "1.1.0",
     "composer/installers": "v1.0.12",
     "vlucas/phpdotenv": "~1.0.6",
@@ -69,10 +69,10 @@
     "wpackagist-plugin/all-in-one-seo-pack": "2.2.6.2",
     "wpackagist-plugin/ap-honeypot": "1.4",
     "wpackagist-plugin/askapache-debug-viewer": "3.1",
-    "wpackagist-plugin/broken-link-checker": "1.10.7",
+    "wpackagist-plugin/broken-link-checker": "1.10.8",
     "wpackagist-plugin/business-directory-plugin": "3.6.4",
     "wpackagist-plugin/co-authors-plus": "3.1.1",
-    "wpackagist-plugin/easyrecipe": "3.3.2998",
+    "wpackagist-plugin/easyrecipe": "3.3.3070",
     "wpackagist-plugin/floating-social-bar": "1.1.7",
     "wpackagist-plugin/go-newrelic": "0.3",
     "wpackagist-plugin/honeypot-comments": "1.1.0",
