@@ -17,7 +17,7 @@
       <aside class="more-home text-center">
         <p><a href="/" class="btn btn-info btn-lg" title="See all the new posts!">I bet you want to see more stuff, right?<br>Check out the homepage with all new posts!</a></p>
       </aside>
-  <script src=" http://ib.3lift.com/ttj?inv_code=grillinfools_article_sub "></script>
+      <script src="https://ib.3lift.com/ttj?inv_code=grillinfools_article_sub"></script>
       <?php comments_template('/templates/comments.php'); ?>
     </div>
   </article>
