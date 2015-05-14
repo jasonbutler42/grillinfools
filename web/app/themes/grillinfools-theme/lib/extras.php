@@ -289,4 +289,51 @@ function wpsites_attachment_redirect(){
     }
 }
 
+/****************************************/
+/*         	     WP Stripe              */
+/****************************************/
+
+function sc_change_details( $html, $charge_response ) {
+ 
+    // This is copied from the original output so that we can just add in our own details
+    $html = '<div class="sc-payment-details-wrap">';
+          
+    $html .= '<p>' . __( 'Congratulations. Your payment went through!', 'sc' ) . '</p>' . "\n";
+          
+    if( ! empty( $charge_response->description ) ) {
+        $html .= '<p>' . __( "Thanks for Registering!", 'sc' ) . '</p>';
+    }
+          
+
+      
+    $html .= '<br><strong>' . __( 'Total Paid: $', 'sc' ) . sc_stripe_to_formatted_amount( $charge_response->amount, $charge_response->currency ) . ' ' . '</strong>' . "\n";
+      
+    $html .= '<p>Your transaction ID is: ' . $charge_response->id . '</p>';
+   
+    $html .= '<p>Card: ****-****-****-' . $charge_response->source->last4 . '<br>';
+    $html .= 'Expiration: ' . $charge_response->source->exp_month . '/' . $charge_response->source->exp_year . '</p>';
+      
+    if( ! empty( $charge_response->metadata->name ) ) {
+        $html .= '<p>Your Name: ' . str_replace('\\', '', $charge_response->metadata->name) . '</p>';
+    }
+    if( ! empty( $charge_response->metadata->team_name ) ) {
+        $html .= '<p>Team Name: ' . str_replace('\\', '', $charge_response->metadata->team_name) . '</p>';
+    }
+    if( ! empty( $charge_response->metadata->email ) ) {
+        $html .= '<p>Email: ' . $charge_response->metadata->email . '</p>';
+    }
+    if( ! empty( $charge_response->metadata->phone ) ) {
+        $html .= '<p>Phone: ' . $charge_response->metadata->phone . '</p>';
+    }
+    if( ! empty( $charge_response->metadata->additional_comments ) ) {
+        $html .= '<p>Additional Comments: ' . str_replace('\\', '', $charge_response->metadata->additional_comments) . '</p>';
+    }
+      
+    $html .= '</div>';
+      
+    return $html;
+      
+}
+add_filter( 'sc_payment_details', 'sc_change_details', 20, 2 );
+
 

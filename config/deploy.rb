@@ -16,7 +16,7 @@ set :log_level, :info
 # Linked stuff gets automatically symbolically linked into the /current deployment folder from the shared folder
 # All files and folders are relative from webserver root (/current/)
 # Linked directories
-set :linked_dirs, %w{web/app/uploads web/app/wfcache web/app/w3tc-config web/app/cache web/app/aiowps_backups web/app/plugins/ad-injection-data web/app/plugins/sumome web/app/plugins/fanciest-author-box web/app/plugins/pinterest-pin-it web/app/opcache}
+set :linked_dirs, %w{web/app/uploads web/app/wfcache web/app/w3tc-config web/app/cache web/app/aiowps_backups web/app/plugins/ad-injection-data web/app/plugins/sumome web/app/plugins/stripe-checkout-pro web/app/plugins/fanciest-author-box web/app/plugins/pinterest-pin-it web/app/opcache}
 # Linked files
 set :linked_files, %w{.env web/.htaccess web/wp/.htaccess web/robots.txt web/dumbass_robots/blackhole.dat}
 
