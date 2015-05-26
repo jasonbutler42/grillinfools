@@ -110,7 +110,7 @@ if ( !is_admin() ) {
 /**********************************/
 // homepage featured four columns
 
-add_image_size( 'Home Image', 350, 150, array('left','top') ); 
+add_image_size( 'Home Image', 350, 250, array('left','top') ); 
 
 
 
