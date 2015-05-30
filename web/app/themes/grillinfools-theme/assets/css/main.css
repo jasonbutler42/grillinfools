@@ -6488,6 +6488,14 @@ figure.alignnone {
   -webkit-background-size: 75px 75px;
           background-size: 75px 75px;
 }
+.ambassador {
+  display: block;
+  width: 75px;
+  height: 75px;
+  background-image: url('/app/themes/grillinfools-theme/assets/img/PinterestAmbassador_Logo.png');
+  -webkit-background-size: 75px 75px;
+          background-size: 75px 75px;
+}
 .tastytreats {
   font: 0/0 a;
   color: transparent;
@@ -7778,23 +7786,32 @@ a.author-pic .avatar {
     height: 575px;
   }
 }
-.home .wrap .stage .allstars {
+.home .wrap .stage .seal {
   position: absolute;
   z-index: 99;
   bottom: 5em;
-  right: 2em;
-  width: 100px;
-  height: 100px;
-  -webkit-background-size: 100px 100px;
-          background-size: 100px 100px;
+  width: 75px;
+  height: 75px;
+  -webkit-background-size: 75px 75px;
+          background-size: 75px 75px;
 }
 @media (min-width: 1200px) {
-  .home .wrap .stage .allstars {
-    width: 150px;
-    height: 150px;
-    -webkit-background-size: 150px 150px;
-            background-size: 150px 150px;
-    bottom: 3em;
+  .home .wrap .stage .seal {
+    width: 110px;
+    height: 110px;
+    -webkit-background-size: 110px 110px;
+            background-size: 110px 110px;
+  }
+}
+.home .wrap .stage .seal.allstars {
+  right: 1em;
+}
+.home .wrap .stage .seal.ambassador {
+  right: 5.5em;
+}
+@media (min-width: 1200px) {
+  .home .wrap .stage .seal.ambassador {
+    right: 7em;
   }
 }
 .home .wrap .home-widget {

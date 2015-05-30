@@ -107,19 +107,30 @@
 			@media(min-width: @screen-lg-desktop){
 				height: 575px;
 			}
-			.allstars {
+			.seal {
 				position: absolute;
 				z-index: 99;
 				bottom: 5em;
-				right: 2em;
-				width: 100px;
-				height: 100px;
-				background-size: 100px 100px;
+				//right: 2em;
+				width: 75px;
+				height: 75px;
+				background-size: 75px 75px;
 				@media(min-width: @screen-lg-desktop){
-					width: 150px;
-					height: 150px;
-					background-size: 150px 150px;
-					bottom: 3em;
+					width: 110px;
+					height: 110px;
+					background-size: 110px 110px;
+				
+				}
+				&.allstars {
+					right: 1em;
+					//bottom: .5em;
+				}
+				&.ambassador {
+					right: 5.5em;
+					@media(min-width: @screen-lg-desktop){
+						right: 7em;
+					}
+					//bottom: 8.5em;
 				}
 			}
 		}
