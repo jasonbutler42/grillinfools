@@ -1,3 +1,20 @@
+<a name="1.11.19"></a>
+### 1.11.19 (2015-05-30)
+
+
+#### Bug Fixes
+
+* clean footer ([60647f97](http://github.com/jasonbutler42/grillinfools/commit/60647f972e03487bab1cfaeb658f3a0d4217e71d))
+* ccn & ssl ([65519233](http://github.com/jasonbutler42/grillinfools/commit/655192337126ea46ea039d83aab0bc3b3cce9a31))
+* core ([1a53085b](http://github.com/jasonbutler42/grillinfools/commit/1a53085bb51d5c8f0ff3283c14f7c6439f32a846))
+* plugins ([0fa6ebe3](http://github.com/jasonbutler42/grillinfools/commit/0fa6ebe3950599606566331020a72d84d7c16dfe))
+* plugin update ([d9bb627a](http://github.com/jasonbutler42/grillinfools/commit/d9bb627a24526e46115f1502a35975d22707771c))
+* **jasonbutler42:** admin contact ([02dc1c99](http://github.com/jasonbutler42/grillinfools/commit/02dc1c99d40ae4997971ac594bbac5c332bbf5c3))
+* **plugins:** plugin update ([880eb5bc](http://github.com/jasonbutler42/grillinfools/commit/880eb5bc3be14cb3ae727eab0481f89d47b850e0))
+* **preg:** deprecated fixes ([e8fe70d5](http://github.com/jasonbutler42/grillinfools/commit/e8fe70d5e6ffcdf8eeda330a4996f94dcb3c9a55))
+* **ssl:** add support running entire site encrypted ([28fc94a6](http://github.com/jasonbutler42/grillinfools/commit/28fc94a661bdef2ad9517838afe4450de4c5fca9))
+
+
 <a name="1.11.18"></a>
 ### 1.11.18 (2015-04-12)
 
