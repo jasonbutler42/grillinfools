@@ -7797,21 +7797,26 @@ a.author-pic .avatar {
 }
 @media (min-width: 1200px) {
   .home .wrap .stage .seal {
-    width: 110px;
-    height: 110px;
-    -webkit-background-size: 110px 110px;
-            background-size: 110px 110px;
+    width: 100px;
+    height: 100px;
+    -webkit-background-size: 100px 100px;
+            background-size: 100px 100px;
   }
 }
 .home .wrap .stage .seal.allstars {
-  right: 1em;
+  right: .25em;
+}
+@media (min-width: 1200px) {
+  .home .wrap .stage .seal.allstars {
+    right: .5em;
+  }
 }
 .home .wrap .stage .seal.ambassador {
-  right: 5.5em;
+  right: 5.75em;
 }
 @media (min-width: 1200px) {
   .home .wrap .stage .seal.ambassador {
-    right: 7em;
+    right: 8em;
   }
 }
 .home .wrap .home-widget {

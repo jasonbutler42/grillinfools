@@ -116,19 +116,22 @@
 				height: 75px;
 				background-size: 75px 75px;
 				@media(min-width: @screen-lg-desktop){
-					width: 110px;
-					height: 110px;
-					background-size: 110px 110px;
+					width: 100px;
+					height: 100px;
+					background-size: 100px 100px;
 				
 				}
 				&.allstars {
-					right: 1em;
+					right: .25em;
+					@media(min-width: @screen-lg-desktop){
+						right: .5em;
+					}
 					//bottom: .5em;
 				}
 				&.ambassador {
-					right: 5.5em;
+					right: 5.75em;
 					@media(min-width: @screen-lg-desktop){
-						right: 7em;
+						right: 8em;
 					}
 					//bottom: 8.5em;
 				}
