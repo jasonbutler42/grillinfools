@@ -1,3 +1,12 @@
+<a name="1.11.20"></a>
+### 1.11.20 (2015-05-31)
+
+
+#### Bug Fixes
+
+* seals improvement ([7beb8fca](http://github.com/jasonbutler42/grillinfools/commit/7beb8fca29665ad74f244ad47fa126df9830cd79))
+
+
 <a name="1.11.19"></a>
 ### 1.11.19 (2015-05-30)
 
