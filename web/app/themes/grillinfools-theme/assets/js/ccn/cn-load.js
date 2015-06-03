@@ -2,8 +2,8 @@
   'use strict';
 
   // load options
-  var options = (typeof cn_options === 'undefined') ? { site: 'http://www.thedailymeal.com', 'jquery': true } : cn_options, jquery_ready;
-  if (!options.site) { options.site = 'http://www.thedailymeal.com'; }
+  var options = (typeof cn_options === 'undefined') ? { site: 'https://www.thedailymeal.com', 'jquery': true } : cn_options, jquery_ready;
+  if (!options.site) { options.site = 'https://www.thedailymeal.com'; }
   if (!options.jquery) { options.jquery = true; }
   if (!options.type) { options.type = 'default'; }
   if (!options.top) { options.top = 0; }
@@ -11,10 +11,10 @@
 
   // jquery
   if (options.jquery) {
-    tdm_ccn_load('http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js', 'js');
+    tdm_ccn_load('https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js', 'js');
   }
 
-  tdm_ccn_load('http://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js','js');
+  tdm_ccn_load('https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js','js');
 
   // load analytics
   //tdm_ccn_load('http://images.thedailymeal.net/sites/all/themes/thedailymeal/js/tdm_analytics.js', 'js');
