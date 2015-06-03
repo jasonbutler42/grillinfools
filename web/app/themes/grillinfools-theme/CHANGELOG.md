@@ -1,3 +1,13 @@
+<a name="1.11.21"></a>
+### 1.11.21 (2015-06-03)
+
+
+#### Bug Fixes
+
+* more https cleaning ([c5ddfca3](http://github.com/jasonbutler42/grillinfools/commit/c5ddfca392b88793ad85fba4c88950f6dc0e2800))
+* **pinterest-pin-it:** override default behavior for mobile ([1f88df95](http://github.com/jasonbutler42/grillinfools/commit/1f88df95e8d0a7aa3d8a74aa06313466b089e425))
+
+
 <a name="1.11.20"></a>
 ### 1.11.20 (2015-05-31)
 

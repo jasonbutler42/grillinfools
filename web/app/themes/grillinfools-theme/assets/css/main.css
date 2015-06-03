@@ -8525,6 +8525,9 @@ textarea.login #login #loginform input[type*="password"] {
 .yarpp-related .yarpp-posts .yarpp-post .yarpp-post-title {
   padding-top: .5em;
 }
+.more-home .btn {
+  white-space: normal;
+}
 .ooyala-container {
   position: relative;
   padding-bottom: 56.25%;
