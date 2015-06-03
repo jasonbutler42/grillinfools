@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "0b123849db96f91c9ee26b678cc80657",
+    "hash": "e955e9f41e263bca4731cb239987f3a2",
     "packages": [
         {
             "name": "composer/installers",
@@ -792,15 +792,15 @@
         },
         {
             "name": "wpackagist-plugin/wordfence",
-            "version": "6.0.3",
+            "version": "6.0.5",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordfence/",
-                "reference": "tags/6.0.3"
+                "reference": "tags/6.0.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordfence.6.0.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordfence.6.0.5.zip",
                 "reference": null,
                 "shasum": null
             },
