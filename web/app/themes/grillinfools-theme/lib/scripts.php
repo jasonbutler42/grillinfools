@@ -117,3 +117,21 @@ function load_ccn_scripts() {
   wp_enqueue_script( 'tdm_analytics' );
 }
 add_action('wp_enqueue_scripts', 'load_ccn_scripts');
+
+
+/* Pinterest pinning plugin stuff */
+include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+
+// check if Pinterest Pin It is active
+if ( is_plugin_active( 'pinterest-pin-it/ppibfi_pinterest.php' ) ) {
+  //plugin is activated
+
+  //Only run the script on the blog (i.e. not dashboard)  - default in plugin is to NOT show on mobile, so we are overriding that
+  if ( ! is_admin() ) {
+    wp_enqueue_script( 'pibfi_pinterest', XCPIN_PATH.'ppibfi_pinterest.js', array( 'jquery' ) );
+    wp_enqueue_style( 'pibfi_pinterest_style', XCPIN_PATH.'ppibfi_pinterest.css' );
+    add_filter( 'the_content', 'pibfi_engine', 98 ); // The engine, loads after Lazy Load
+  }
+}
+
+
