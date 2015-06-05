@@ -245,7 +245,7 @@ function if_featured_image_class($classes) {
 
 function jumbotron_number() {
 	/* set number of slides in jumbotron - this should probably be done with a plugin or something */
-	$jumbotron_number = 5;
+	$jumbotron_number = 7;
 	return $jumbotron_number;
 }
 
