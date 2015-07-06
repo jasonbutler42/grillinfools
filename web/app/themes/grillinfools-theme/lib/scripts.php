@@ -116,7 +116,7 @@ function load_ccn_scripts() {
   wp_enqueue_script( 'cn-load' );
   wp_enqueue_script( 'tdm_analytics' );
 }
-add_action('wp_enqueue_scripts', 'load_ccn_scripts');
+//add_action('wp_enqueue_scripts', 'load_ccn_scripts');
 
 
 /* Pinterest pinning plugin stuff */
