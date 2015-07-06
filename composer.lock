@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "a090fc64d567c2284e37032ca00b82cb",
+    "hash": "e9a0877d671961d7fac6ddaba6721ace",
     "packages": [
         {
             "name": "composer/installers",
@@ -377,6 +377,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/askapache-debug-viewer/"
+        },
+        {
+            "name": "wpackagist-plugin/better-search-replace",
+            "version": "1.0.6",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/better-search-replace/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/better-search-replace.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/better-search-replace/"
         },
         {
             "name": "wpackagist-plugin/broken-link-checker",
