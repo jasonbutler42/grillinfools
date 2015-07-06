@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "e9a0877d671961d7fac6ddaba6721ace",
+    "hash": "bbb2783314b3448119fcf19007ad8599",
     "packages": [
         {
             "name": "composer/installers",
@@ -751,26 +751,6 @@
             "homepage": "http://wordpress.org/plugins/sabre/"
         },
         {
-            "name": "wpackagist-plugin/search-and-replace",
-            "version": "2.7.1",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/search-and-replace/",
-                "reference": "tags/2.7.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/search-and-replace.2.7.1.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/search-and-replace/"
-        },
-        {
             "name": "wpackagist-plugin/subscribe-to-comments-reloaded",
             "version": 150611,
             "source": {
@@ -849,52 +829,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wp-recent-posts-from-category/"
-        },
-        {
-            "name": "wpackagist-plugin/wp-stripe",
-            "version": "1.5",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/wp-stripe/",
-                "reference": "tags/1.5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/wp-stripe.1.5.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "replace": {
-                "wpackagist/wp-stripe": "self.version"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/wp-stripe/"
-        },
-        {
-            "name": "wpackagist-plugin/wp-stripe-email-receipts",
-            "version": "1.0",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/wp-stripe-email-receipts/",
-                "reference": "tags/1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/wp-stripe-email-receipts.1.0.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "replace": {
-                "wpackagist/wp-stripe-email-receipts": "self.version"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/wp-stripe-email-receipts/"
         },
         {
             "name": "wpackagist-plugin/yet-another-related-posts-plugin",
