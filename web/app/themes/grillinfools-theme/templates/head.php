@@ -1,4 +1,4 @@
-<?php include($_SERVER['DOCUMENT_ROOT'] . "/dumbass_robots/blackhole.php"); ?>
+<?php //include($_SERVER['DOCUMENT_ROOT'] . "/dumbass_robots/blackhole.php"); ?>
 <!doctype html>
 <html class="no-js" <?php language_attributes(); ?>>
 <head>
