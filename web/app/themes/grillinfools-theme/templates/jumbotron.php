@@ -1,5 +1,5 @@
 <div class="stage">
-<a href="http://live.charbroil.com/articles/grillin-fools?utm_source=scott-thomas-web&utm_medium=article-link&utm_campaign=all-star-blogger" target="_blank" class="allstars seal"></a>
+<a href="http://www.charbroil.com/community/author/scottthomas/" target="_blank" class="allstars seal"></a>
 <a href="https://www.pinterest.com/grillinfools/" target="_blank" class="ambassador seal"></a>
 
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
