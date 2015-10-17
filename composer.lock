@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "2d0793df27df77b38359a34271c2add1",
+    "hash": "12f8829f62ca2767e23360f167b46532",
     "packages": [
         {
             "name": "composer/installers",
@@ -274,7 +274,7 @@
         },
         {
             "name": "wpackagist-plugin/advanced-responsive-video-embedder",
-            "version": "6.1.2",
+            "version": "6.3.4",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/advanced-responsive-video-embedder/",
@@ -294,15 +294,15 @@
         },
         {
             "name": "wpackagist-plugin/akismet",
-            "version": "3.1.4",
+            "version": "3.1.5",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/akismet/",
-                "reference": "tags/3.1.4"
+                "reference": "tags/3.1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/akismet.3.1.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/akismet.3.1.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -380,7 +380,7 @@
         },
         {
             "name": "wpackagist-plugin/better-search-replace",
-            "version": "1.2.3",
+            "version": "1.2.4",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/better-search-replace/",
@@ -440,15 +440,15 @@
         },
         {
             "name": "wpackagist-plugin/business-directory-plugin",
-            "version": "3.6.8",
+            "version": "3.6.9.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/business-directory-plugin/",
-                "reference": "tags/3.6.8"
+                "reference": "tags/3.6.9.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/business-directory-plugin.3.6.8.zip",
+                "url": "https://downloads.wordpress.org/plugin/business-directory-plugin.3.6.9.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -606,15 +606,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "3.7",
+            "version": "3.7.2",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/3.7"
+                "reference": "tags/3.7.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.3.7.zip",
+                "url": "https://downloads.wordpress.org/plugin/jetpack.3.7.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -792,15 +792,15 @@
         },
         {
             "name": "wpackagist-plugin/wordfence",
-            "version": "6.0.17",
+            "version": "6.0.20",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordfence/",
-                "reference": "tags/6.0.17"
+                "reference": "tags/6.0.20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordfence.6.0.17.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordfence.6.0.20.zip",
                 "reference": null,
                 "shasum": null
             },
