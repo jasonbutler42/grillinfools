@@ -11,7 +11,7 @@ define('WP_SITEURL', getenv('WP_SITEURL'));
 ini_set('display_errors', 0);
 define('WP_DEBUG_DISPLAY', false);
 define('SCRIPT_DEBUG', false);
-
+define('WP_CACHE', true);
 define('FTP_PUBKEY',getenv('FTP_PUBKEY'));
 define('FTP_PRIKEY',getenv('FTP_PRIKEY'));
 define('FTP_USER',getenv('FTP_USER'));
