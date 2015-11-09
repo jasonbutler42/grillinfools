@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "12f8829f62ca2767e23360f167b46532",
+    "hash": "d714ccb3d0511237c17ea63a3ae3760e",
     "packages": [
         {
             "name": "composer/installers",
@@ -274,7 +274,7 @@
         },
         {
             "name": "wpackagist-plugin/advanced-responsive-video-embedder",
-            "version": "6.3.4",
+            "version": "6.3.5",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/advanced-responsive-video-embedder/",
@@ -380,7 +380,7 @@
         },
         {
             "name": "wpackagist-plugin/better-search-replace",
-            "version": "1.2.4",
+            "version": "1.2.6",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/better-search-replace/",
@@ -420,15 +420,15 @@
         },
         {
             "name": "wpackagist-plugin/broken-link-checker",
-            "version": "1.10.9",
+            "version": "1.10.10",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/broken-link-checker/",
-                "reference": "tags/1.10.9"
+                "reference": "tags/1.10.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/broken-link-checker.1.10.9.zip",
+                "url": "https://downloads.wordpress.org/plugin/broken-link-checker.1.10.10.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -480,15 +480,15 @@
         },
         {
             "name": "wpackagist-plugin/easyrecipe",
-            "version": "3.4.3177",
+            "version": "3.5.3208",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/easyrecipe/",
-                "reference": "tags/3.4.3177"
+                "reference": "tags/3.5.3208"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/easyrecipe.3.4.3177.zip",
+                "url": "https://downloads.wordpress.org/plugin/easyrecipe.3.5.3208.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -586,15 +586,15 @@
         },
         {
             "name": "wpackagist-plugin/instagram-feed",
-            "version": "1.3.7",
+            "version": "1.3.11",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/instagram-feed/",
-                "reference": "tags/1.3.7"
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/instagram-feed.1.3.7.zip",
+                "url": "https://downloads.wordpress.org/plugin/instagram-feed.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -606,15 +606,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "3.7.2",
+            "version": "3.8.0",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/3.7.2"
+                "reference": "tags/3.8.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.3.7.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/jetpack.3.8.0.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -809,6 +809,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wordfence/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-ffpc",
+            "version": "1.10.0",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/wp-ffpc/",
+                "reference": "tags/1.10.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-ffpc.1.10.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-ffpc/"
         },
         {
             "name": "wpackagist-plugin/wp-recent-posts-from-category",
