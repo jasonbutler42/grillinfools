@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7569f2e73e1ba1ef6ec1bd717dce1313",
-    "content-hash": "fd98796a4e2a3aa1081865e4a1d08409",
+    "hash": "1b3f6364232c1ac9b70c2b61cce803b8",
+    "content-hash": "e5ce3a772dae48b01739911571d84807",
     "packages": [
         {
             "name": "composer/installers",
@@ -539,6 +539,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/go-newrelic/"
+        },
+        {
+            "name": "wpackagist-plugin/google-pagespeed-insights",
+            "version": "1.0.6",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/google-pagespeed-insights/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/google-pagespeed-insights.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/google-pagespeed-insights/"
         },
         {
             "name": "wpackagist-plugin/honeypot-comments",
