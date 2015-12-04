@@ -1,9 +1,11 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
     ],
-    "hash": "d714ccb3d0511237c17ea63a3ae3760e",
+    "hash": "7569f2e73e1ba1ef6ec1bd717dce1313",
+    "content-hash": "fd98796a4e2a3aa1081865e4a1d08409",
     "packages": [
         {
             "name": "composer/installers",
@@ -274,7 +276,7 @@
         },
         {
             "name": "wpackagist-plugin/advanced-responsive-video-embedder",
-            "version": "6.3.5",
+            "version": "6.3.8",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/advanced-responsive-video-embedder/",
@@ -314,15 +316,15 @@
         },
         {
             "name": "wpackagist-plugin/all-in-one-seo-pack",
-            "version": "2.2.7.2",
+            "version": "2.2.7.4",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/all-in-one-seo-pack/",
-                "reference": "tags/2.2.7.2"
+                "reference": "tags/2.2.7.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/all-in-one-seo-pack.2.2.7.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/all-in-one-seo-pack.2.2.7.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -380,7 +382,7 @@
         },
         {
             "name": "wpackagist-plugin/better-search-replace",
-            "version": "1.2.6",
+            "version": "1.2.8",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/better-search-replace/",
@@ -440,15 +442,15 @@
         },
         {
             "name": "wpackagist-plugin/business-directory-plugin",
-            "version": "3.6.9.1",
+            "version": "3.6.10.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/business-directory-plugin/",
-                "reference": "tags/3.6.9.1"
+                "reference": "tags/3.6.10.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/business-directory-plugin.3.6.9.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/business-directory-plugin.3.6.10.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -606,15 +608,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "3.8.0",
+            "version": "3.8.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/3.8.0"
+                "reference": "tags/3.8.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.3.8.0.zip",
+                "url": "https://downloads.wordpress.org/plugin/jetpack.3.8.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -875,6 +877,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
     "platform": {
         "php": ">=5.3.2"
     },
