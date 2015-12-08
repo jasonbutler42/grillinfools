@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1b3f6364232c1ac9b70c2b61cce803b8",
-    "content-hash": "e5ce3a772dae48b01739911571d84807",
+    "hash": "fa938e0ee361d3aa572e44a7e886c1fe",
+    "content-hash": "5cfd6956e492cb01c7c3fc74e4ab54c3",
     "packages": [
         {
             "name": "composer/installers",
@@ -382,7 +382,7 @@
         },
         {
             "name": "wpackagist-plugin/better-search-replace",
-            "version": "1.2.8",
+            "version": "1.2.9",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/better-search-replace/",
@@ -459,6 +459,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/business-directory-plugin/"
+        },
+        {
+            "name": "wpackagist-plugin/bwp-minify",
+            "version": "1.3.3",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/bwp-minify/",
+                "reference": "tags/1.3.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/bwp-minify.1.3.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/bwp-minify/"
         },
         {
             "name": "wpackagist-plugin/co-authors-plus",
@@ -708,15 +728,15 @@
         },
         {
             "name": "wpackagist-plugin/regenerate-thumbnails",
-            "version": "2.2.4",
+            "version": "2.2.5",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/regenerate-thumbnails/",
-                "reference": "tags/2.2.4"
+                "reference": "tags/2.2.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/regenerate-thumbnails.2.2.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/regenerate-thumbnails.2.2.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -814,15 +834,15 @@
         },
         {
             "name": "wpackagist-plugin/wordfence",
-            "version": "6.0.20",
+            "version": "6.0.21",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordfence/",
-                "reference": "tags/6.0.20"
+                "reference": "tags/6.0.21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordfence.6.0.20.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordfence.6.0.21.zip",
                 "reference": null,
                 "shasum": null
             },
