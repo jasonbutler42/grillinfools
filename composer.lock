@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fa938e0ee361d3aa572e44a7e886c1fe",
-    "content-hash": "5cfd6956e492cb01c7c3fc74e4ab54c3",
+    "hash": "d98752d60fd50679bdfe82c9168ecf2e",
+    "content-hash": "30231ca7772ba545b498b2e0dacff390",
     "packages": [
         {
             "name": "composer/installers",
@@ -459,26 +459,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/business-directory-plugin/"
-        },
-        {
-            "name": "wpackagist-plugin/bwp-minify",
-            "version": "1.3.3",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/bwp-minify/",
-                "reference": "tags/1.3.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/bwp-minify.1.3.3.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/bwp-minify/"
         },
         {
             "name": "wpackagist-plugin/co-authors-plus",
