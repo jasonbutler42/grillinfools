@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d98752d60fd50679bdfe82c9168ecf2e",
-    "content-hash": "30231ca7772ba545b498b2e0dacff390",
+    "hash": "1c60dd348f5049779ed24e64d1c18d27",
+    "content-hash": "8c8fd7307ba720c63005dd1ffa27121c",
     "packages": [
         {
             "name": "composer/installers",
@@ -242,10 +242,10 @@
         },
         {
             "name": "wordpress/wordpress",
-            "version": "4.3.1",
+            "version": "4.4",
             "dist": {
                 "type": "zip",
-                "url": "https://wordpress.org/wordpress-4.3.1.zip",
+                "url": "https://wordpress.org/wordpress-4.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -276,7 +276,7 @@
         },
         {
             "name": "wpackagist-plugin/advanced-responsive-video-embedder",
-            "version": "6.3.8",
+            "version": "6.3.9",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/advanced-responsive-video-embedder/",
@@ -296,15 +296,15 @@
         },
         {
             "name": "wpackagist-plugin/akismet",
-            "version": "3.1.5",
+            "version": "3.1.6",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/akismet/",
-                "reference": "tags/3.1.5"
+                "reference": "tags/3.1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/akismet.3.1.5.zip",
+                "url": "https://downloads.wordpress.org/plugin/akismet.3.1.6.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -316,15 +316,15 @@
         },
         {
             "name": "wpackagist-plugin/all-in-one-seo-pack",
-            "version": "2.2.7.4",
+            "version": "2.2.7.5",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/all-in-one-seo-pack/",
-                "reference": "tags/2.2.7.4"
+                "reference": "tags/2.2.7.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/all-in-one-seo-pack.2.2.7.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/all-in-one-seo-pack.2.2.7.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -442,15 +442,15 @@
         },
         {
             "name": "wpackagist-plugin/business-directory-plugin",
-            "version": "3.6.10.1",
+            "version": "3.6.12",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/business-directory-plugin/",
-                "reference": "tags/3.6.10.1"
+                "reference": "tags/3.6.12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/business-directory-plugin.3.6.10.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/business-directory-plugin.3.6.12.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -628,15 +628,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "3.8.1",
+            "version": "3.8.2",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/3.8.1"
+                "reference": "tags/3.8.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.3.8.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/jetpack.3.8.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -814,15 +814,15 @@
         },
         {
             "name": "wpackagist-plugin/wordfence",
-            "version": "6.0.21",
+            "version": "6.0.22",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordfence/",
-                "reference": "tags/6.0.21"
+                "reference": "tags/6.0.22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordfence.6.0.21.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordfence.6.0.22.zip",
                 "reference": null,
                 "shasum": null
             },
