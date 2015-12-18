@@ -34,6 +34,14 @@ module.exports = function(grunt) {
         '!assets/**/*.min.*'
       ]
     },
+    csslint: {
+      strict: {
+        options: {
+          import: 2
+        },
+      src: ['assets/css/*.css']
+      }
+    },
     less: {
       dev: {
         files: {
@@ -180,6 +188,7 @@ module.exports = function(grunt) {
   });
   grunt.loadNpmTasks('grunt-conventional-changelog');
   grunt.loadNpmTasks('grunt-bump');
+  grunt.loadNpmTasks('grunt-contrib-csslint');
   // Register tasks
   grunt.registerTask('default', [
     'dev'
@@ -188,7 +197,8 @@ module.exports = function(grunt) {
     'jshint',
     'less:dev',
     'autoprefixer:dev',
-    'concat'
+    'concat',
+    'csslint'
   ]);
   grunt.registerTask('build', [
     'jshint',
